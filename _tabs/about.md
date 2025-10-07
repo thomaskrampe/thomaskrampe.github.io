@@ -9,8 +9,7 @@ order: 4
 - Table of Contents
 {:toc .lead .large-only}
 
-![Thomas Krampe](https://picsur.myctx.net/i/af746a61-206e-488f-b7ce-9a4cbc460c23.jpg)
-{:.lead width="240" height="360" loading="lazy"}
+![Thomas Krampe](https://picsur.myctx.net/i/af746a61-206e-488f-b7ce-9a4cbc460c23.jpg){: width="240" height="240" }
 
 ## Mission
 
