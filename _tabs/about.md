@@ -4,13 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# About me
-
-- Table of Contents
-{:toc .lead .large-only}
-
-![Thomas Krampe](https://picsur.myctx.net/i/af746a61-206e-488f-b7ce-9a4cbc460c23.jpg){: width="240" height="240" }
-
 ## Mission
 
 Neue Technologien kommen und gehen, viele werden schnell wieder vergessen doch einige wenige bleiben auf Dauer erhalten. In vielen Unternehmen ist es einfach nicht möglich, jede neue Technologie zu evaluieren und auf einen sinnvollen und gewinnbringenden Einsatz im Geschäftsprozess zu überprüfen. Oftmals bringt auch nur eine bestimmte Kombination von unterschiedlichen Technologien und Prozessen den entscheidenen Vorteil und führt somit auch zum gewünschten Erfolg. In Vorträgen, Whitepapern und Artikeln stelle ich viele dieser neuen Technolgien in Zusammenhang mit den meisten im Business vorhandenen Prozessen und gebe ihnen damit vielleicht einen besseren Ausgangspunkt oder eine Idee für ihre Entscheidung zur Investitionen in diese neuen Technologien.
