@@ -1,6 +1,8 @@
 ---
-layout: plain
-sitemap: false
+layout: page
+title: Nutzungsbedingungen
+permalink: /nutzung/
+toc: false
 ---
 
 # Nutzungsbedingungen

@@ -1,6 +1,8 @@
 ---
-layout: plain
-sitemap: false
+layout: page
+title: Impressum
+permalink: /impressum/
+toc: false
 ---
 
 # Impressum
