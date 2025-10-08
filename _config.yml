@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://blog.kngstn.eu"
+url: "https://thomaskrampe.github.io"
 
 github:
   username: thomaskrampe # change to your GitHub username
@@ -43,7 +43,6 @@ social:
     - https://twitter.com/thomaskrampe # change to your Twitter homepage
     - https://github.com/thomaskrampe # change to your GitHub homepage
     - https://www.facebook.com/thomaskrampe
-   
 
 # Site Verification Settings
 webmaster_verifications:
@@ -99,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/assets/avatar_512.png'
+avatar: "/assets/avatar_512.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -151,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "https://thomaskrampe.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
