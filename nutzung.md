@@ -1,7 +1,6 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 6
+layout: plain
+sitemap: false
 ---
 
 # Nutzungsbedingungen
