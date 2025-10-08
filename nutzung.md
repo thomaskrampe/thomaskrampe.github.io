@@ -5,8 +5,6 @@ permalink: /nutzung/
 toc: false
 ---
 
-# Nutzungsbedingungen
-
 Lesen Sie die folgenden Bedingungen aufmerksam durch, bevor Sie diese Website nutzen. Mit der Benutzung dieser Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Sollten Sie diese Bedingungen nicht akzeptieren, verlassen Sie diese Website bitte.
 
 ## 1. Nutzung der Website
