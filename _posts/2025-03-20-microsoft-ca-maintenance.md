@@ -87,7 +87,7 @@ certutil -deleterow 1/10/2023 Cert
 
 Letzteres ist vielleicht nicht ganz gewollt, da hier eben alle Zertifikate (**und die dazugehörigen Schlüssel**) aus der Datenbank gelöscht werden. Gerade für diesen Einsatzzweck habe ich ein Powershell Skript geschrieben, dass nicht nur basierend auf dem Datum die Zertifikate löscht, sondern auch das Template, mit welchen die Zertifikate erstellt wurden berücksichtigt.
 
-Das Skript ist in meinem [GitHub Repository][1] erhältlich. Der ursprünglche Einsatzzweck ist die Zertifikate zu löschen, die von Citrix FAS angelegt wurden. Das Skript kann aber leicht angepasst werden.
+Das Skript ist in meinem [GitHub Repository][4] erhältlich. Der ursprünglche Einsatzzweck ist die Zertifikate zu löschen, die von Citrix FAS angelegt wurden. Das Skript kann aber leicht angepasst werden.
 
 ## Datenbank komprimieren
 Der nächste Schritt ist die Komprimierung der CA-Datenbankdatei, um den gesamten Leerraum zu defragmentieren, der durch das Löschen der fehlgeschlagenen Anfragen in der Datenbank entstanden ist. Dieser Vorgang ist identisch mit dem Defragmentieren von Active Directory, da die Zertifizierungsdienste die gleiche ESE Datenbanktechnologie wie das Active Directory verwendet.
@@ -112,5 +112,10 @@ Abschließend natürlich nicht vergessen, die Zertifizierungsstelle wieder zu st
 
 Wie jeder andere Infrastrukturdienst in einer Windows Umgebung erfordert auch die Windows-Zertifizierungsstelle eine gewisse Aufmerksamkeit, Wartung, Pflege und Überwachung, um ihre Funktionsfähigkeit auf Dauer gewährleisten zu können. Mit der richtigen Überwachung können wir ernste Probleme erkennen  bevor sie auftreten und mit regelmäßiger Wartung sowie Pflege können wir verhindern, dass ernsthafte Probleme überhaupt auftreten.
 
+*[ESE]: Extensible Storage Engine
+*[CRL]: Certificate Revocation List
+*[FAS]: Federated Authentication Service
+
 [1]: https://picsur.myctx.net/i/01818dde-2516-456e-adde-a6e58dac4af4.png
 [2]: https://picsur.myctx.net/i/e73622e9-9538-43d3-8065-3de030a6519c.png
+[3]: https://github.com/thomaskrampe/PowerShell/tree/master/Citrix/FAS
