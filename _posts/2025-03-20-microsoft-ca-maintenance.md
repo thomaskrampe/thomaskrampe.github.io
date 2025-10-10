@@ -4,7 +4,7 @@ date: 2025-03-20 12:00:00 +/-0000
 categories: [Microsoft, Support]
 tags: [Windows, PKI, Maintenance] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/8c9bd1aa-2c3a-4bfe-b164-fff9cb621843.jpg
+  path: https://picsur.myctx.net/i/8c9bd1aa-2c3a-4bfe-b164-fff9cb621843.jpg?width=1200
 ---
 
 Einmal installiert stellen die Microsoft Active Directory Zertifikatdienste (AD CS), also die Zertifizierungsstelle (CA) von Microsoft, entsprechend benötigte Zertifikate aus.
