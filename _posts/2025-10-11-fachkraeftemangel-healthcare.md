@@ -8,13 +8,15 @@ image:
 ---
 
 ## Strategien zwischen Personalpolitik und technischer Innovation
+
 In Ergänzung zu meinem Artikel von letzter Woche zum Thema [Fachkräftemangel bei KMU‘s](https://thomaskrampe.github.io/posts/fachkraeftemangel-bei-kmu/), möchte ich heute gezielt auf den Fachkräftemangel im Health Care Umfeld eingehen, der sich in Deutschland leider zu einer systemischen Krise ausgeweitet. Die Knappheit an qualifiziertem Personal betrifft nicht nur die Kernbereiche in Pflege und Medizin, sondern legt auch die notwendigen Fortschritte in der Digitalisierung des Sektors lahm. Um die Zukunftsfähigkeit der Gesundheitsversorgung zu gewährleisten und auch die Gesamtkosten nicht explodieren zu lassen, ist meiner Meinung nach ein umfassendes strategisches Vorgehen erforderlich, das traditionelle Anreize mit fortschrittlichen, technologischen Lösungen kombiniert.
 
 ## Die doppelte Belastung: Personalkrise und IT-Druck
+
 Der Mangel an qualifiziertem Personal führt zu massiver Überlastung des Stammpersonals, was wiederum Fluktuation und Frühverrentung begünstigt. Diese Situation wird zusätzlich verschärft durch den gleichzeitigen Digitalisierungszwang, insbesondere durch Initiativen wie das Krankenhauszukunftsgesetz (KHZG).
 Dieser Druck ist im Bereich der Krankenhaus-IT besonders spürbar. In einem [Interview mit Andreas Lockau auf Heise](https://www.heise.de/hintergrund/Interview-Warum-die-Krankenhaus-IT-unter-Druck-ist-10734422.htm) wird klar, wie die IT-Abteilungen in Krankenhäusern und Pflegeeinrichtungen unter massivem Stress stehen, da sie gleichzeitig den reibungslosen Betrieb der kritischen Infrastruktur sicherstellen und oft gleichzeitig hochkomplexe Großprojekte (wie z.B. Cybersicherheitsmaßnahmen oder die Einführung der ePA) umsetzen müssen. Interne IT-Teams sind dazu oft zu klein und können mit den Anforderungen des Marktes (hohe Gehälter in der Industrie) und den regulatorischen Vorgaben kaum Schritt halten. Der Mangel an IT-Fachkräften verlangsamt somit direkt die Entlastung des medizinischen Personals und führt auch mittelfristig zu höheren Kosten bei schlechterer Versorgung der Patienten.
 
-## Wo sehe ich hier die Lösungsansätze.
+## Wo sehe ich hier die Lösungsansätze
 
 **Lösungsansatz 1:** Technische Entlastung durch Innovation
 Der intelligente Einsatz von Technologie ist der wirksamste Hebel, um Routineaufgaben abzubauen und die verfügbare Fachkraftzeit auf die Kernkompetenzen zu lenken.
@@ -34,6 +36,7 @@ Parallel zur technologischen Innovation muss natürlich auch die Basis für attr
 * Internationale Rekrutierung: Vereinfachung der Anerkennungsverfahren und gezielte Integrationsprogramme sind essenziell, um Fachkräfte aus dem Ausland schneller in den Arbeitsmarkt zu integrieren.
 
 ## Entlastung durch technische Partnerschaft sichern
+
 Der interne Aufbau von Personalressourcen zur Bewältigung des digitalen Wandels und der steigenden Anforderungen (z.B. IT-Sicherheit) ist für viele Gesundheitseinrichtungen kaum leistbar.
 Nutzen Sie deshalb unsere Expertise als spezialisierten IT Service Providers im Gesundheitswesen, um Ihre knappen Fachkräfte gezielt zu entlasten. Wir ermöglichen Ihnen die technische Skalierbarkeit, die Ihre interne IT-Abteilung derzeit nicht bieten kann.
 
