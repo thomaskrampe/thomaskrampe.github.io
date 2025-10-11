@@ -1,6 +1,6 @@
 ---
 title: Fachkräftemangel im deutschen Gesundheitswesen
-date: 2025-10-13 09:00:00 +/-0000
+date: 2025-10-11 09:00:00 +/-0000
 categories: [Strategie, Fachkräftemangel]
 tags: [workplace, healthcare] # TAG names should always be lowercase
 image:
