@@ -7,7 +7,7 @@ toc: false
 
 ![](https://picsur.myctx.net/i/b06e076d-2f69-45d3-9e94-7abd60f87af0.png){: .normal }
 
-Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Thomas Krampe <thomas at kngstn dot eu>
+Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: [Thomas Krampe](mailto:thomas@thomas-krampe.com)
 
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
 
