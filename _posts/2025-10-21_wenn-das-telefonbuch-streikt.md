@@ -7,7 +7,7 @@ image:
   path: https://picsur.myctx.net/i/a9b326a6-38cd-4805-bf36-107b05a2b6a2.png
 ---
 
-## DNS-Sicherheit: Ausfallsicherheit und Verschlüsselung als Fundament der digitalen Souveränität
+## DNS-Sicherheit - Ausfallsicherheit und Verschlüsselung als Fundament der digitalen Souveränität
 
 Die jüngsten massiven Ausfälle bei Amazon Web Services (AWS) und Microsoft Azure haben uns wieder einmal mehr vor Augen geführt, wie fragil und systemkritisch das Domain Name System (DNS) in unserer hochgradig vernetzten digitalen Infrastruktur ist. Ende letzten Jahres legte ein DNS-Fehler in einer Schlüsselregion von AWS Dienste von der Kryptobörse bis zum Streaming-Anbieter lahm, was Millionen von Nutzern weltweit betraf. Auch ein globaler Ausfall bei Azure Front Door zeigte kürzlich (09.10.2025), wie die zentrale Abhängigkeit von DNS-Komponenten in großen Cloud-Umgebungen aber auch in lokalen Netzwerken zu einen Single Point of Failure (SPOF) werden kann.
 
