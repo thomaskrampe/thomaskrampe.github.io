@@ -1,10 +1,10 @@
 ---
 title: Jenseits der Automatisierung: Die strategische Rolle von KI-Workflows und autonomen Agenten für CIOs
-date: 2025-10-11 09:00:00 +/-0000
+date: 2025-10-20 09:00:00 +/-0000
 categories: [Strategie, KI, Automatisierung]
 tags: [processes, llm, ki-agents] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/8a8d20b2-58b4-4ca6-97a0-8bdd28cc6e68.png
+  path: https://picsur.myctx.net/i/e6d14946-3686-48d7-8f1c-f3a1b22cd8ab.png
 ---
 
 In meinen vorangegangenen Artikeln habe ich immer wieder die KI als eine mögliche Lösung für den Fachkräftemangel hingewiesen. Als Feedback auf diese Artikel habe ich mitgenommen, dass die Unternehmensautomatisierung eine tiefgreifende Transformation durchläuft. In vielen Organisationen besteht Grundsätzlich eine große Unklarheit über die feinen, aber entscheidenden Unterschiede zwischen einer Automatisierung, einem KI-Workflow und einem KI-Agenten. Für CIOs ist das Verständnis dieser unterschiedlichen Konzepte nicht nur wichtig, sondern bildet die kritische Grundlage für strategische Investitionen und eine zukunftssichere IT-Architektur.

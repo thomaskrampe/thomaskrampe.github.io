@@ -4,7 +4,7 @@ date: 2025-10-21 09:00:00 +/-0000
 categories: [Technologie, Sicherheit, DNS]
 tags: [dns, dnssec, ha] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/9cd33a95-5097-4682-a422-3d7b3010ef88.png
+  path: https://picsur.myctx.net/i/a9b326a6-38cd-4805-bf36-107b05a2b6a2.png
 ---
 
 ## DNS-Sicherheit: Ausfallsicherheit und Verschlüsselung als Fundament der digitalen Souveränität
