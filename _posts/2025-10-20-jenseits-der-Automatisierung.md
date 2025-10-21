@@ -1,5 +1,5 @@
 ---
-title: Jenseits der Automatisierung: Die strategische Rolle von KI-Workflows und autonomen Agenten für CIO
+title: Jenseits der Automatisierung - Die strategische Rolle von KI-Workflows und autonomen Agenten für CIO
 date: 2025-10-20 09:00:00 +/-0000
 categories: [Strategie, KI, Automatisierung]
 tags: [processes, llm, ki] # TAG names should always be lowercase
