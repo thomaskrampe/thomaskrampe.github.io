@@ -86,7 +86,7 @@ RRL ist eine essenzielle Maßnahme gegen Distributed Denial of Service (DDoS) An
 
 ## Fazit
 
-Wer seine digitale Souveränität wahren will, muss das Fundament, in diesem Fall DNS, zwingend robuster gestalten und als kritisches System wahrnehmen.
+Wer seine digitale Souveränität wahren will, muss das Fundament zwingend robuster gestalten und DNS als kritisches System wahrnehmen.
 
 *[DNS]: Domain Name System
 *[SPOF]: Single Point of Failure
