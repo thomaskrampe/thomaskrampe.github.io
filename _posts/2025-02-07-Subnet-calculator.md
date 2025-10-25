@@ -9,7 +9,7 @@ image:
 
 Um einfach mal eine bestimmte IP-Adresse einem Subnet zuzuordnen, bedienen wir uns einfach einer frei verfügbaren API im Internet. Einfach die IP-Adresse in CIDR Notation z.B. per curl an die API schicken.
 
-```console
+```shell
 curl https://networkcalc.com/api/ip/10.0.1.15/27
 ```
 
@@ -21,13 +21,13 @@ Das Ergebnis ist dann eine Antwort in JSON:
 
 Wer das etwas lesbarer haben möchte kann die Ausgabe auch in eine Datei umleiten:
 
-```console
+```shell
 curl https://networkcalc.com/api/ip/10.0.1.15/27 > ip.txt
 ```
 
 Und danach mit dem Tool `jq` auswerten (_auf macOS vorher z.B. mit Homebrew und dem Kommando `brew install jq' installieren_): 
 
-```
+```shell
 cat ip.txt | jq '.address.cidr_notation'  
 "10.1.101.0/28"
 cat ip.txt | jq '.address.subnet_mask'                     
@@ -37,6 +37,7 @@ cat ip.txt | jq '.address.first_assignable_host'
 cat ip.txt | jq '.address.last_assignable_host'
 "10.1.101.14"
 ```
+
 Da JSON wie XML hierarchisch auf gebaut ist gehen wir mit `.address` in den dritten Abschnitt (1. = .status, 2. = .meta, 3. = .address) und holen uns dort das Objekt .cidr_notation. Da wir das ja bereits kennen, weil wir das ja beim curl erfasst haben, wäre zum Beispiel die Subnetmaske interessant (die Bit kennen wir bereits).
 
 Das ganze geht natürlich auch mit PowerShell:
@@ -44,9 +45,10 @@ Das ganze geht natürlich auch mit PowerShell:
 ```powershell
 (Invoke-RestMethod https://networkcalc.com/api/ip/10.0.1.15/27).address
 ```
+
 Ausgabe der API:
 
-```
+```powershell
 PS /Users/thomas> (Invoke-RestMethod https://networkcalc.com/api/ip/10.0.1.15/27).address
 
 cidr_notation         : 10.0.1.15/27

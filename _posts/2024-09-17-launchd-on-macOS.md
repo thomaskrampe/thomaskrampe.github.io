@@ -28,7 +28,7 @@ Unsere Skripte können wie bei **crond** überall im Filesystem liegen (`chmod +
 Immer daran denken, dass Agenten keine Root-Rechte haben und daher keine Aufgaben ausführen können, die einen tiefen Systemzugriff erfordern. Daemons hingegen laufen mit Root-Rechten und können Aufgaben ausführen, die das gesamte System betreffen.
 
 > Ein schlecht geschriebenes und angreifbares Skript als Daemon kann als Einfallstor für weitere böse Jungs dienen.
-{: .prompt-tip }
+{: .prompt-danger }
 
 ## Job Definitionen
 

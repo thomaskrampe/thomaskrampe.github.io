@@ -94,7 +94,7 @@ Der nächste Schritt ist die Komprimierung der CA-Datenbankdatei, um den gesamte
 
 Zuerst löschen wir noch alle edb000xx.log Dateien sowie die edb.chk Datei. Wenn die CA mit den Default Einstellungen installiert wurde, sollten sich diese Dateien unter `%SystemRoot%\System32\CertLog` befinden. Vor dem Löschen bitte die CA Services stoppen, da die Dateien sonst noch in Benutzung sind.
 
-![][1]
+![][1]{: .shadow }
 
 Da die Zertifizierungsstelle auch während des Defragmentierens nicht online sein darf, lassen wir die Dienste noch deaktiviert und führen danach den folgenden Befehl zum defragmentieren aus:
 
@@ -102,7 +102,7 @@ Da die Zertifizierungsstelle auch während des Defragmentierens nicht online sei
 esentutl /d Pfad\zur\CaDatabase.edb
 ```
 
-![][2]
+![][2]{: .shadow }
 
 Im Hintergrund erstellt `esentutl.exe` eine temporäre Datenbankdatei und kopiert alle aktiven Datensätze aus der aktuellen Datenbankdatei in die neue Datei. Wenn der Vorgang abgeschlossen ist, wird die ursprüngliche Datenbankdatei gelöscht und die temporäre Datei so umbenannt, dass sie der ursprünglichen Datei entspricht. Der einzige Unterschied ist jetzt, dass die Datenbankdatei nun viel kleiner sein sollte.
 

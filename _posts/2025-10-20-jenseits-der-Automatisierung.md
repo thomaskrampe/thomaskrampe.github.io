@@ -18,6 +18,7 @@ Im Kern lassen sich diese drei Stufen der Prozessoptimierung anhand von drei Sch
 Die Evolution geht dabei vom starren Regelwerk (Automatisierung) über die assistierte Intelligenz (KI-Workflow) bis hin zur echten Autonomie (KI-Agent).
 
 ![Stufen der Prozessautomatisierung](https://picsur.myctx.net/i/42c68cf0-6e74-4ccd-83a8-d696049016d7.png)
+_Stufen der Prozessautomatisierung_
 
 ## 1\. Automatisierungen (Regelbasiert und Statisch)
 

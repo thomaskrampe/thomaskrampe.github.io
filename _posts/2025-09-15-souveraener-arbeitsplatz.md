@@ -40,6 +40,7 @@ Europa und Deutschland haben in den vergangenen Jahren ein relativ gutes Ökosys
 *	**Rechtliche Grauzonen:** Gesetzeslagen (z. B. Anfragen nach Daten durch ausländische Behörden) und internationale Abkommen können hier trotzdem noch Einfluss haben. Entsprechende vertragliche Zusicherungen und technische Maßnahmen (komplette Verschlüsselung sowie Key-Ownership) mildern das Problem ein wenig, können es aber nicht vollständig lösen.
 
 ![Abstufungen von Souveränität am Beispiel von Software Lizenzen](https://picsur.myctx.net/i/2d4475b6-244e-47b4-8951-055a70dc70bc.png)
+_Abstufungen von Souveränität am Beispiel von Software Lizenzen_
 
 ## Handlungsempfehlung für ein mittelständisches deutsches Unternehmen (konkret & pragmatisch)
 Wie könnte ein Projekt zur Einführung eines souveränen, digitalen Arbeitsplatz ablaufen.

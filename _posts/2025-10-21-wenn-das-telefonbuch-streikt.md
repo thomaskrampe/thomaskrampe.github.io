@@ -26,6 +26,8 @@ Der Schlüssel liegt in der konsequenten Anwendung des Prinzips der Redundanz.
 2\. **Anycast-Routing:** Setzen Sie auf Anycast für Ihre autoritativen Nameserver. Anycast ermöglicht es, dieselbe IP-Adresse von mehreren Servern an unterschiedlichen Standorten weltweit zu annoncieren. Fällt einer dieser Standorte aus, übernimmt das Routing-Protokoll (BGP) automatisch einen anderen, geografisch näheren und verfügbaren Server. Dies reduziert nicht nur die Latenz, sondern maximiert auch die Ausfallsicherheit.
 
 ![Unicast vs. Multicast](https://picsur.myctx.net/i/53bd8249-dfc0-4211-a60f-8ad7bc27ee8a.png)
+_Unicast vs. Multicast_
+
 
 3\. **Primär/Sekundär-Architektur:** Konfigurieren Sie Ihre Zonen mit mindestens einem Primären Nameserver (Master) und mehreren Sekundären Nameservern (Slaves), die über AXFR- oder IXFR-Protokolle synchronisiert werden. Diese Server sollten idealerweise in unterschiedlichen Autonomous Systems (AS) liegen.
 
