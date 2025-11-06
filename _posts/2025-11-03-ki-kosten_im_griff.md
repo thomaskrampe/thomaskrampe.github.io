@@ -29,7 +29,7 @@ Eine effektive Überwachung und Monitoring sollte immer der erste Schritt zur ef
 
 **Was also machen?**
 
-Die Überwachung der Nutzung sowie der resultierenden Kosten muss über die reine Cloud-Rechnung hinausgehen und den konkreten Beitrag der KI-Nutzung an den Gesamtkosten erfassen. Dabei sollten z.B. API-Calls, Nutzerzahlen oder das Output-Volumen systematisch und detailliert erfasst werden. Auch entsprechende KPI wie z.B. Kosten pro generierter Einheit, Zeitersparnis pro Prozess, Anzahl der Agent Anfragen etc. sollten erfasst und im Idealfall grafisch über entsprechende FinOps Tools oder Dashboards zentral sichtbar gemacht werden, sow weiß jeder wo er steht.
+Die Überwachung der Nutzung sowie der resultierenden Kosten muss über die reine Cloud-Rechnung hinausgehen und den konkreten Beitrag der KI-Nutzung an den Gesamtkosten erfassen. Dabei sollten z.B. API-Calls, Nutzerzahlen oder das Output-Volumen systematisch und detailliert erfasst werden. Auch entsprechende KPI wie z.B. Kosten pro generierter Einheit, Zeitersparnis pro Prozess, Anzahl der Agent Anfragen etc. sollten erfasst und im Idealfall grafisch über entsprechende FinOps Tools oder Dashboards zentral sichtbar gemacht werden, so weiß jeder wo er steht.
 
 ## Governance und FinOps etablieren
 
