@@ -1,6 +1,6 @@
 ---
-title: Goldsuche für die KI - Machen Sie Ihre Daten sofort nutzbar
-date: 2025-11-10 09:00:00 +/-0000
+title: Trash In, Trash Out – Das 80%-Problem Ihrer KI-Strategie
+date: 2025-11-07 09:00:00 +/-0000
 categories: [Strategie, KI, Datenklassifizierung]
 tags: [ki, daten, how-to, processes] # TAG names should always be lowercase
 image:
@@ -62,11 +62,12 @@ Die strengen europäischen Vorschriften (DSGVO) erfordern einen kontrollierten Z
 
     Stellen Sie auch sicher, dass die Zugriffsrechte, die in Ihren Quellsystemen (SharePoint, Datenbanken) gelten, unbedingt auf das KI-System übertragen werden. Ein KI-Agent darf nur die Dokumente sehen und verwerten, die auch der anfragende Benutzer sehen darf. Im Idealfall richten Sie für die verwendeten KI-Agenten entsprechende eigene Personas in Ihrem Identity Management System (IMS) ein. Das macht einen rollenbasierten Zugriff (RBAC) dieser Agents möglich und erlaubt eine granulare Kontrolle, in der zum Beispiel ein verwendeter Agent weniger Berechtigungen hat als der Benutzer, der ihn ausführt. Das wird dann besonders wichtig, wenn keine Menschen mehr involviert sind, sondern eine **KI-Agent-zu-KI-Agent** Kommunikation über vielleicht unklar definierte Schnittstellen stattfindet.
 
-    Wichtig: Nur die Anonymisierung entfernt den Personenbezug endgültig und sollte das Ziel für Trainingsdaten sein, während Pseudonymisierung für RAG-Systeme oft ausreichend ist, aber zusätzliche Kontrollen erfordert.
+    > Wichtig: Nur die Anonymisierung entfernt den Personenbezug endgültig und sollte das Ziel für Trainingsdaten sein, während Pseudonymisierung für RAG-Systeme oft ausreichend ist, aber zusätzliche Kontrollen erfordert.
+    {: .prompt-danger }
 
     Saubere Daten sind in Europa immer anonymisierte Daten. Beginnen Sie KI-Projekte mit PBD-freien Daten, um juristische Fallstricke zu umgehen und sich nicht in eine ungewollte Situation zu begeben.
 
-## Data Governanc - Datenaufbereitung ist der neue Business-Prozess
+## Data Governance - Datenaufbereitung ist der neue Business-Prozess
 
 Datenaufbereitung ist keine einmalige IT-Aufgabe, sondern auch ein kontinuierlicher Business-Prozess. Indem Sie und Ihre Teams kleine, disziplinierte Schritte zur Strukturierung und Bereinigung Ihrer Daten gehen und dabei die europäischen Sicherheitsstandards einhalten, schaffen Sie die notwendige Basis, damit Ihre KI-Agenten vom "netten Gimmick" zum produktiven, vertrauenswürdigen Mitarbeiter werden. Die Zeit, die Sie heute in saubere Daten investieren, sparen Sie morgen in der Überprüfung fehlerhafter KI-Ergebnisse.
 
