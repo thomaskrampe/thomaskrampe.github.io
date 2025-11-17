@@ -9,9 +9,9 @@ image:
 
 ## Warum Ihr Unternehmen jetzt die Schlüssel wechseln sollte
 
-Als CIO oder CISO wissen Sie sicher, IT-Sicherheit darf kein statischer Zustand sein. Die Zeit drängt bereits, in der Kryptographie den nächsten Schritt zu gehen und auch für die Post-Quatum-Cryptography (PQC) gerüstet zu sein. Obwohl realistische Quantencomputer noch nicht flächendeckend im Einsatz, sollten wir heute schon wichtige Schritte zur Krypto-Agilität und Vorbereitung treffen. Die Gefahr des **"Harvest Now, Decrypt Later"** (*Heute verschlüsselte Daten stehlen, um sie später mit Quantencomputern zu entschlüsseln*) ist real.
+Als CIO oder CISO wissen Sie sicher, IT-Sicherheit darf kein statischer Zustand sein. Die Zeit drängt bereits, in der Kryptographie den nächsten Schritt zu gehen und auch für die Post-Quatum-Cryptography (PQC) gerüstet zu sein. Obwohl realistische Quantencomputer noch nicht flächendeckend im Einsatz sind, sollten wir heute schon wichtige Schritte zur Krypto-Agilität und Vorbereitung treffen. Die Gefahr des **"Harvest Now, Decrypt Later"** (*Heute verschlüsselte Daten stehlen, um sie später mit Quantencomputern zu entschlüsseln*) ist bereits real.
 
-Der Algorithmus von **Shor** kann bereits die mathematische Grundlage von RSA, die Faktorisierung großer Primzahlen, hocheffizient aufbrechen. ECC ((Elliptic Curve Cryptography) ist, auch wenn nicht quantensicher, weniger exponiert und die modernen kryptographischen Entwicklungen basieren oft auf ECC-Prinzipien. Der Wechsel zu ECC ist somit das wichtigste Zwischenziel zur Post-Quanten-Kryptographie.
+Der Algorithmus von **Shor** kann bereits die mathematische Grundlage von RSA, die Faktorisierung großer Primzahlen, hocheffizient aufbrechen. ECC ((Elliptic Curve Cryptography) ist, auch wenn nicht quantensicher, weniger exponiert und die modernen kryptographischen Entwicklungen basieren oft auf ECC-Prinzipien. Der Wechsel zu ECC ist somit das wichtigste Zwischenziel auf dem Weg zur Post-Quanten-Kryptographie.
 
 Dieser Wechsel ist tatsächlich nicht nur eine vage Empfehlung von mir, sondern in Deutschland bereits eine zwingende Notwendigkeit, wie das Beispiel der Telematikinfrastruktur (TI) zeigt. Bis zum 1. Januar 2026 muss das Gesundheitswesen die Umstellung vollzogen haben, weil ältere RSA-Verfahren dann unzulässig werden (gemäß BSI TR-02102-1). Über das Thema wird aktuell in der Presse, im Zusammenhang mit dem E-Rezept, auch ausführlich berichtet.
 
@@ -19,11 +19,11 @@ Das sollte ein Weckruf für alle Unternehmen sein, denn die Gründe warum dieser
 
 ## Was können und sollten wir heute bereits machen?
 
-Was in vielen Bereichen gültig ist, gilt auch hier. Was wir nicht kennen, können wir nicht schützen. Deshalb ist der wichtigste Schritt zuerst die Inventur und die Nutzung hybrider Verfahren in Pilotprojekten zu testen.
+Was in vielen Bereichen gültig ist, gilt auch hier. Was wir nicht kennen, können wir nicht schützen. Deshalb ist der wichtigste Schritt zuerst die Inventur der vorhandenen Kryptografie, gefolgt von einem Proof of Concept sowie dem dann folgendem Update auf die PQC-Varianten.
 
 ### 1. Inventur
 
-* **Identifizieren Sie alle kryptografischen Abhängigkeiten:** Finden Sie heraus, wo genau in Ihrer Infrastruktur RSA oder bereits ECC (Elliptic Curve Cryptography) für Schlüsselaustausch und Signaturen verwendet wird.
+* **Identifizieren Sie alle kryptografischen Abhängigkeiten:** Finden Sie heraus, wo genau in Ihrer Infrastruktur RSA oder bereits ECC (Elliptic Curve Cryptography) für den Schlüsselaustausch und Signaturen verwendet werden.
 
 * **Priorität:** SSL/TLS-Zertifikate, VPN-Zugänge, Code-Signierungsschlüssel, und Langzeit-Archivierungsdaten sollten hier Priorität haben.
 
@@ -33,9 +33,9 @@ Was in vielen Bereichen gültig ist, gilt auch hier. Was wir nicht kennen, könn
 
 * **Starten Sie Pilotprojekte mit hybrider Kryptografie:** Bei diesem Ansatz sichern Sie die Kommunikation doppelt ab.
 
-* **Alt und Neu:** Eine Verbindung wird sowohl mit einem klassischen Algorithmus (z. B. ECC) als auch mit einem Post-Quanten-Algorithmus (zum Beispiel CRYSTALS-Kyper) sowie gesichert. Empfohlen wird der hybride  Ansatz für den Schlüsseltausch, das heißt, der Sitzungsschlüssel wird sowohl durch den bewährten ECC-Schlüsselaustausch (z. B. ecdh-sha2-nistp256) als auch durch den quantenresistenten Kyber-Schlüsselaustausch gesichert.
+* **Alt und Neu:** Eine Verbindung wird sowohl mit einem klassischen Algorithmus (z. B. ECC) als auch mit einem Post-Quanten-Algorithmus (zum Beispiel CRYSTALS-Kyper) gesichert. Das heißt, der Sitzungsschlüssel wird sowohl durch den bewährten ECC-Schlüsselaustausch (z. B. ecdh-sha2-nistp256) als auch durch den quantenresistenten Kyber-Schlüsselaustausch gesichert.
 
-* **Sicherheitsvorteil:** Die Verbindung ist nur dann unsicher, wenn beide Algorithmen gebrochen werden. Dies schützt Sie gegen den Durchbruch der PQC-Algorithmen und gibt Ihnen gleichzeitig eine sofortige Abwehr gegen zukünftige Quantencomputer.
+* **Sicherheitsvorteil:** Die Verbindung ist nur dann unsicher, wenn beide Algorithmen aufgebrochen werden. Dies schützt Sie gegen den Durchbruch der PQC-Algorithmen und gibt Ihnen gleichzeitig eine sofortige Abwehr gegen zukünftige Quantencomputer.
 
 * **Testen Sie die Performance:** Messen Sie, wie sich die neuen, oft größeren Schlüssel und die längeren Rechenzeiten der PQC-Algorithmen auf Ihre Server-Latenz und den Speicherbedarf auswirken.
 
@@ -58,7 +58,7 @@ CRYSTALS-Kyber ist der Algorithmus, der derzeit die größte Sicherheit bei gute
 
 * **Sicherheit:** Er basiert auf sogenannten Learning with Errors (LWE)-Problemen in Gitternetzen, die als extrem schwer lösbar gelten und von Experten als die sicherste PQC-Familie angesehen werden.
 
-* **Performance:** Kyber wurde so konzipiert, dass es schnell ist und Schlüsselgrößen sowie Chiffriertexte produziert, die für heutige Internet-Protokolle (wie TLS) praktikabel sind. Es ist in Geschwindigkeit und Bandbreite vergleichbar mit ECC, aber langsamer als RSA.
+* **Performance:** Kyber wurde so konzipiert, dass es schnell ist und Schlüsselgrößen sowie Chiffriertexte produziert, die für heutige Internet-Protokolle (wie TLS) praktikabel sind. Es ist in Geschwindigkeit und Bandbreite vergleichbar mit ECC.
 
 * **Implementierung:** Er ist der ausgewählte Standard für den Schlüsselaustausch und wird in immer mehr kommerziellen und Open-Source-Bibliotheken unterstützt.
 
@@ -70,7 +70,7 @@ Sollten Sie aus irgendwelchen Gründen noch nicht auf die neueren PQC-Algorithme
 | **Schlüssellänge** |   Sehr kurz   |   Sehr lang    |
 |  **Performance**   |    Schnell    |    Langsam     |
 
-Selbst wenn Sie auf RSA-Schlüssel mit 4096 Bit oder mehr aufrüsten, um die Sicherheit zu erhöhen, bezahlen Sie mit drastisch langsameren Prozessen und einem höheren Rechen- und Energieverbrauch. ECC liefert die gleiche oder höhere Sicherheit mit minimalem Aufwand.
+Selbst wenn Sie auf RSA-Schlüssel mit 4096 Bit oder mehr aufrüsten, um die Sicherheit zu erhöhen, bezahlen Sie mit drastisch langsameren Prozessen und einem höheren Rechen- und Energieverbrauch. ECC liefert die gleiche oder höhere Sicherheit mit minimalem Aufwand und kürzeren Schlüsseln.
 
 ## Der pragmatische Plan für den Schlüsseltausch
 
@@ -86,7 +86,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519
 
 Der heutige Umstieg auf ED25519 ist der einfachste und wirksamste Schritt, den Sie zur Verbesserung der SSH-Sicherheit unter den derzeit offiziell verfügbaren Algorithmen unternehmen können.
 
-**2\. Mittelfristig (Hybrid-Pilot) Quantenresistente Signaturen einführen:** Generieren Sie mit einem gepatchtem SSH hybride Schlüsselpaare (z. B. ED25519 + Dilithium). Diese können heute in Pilotprojekten verwendet werden.
+**2\. Mittelfristig (Hybrid-Pilot) Quantenresistente Signaturen einführen:** Generieren Sie mit einem gepatchtem SSH (z.B. OpenSSH 3.5) hybride Schlüsselpaare (z. B. ED25519 + Dilithium). Diese können heute in Pilotprojekten verwendet und getestet werden.
 
 **3\. Langfristig (Vollständig PQC) vollständige Migration:** Ersetzen Sie alle klassischen Schlüssel durch den PQC-Signaturalgorithmus CRYSTALS-Dilithium, sobald dieser offiziell in OpenSSH integriert ist.
 
