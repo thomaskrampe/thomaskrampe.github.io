@@ -11,11 +11,11 @@ image:
 
 Als CIO oder CISO wissen Sie sicher, IT-Sicherheit darf kein statischer Zustand sein. Die Zeit drängt bereits, in der Kryptographie den nächsten Schritt zu gehen und auch für die Post-Quatum-Cryptography (PQC) gerüstet zu sein. Obwohl realistische Quantencomputer noch nicht flächendeckend im Einsatz sind, sollten wir heute schon wichtige Schritte zur Krypto-Agilität und Vorbereitung treffen. Die Gefahr des **"Harvest Now, Decrypt Later"** (*Heute verschlüsselte Daten stehlen, um sie später mit Quantencomputern zu entschlüsseln*) ist bereits real.
 
-Der Algorithmus von **Shor** kann bereits die mathematische Grundlage von RSA, die Faktorisierung großer Primzahlen, hocheffizient aufbrechen. ECC ((Elliptic Curve Cryptography) ist, auch wenn nicht quantensicher, weniger exponiert und die modernen kryptographischen Entwicklungen basieren oft auf ECC-Prinzipien. Der Wechsel zu ECC ist somit das wichtigste Zwischenziel auf dem Weg zur Post-Quanten-Kryptographie.
+Der **Shor Algorithmus** kann bereits die mathematische Grundlage von RSA, die Faktorisierung großer Primzahlen, hocheffizient aufbrechen. ECC ((Elliptic Curve Cryptography) ist, auch wenn nicht quantensicher, weniger exponiert und die modernen kryptographischen Entwicklungen basieren oft auf ECC-Prinzipien. Der Wechsel zu ECC ist somit das wichtigste Zwischenziel auf dem Weg zur Post-Quanten-Kryptographie.
 
 Dieser Wechsel ist tatsächlich nicht nur eine vage Empfehlung von mir, sondern in Deutschland bereits eine zwingende Notwendigkeit, wie das Beispiel der Telematikinfrastruktur (TI) zeigt. Bis zum 1. Januar 2026 muss das Gesundheitswesen die Umstellung vollzogen haben, weil ältere RSA-Verfahren dann unzulässig werden (gemäß BSI TR-02102-1). Über das Thema wird aktuell in der Presse, im Zusammenhang mit dem E-Rezept, auch ausführlich berichtet.
 
-Das sollte ein Weckruf für alle Unternehmen sein, denn die Gründe warum dieser Schritt nötig ist, betrifft früher oder später auch die Infrastrukturen, die nicht zu Konnektoren, Heilberufsausweisen (eHBA), Praxisausweisen (SMC-B) und Kartenterminals gehören.
+Das sollte ein Weckruf für alle Unternehmen sein, denn die Gründe warum dieser Schritt nötig ist, betrifft früher oder später auch die Infrastrukturen, die nicht zu Konnektoren, Heilberufsausweisen (eHBA), Praxisausweisen (SMC-B) und Kartenterminals zählen.
 
 ## Was können und sollten wir heute bereits machen?
 
