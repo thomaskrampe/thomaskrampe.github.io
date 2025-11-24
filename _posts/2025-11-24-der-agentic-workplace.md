@@ -7,13 +7,14 @@ image:
   path: https://picsur.myctx.net/i/9dc1c105-64e4-46ca-bb35-4409f0d08d4e.png
 ---
 
-# Der Agentic Workplace und die Neubewertung des Arbeitsplatzes
 ## Wie Multi-Agenten-Systeme die Arbeitswelt neu ordnen
+
 Der Digital Workplace hat uns mit Tools zur Kollaboration versorgt, der Smart Workplace nutzt Generative KI zur Assistenz. Doch die nächste, tiefgreifendste Evolution ist der Agentic Workplace. Hier übernehmen Multi-Agenten-Systeme (MAS) die Automatisierung komplexer, domänenübergreifender Geschäftsprozesse, indem sie KI-Agenten in die Lage versetzen, autonom zu planen, zu kooperieren und Aufgaben zu orchestrieren.
 
 Dieser technologische Sprung verändert die Rolle von Software grundlegend. Anwendungen werden von starren Werkzeugen zu flexiblen Mitarbeitern, die selbstständig handeln können und sich gegenseitig ergänzen.
 
 ## Von Co-Piloten zu autonomen Agenten
+
 Der Unterschied zwischen einem generativen KI (GenAI) Copiloten und einem autonomen Agenten liegt in der Autonomie und Zielorientierung.
 
 Ein Copilot assistiert einem menschlichen Benutzer bei der Erledigung einer einzelnen Aufgabe (z. B. einen E-Mail-Entwurf erstellen). Ein autonomer Agent hingegen ist ein Softwaremodul, das folgende Eigenschaften besitzt:
@@ -29,6 +30,7 @@ Ein Copilot assistiert einem menschlichen Benutzer bei der Erledigung einer einz
 * **Reflexion:** Er ist in der Lage, Fehler im Plan zu erkennen, Rückschläge zu verarbeiten und den Plan anzupassen und zu verbessern.
 
 ## Multi-Agenten-Systeme (MAS)
+
 Ein Multi-Agenten-System entsteht, wenn mehrere autonome Agenten mit unterschiedlichen Rollen und Kompetenzen zusammenarbeiten, um ein gemeinsames komplexes Ziel zu erreichen.
 
 * **Rollenverteilung:** Man kann sich ein MAS wie ein virtuelles Team vorstellen: Der "Planungs-Agent" übernimmt die Strategie, der "Datenbank-Agent" extrahiert relevante Informationen, und der "Kommunikations-Agent" interagiert mit externen Systemen oder Menschen.
@@ -36,6 +38,7 @@ Ein Multi-Agenten-System entsteht, wenn mehrere autonome Agenten mit unterschied
 * **Koordination:** Die Agenten kommunizieren über definierte Protokolle und Mechanismen, oft unter der Leitung eines Orchestrierungs-Frameworks, um Ressourcenkonflikte zu lösen und die Reihenfolge der Aktionen festzulegen.
 
 ## Orchestrierung und Integration in die IT-Landschaft
+
 Der Erfolg von MAS hängt von der reibungslosen Integration in die bestehende IT-Infrastruktur ab. Die Agenten müssen Zugriff auf die richtigen APIs der Enterprise-Systeme (CRM, ERP, Kalender, Datenbanken) erhalten. Auch hier muss im Vorfeld auf Least Privilege sowie eine rollenbasierte Zugriffskontrolle /RBAC) geachtet werden, damit die Agenten nur auf die Daten kommen, auf die sie auch Zugriff benötigen.
 
 Der Orchestrator (oder besser der Chief Operating Officer (COO) des MAS) ist das Herzstück des Systems. Er hat dafür zu sorgen, dass:
@@ -46,13 +49,14 @@ Der Orchestrator (oder besser der Chief Operating Officer (COO) des MAS) ist das
 
 3\. Der Prozess überwacht und protokolliert wird, um Audits und Korrekturen zu ermöglichen.
 
-Diese Orchestrierungsebene überbrückt die Lücke zwischen dem Ziel des Menschen (in natürlicher Sprache) und der technischen Ausführung durch die Backend-Systeme. Die Agenten führen dabei keine Aktionen direkt in den Hauptsystemen durch. 
+Diese Orchestrierungsebene überbrückt die Lücke zwischen dem Ziel des Menschen (in natürlicher Sprache) und der technischen Ausführung durch die Backend-Systeme. Die Agenten führen dabei keine Aktionen direkt in den Hauptsystemen durch.
 
-Die KI-Agenten arbeiten dabei nicht direkt im System. Stattdessen geben wir den Agenten einen digitalen Werkzeugkasten mit. Jedes Werkzeug ist eine Schnittstelle (API) einer Unternehmensanwendung (z.B. "Kundeninformation abrufen"). Der Agent wählt dann autonom das passende Werkzeug und wendet es mit den richtigen Daten an, um die Aufgabe zu lösen. 
+Die KI-Agenten arbeiten dabei nicht direkt im System. Stattdessen geben wir den Agenten einen digitalen Werkzeugkasten mit. Jedes Werkzeug ist eine Schnittstelle (API) einer Unternehmensanwendung (z.B. "Kundeninformation abrufen"). Der Agent wählt dann autonom das passende Werkzeug und wendet es mit den richtigen Daten an, um die Aufgabe zu lösen.
 
 Auf diese Weise kann der Agent handeln, ohne die Sicherheitsmechanismen und Zugriffsrechte der Originalanwendung zu umgehen.. Dies gewährleistet, dass die Sicherheit und die Zugriffsrechte der ursprünglichen Anwendung erhalten bleiben.
 
 ## Beispiele aus der Praxis
+
 Agentic Workplaces sind besonders dort entscheident, wo komplexe Geschäftsprozesse systemübergreifende Logik erfordern und wo bisher manuelle Übergaben nötig waren.
 
 **Automatisierte Onboarding-Prozesse (HR):**
@@ -70,7 +74,8 @@ Ein Analyse-Agent erhält die Anweisung: "Ermittle die Kunden mit den wahrschein
 Durch Multi-Agenten-Systeme wird die digitale Arbeitswelt flexibler und widerstandsfähiger, da Prozesse nicht mehr nur skriptgesteuert ablaufen, sondern sich dynamisch an die Gegebenheiten anpassen können. Der menschliche Mitarbeiter verschiebt seinen Fokus vom Abarbeiten von Sub-Tasks zur Definition des strategischen Ziels und zur Überwachung der Agenten.
 
 ## Der Arbeitsplatz des Benutzers
-Vergessen Sie die nächste Software-Suite. Der Agentic Workplace ist die unsichtbare Betriebssystem-Schicht (quasi ein *agenticOS*), die Ihre bestehende Infrastruktur orchestriert und bestehenden Anwendungen im Auftrag des Benutzers steuert. Gegebenenfalls können auch die bestehenden Anwendungen oder Frontendsysteme gleich ganz entfallen, wenn die Agenten Dateiformate oder Datenbanken ohne die entsprechende Anwendung lesen und schreiben können. 
+
+Vergessen Sie die nächste Software-Suite. Der Agentic Workplace ist die unsichtbare Betriebssystem-Schicht (quasi ein *agenticOS*), die Ihre bestehende Infrastruktur orchestriert und bestehenden Anwendungen im Auftrag des Benutzers steuert. Gegebenenfalls können auch die bestehenden Anwendungen oder Frontendsysteme gleich ganz entfallen, wenn die Agenten Dateiformate oder Datenbanken ohne die entsprechende Anwendung lesen und schreiben können.
 
 Die Anwendung auf dem Agentic Workplace des Benutzers geschieht hauptsächlich in vier Bereichen:
 
