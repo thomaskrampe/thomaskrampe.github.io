@@ -145,6 +145,7 @@ Set-Secret -Name "Dbaccess" -Secret (Get-Credential)
 Nutzen Sie `Export-Clixml` nur für temporäre lokale Tests. Stellen Sie für alle produktiven Task-Scheduler-Aufgaben auf das SecretManagement-Modul um. Es ist zukunftssicherer, da Sie das Backend (z. B. Wechsel zu Azure KeyVault) später austauschen können, ohne Ihr Skript umschreiben zu müssen.
 
 ## Bonus
+
 Die beiden PowerShell Module SecretStore und SecretManagement sind auch auf anderen Betriebssystemen wie z.B. macOS oder Linux verfügbar. Wer also wie ich seine Scripte auf macOS nutzt, kann auch dort wirksam verhindern, dass die Credentials im Script zu lesen sind.
 
 Was denkt ihr, ist das ein nützlicher Weg oder habt ihr eine andere Methode?
