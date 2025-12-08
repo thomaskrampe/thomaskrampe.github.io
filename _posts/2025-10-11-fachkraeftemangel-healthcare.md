@@ -4,7 +4,7 @@ date: 2025-10-11 09:00:00 +/-0000
 categories: [Strategie, Fachkräftemangel]
 tags: [workplace, healthcare] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/f8e0ccc7-ace6-4432-86ce-ac95a06f66e0.png
+  path: https://picsur.kngstn.eu/i/c5691de6-c5e7-443a-827f-34eb876cc829.png
 ---
 
 ## Strategien zwischen Personalpolitik und technischer Innovation

@@ -4,7 +4,7 @@ date: 2024-09-17 12:00:00 +/-0000
 categories: [macOS, Tools]
 tags: [how-to, automation] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/9f130f9d-98a7-4afc-86b2-71b07a8751ef.jpg
+  path: https://picsur.kngstn.eu/i/6f3193cc-31fd-49af-bb0b-52e7f030dc32.png
 ---
 
 ## Warum launchd

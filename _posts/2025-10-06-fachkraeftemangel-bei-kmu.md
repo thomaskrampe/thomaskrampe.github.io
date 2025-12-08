@@ -4,7 +4,7 @@ date: 2025-10-06 12:00:00 +/-0000
 categories: [Strategie, Fachkräftemangel]
 tags: [workplace] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/a2436ac9-92fe-4d48-8748-899dea1032f7.png
+  path: https://picsur.kngstn.eu/i/6f2e3849-712c-4fae-9a65-9a885509f67b.png
 ---
 
 Der IT-Fachkräftemangel stellt für kleine und mittlere Unternehmen (KMU) in Deutschland eine erhebliche Belastung dar und wirkt sich negativ auf deren Wettbewerbsfähigkeit und Zukunftsaussichten aus. Aus analytischer Sicht lässt sich das Problem auf mehrere kritische Bereiche herunterbrechen, die im Folgenden detailliert beleuchtet werden.

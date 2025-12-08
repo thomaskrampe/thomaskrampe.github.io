@@ -4,7 +4,7 @@ date: 2025-11-07 09:00:00 +/-0000
 categories: [Strategie, KI, Datenklassifizierung]
 tags: [ki, daten, how-to, processes] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/3a18cc5e-1382-491e-a1be-b778b72a1f8f.png
+  path: https://picsur.kngstn.eu/i/514a494f-eb68-4ac7-b4c1-d4cdf7a2143d.png
 ---
 
 ## Warum die KI Ihre Daten nicht versteht und wie Sie das ändern

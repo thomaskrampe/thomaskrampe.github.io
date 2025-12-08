@@ -4,7 +4,7 @@ date: 2024-04-11 12:00:00 +/-0000
 categories: [Strategie, Security]
 tags: [zero-trust] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/261f1ce1-ff29-4729-8afd-75342b14d78c.png
+  path: https://picsur.kngstn.eu/i/81008d94-eb24-45eb-bdfe-0f050fcae29f.jpg
 ---
 
 ## Vertrauen ist gut, Kontrolle ist besser
@@ -82,4 +82,4 @@ Und genau diese Fragen müssen wir in unserer Zero-Trust Infrastruktur für jede
 
 Die Einführung einer Zero-Trust Infrastruktur ist sicherlich kein leichtes Projekt. Unternehmen allerdings, die bereits die Cloud adaptiert haben, kommen in den Genuss von leicht zu implementierenden, Cloud-basierten Zero-Trust Sicherheitsmodellen, die fast alle großen Cloudprovider und Hyperscaler anbieten. Aber auch im eigenen Rechenzentrum sind bereits entsprechende Tool Sets vorhanden, die die Einführung einer Zero-Trust Infrastruktur vereinfachen. Abschließend noch ein weiteres Sprichwort – Jede Reise beginnt mit dem ersten Schritt. Es gibt keinen Grund den ersten Schritt in Richtung Zero-Trust nicht zu machen.
 
-[1]: https://picsur.myctx.net/i/f778e071-908e-4218-ab3e-c5a0fe460af5.png
+[1]: https://picsur.kngstn.eu/i/aaf51935-cfa9-4508-ae6d-e2af1892e39e.jpg

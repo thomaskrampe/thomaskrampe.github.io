@@ -5,7 +5,7 @@ permalink: /impressum/
 toc: false
 ---
 
-![Impressum](https://picsur.myctx.net/i/b06e076d-2f69-45d3-9e94-7abd60f87af0.png){: .normal }
+![Impressum](https://picsur.kngstn.eu/i/70dcdec2-1475-4b49-88a7-c5b71830b8d3.jpg){: .normal }
 
 Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: [Thomas Krampe](mailto:thomas@tkrampe.com)
 

@@ -4,7 +4,7 @@ date: 2025-11-16 13:30:00 +/-0000
 categories: [Strategie, Security, Kryptographie]
 tags: [security, pqc, ecc, kryptographie] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/d369ce55-4a67-4ce4-b657-04157e4c2325.png
+  path: https://picsur.kngstn.eu/i/b0fcae02-5f62-4723-b8ac-4511dfa5d82e.png
 ---
 
 ## Warum Ihr Unternehmen jetzt die Schlüssel wechseln sollte

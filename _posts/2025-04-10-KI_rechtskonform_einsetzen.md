@@ -4,7 +4,7 @@ date: 2025-04-10 12:00:00 +/-0000
 categories: [Strategie, KI]
 tags: [ki] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/a47fda34-a857-4e06-a905-64a1bf09e08b.jpg
+  path: https://picsur.kngstn.eu/i/b6e24149-f53c-4e5e-a548-6189efe3497a.png
 ---
 
  Kaum ein anderes Thema hat in den letzten Monaten für so viel Bewegung in Unternehmen gesorgt wie Künstliche Intelligenz (KI). Tools wie ChatGPT, Copilot oder andere generative KI-Modelle werden zunehmend in Arbeitsprozesse integriert – oftmals schneller, als es der IT oder der Rechtsabteilung lieb ist. Doch wie gelingt ein sicherer, datenschutzkonformer Einsatz dieser mächtigen Technologien?
@@ -12,7 +12,7 @@ image:
 ## KI ist da – und bleibt
 Ob im privaten Umfeld oder im Berufsleben: KI-Tools sind allgegenwärtig. Mitarbeitende nutzen sie bereits heute zur Textgenerierung, Datenanalyse oder für kreative Aufgaben. Das Problem: In vielen Fällen geschieht das ohne Wissen oder Freigabe der IT – sogenannte Schattennutzung. Dabei ist das Risiko hoch: personenbezogene Daten, Geschäfts-geheimnisse oder proprietäre Informationen könnten unkontrolliert in externe Systeme gelangen. 
 
-![](https://picsur.myctx.net/i/b46e8e1c-8e01-4b9c-8025-5b52d67a9bdb.png)
+![](https://picsur.kngstn.eu/i/0202a72b-5423-4c88-b5a2-9e5a6477de78.jpg)
 
 ## Rechtliche Grundlage: Der AI Act ist da
 

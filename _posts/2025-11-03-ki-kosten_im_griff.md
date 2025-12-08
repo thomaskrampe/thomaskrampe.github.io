@@ -4,7 +4,7 @@ date: 2025-11-03 17:30:00 +/-0000
 categories: [Strategie, KI, FinOps]
 tags: [ki, finance, finops] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/5ac86e86-aa22-4848-b5b7-20921a93e8c3.png
+  path: https://picsur.kngstn.eu/i/e3683f6d-237c-4577-b959-a28ab050db9d.png
 ---
 
 ## Wenn Innovation auf Budget trifft

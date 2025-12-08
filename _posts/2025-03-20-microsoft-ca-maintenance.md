@@ -4,7 +4,7 @@ date: 2025-03-20 12:00:00 +/-0000
 categories: [Microsoft, Support]
 tags: [windows, pki, maintenance] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/8c9bd1aa-2c3a-4bfe-b164-fff9cb621843.jpg?width=1200
+  path: https://picsur.kngstn.eu/i/b52ccd34-7682-43ce-b410-c5af77b4e260.png
 ---
 
 Einmal installiert stellen die Microsoft Active Directory Zertifikatdienste (AD CS), also die Zertifizierungsstelle (CA) von Microsoft, entsprechend benötigte Zertifikate aus.
@@ -116,6 +116,6 @@ Wie jeder andere Infrastrukturdienst in einer Windows Umgebung erfordert auch di
 *[CRL]: Certificate Revocation List
 *[FAS]: Federated Authentication Service
 
-[1]: https://picsur.myctx.net/i/01818dde-2516-456e-adde-a6e58dac4af4.png
-[2]: https://picsur.myctx.net/i/e73622e9-9538-43d3-8065-3de030a6519c.png
+[1]: https://picsur.kngstn.eu/i/c8ed5f31-3dc7-4cef-89ee-ed69d7a102a2.jpg
+[2]: https://picsur.kngstn.eu/i/a880f609-c611-489d-91b1-acf34c1c70b0.jpg
 [3]: https://github.com/thomaskrampe/PowerShell/tree/master/Citrix/FAS

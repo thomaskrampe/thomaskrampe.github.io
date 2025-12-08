@@ -4,7 +4,7 @@ date: 2025-10-20 09:00:00 +/-0000
 categories: [Strategie, KI, Automatisierung]
 tags: [processes, llm, ki] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/e6d14946-3686-48d7-8f1c-f3a1b22cd8ab.png
+  path: https://picsur.kngstn.eu/i/5c58a235-ed44-4dc0-baba-8af9ff09e9c2.png
 ---
 
 In meinen vorangegangenen Artikeln habe ich immer wieder die KI als eine mögliche Lösung für den Fachkräftemangel hingewiesen. Als Feedback auf diese Artikel habe ich mitgenommen, dass die Unternehmensautomatisierung eine tiefgreifende Transformation durchläuft. In vielen Organisationen besteht Grundsätzlich eine große Unklarheit über die feinen, aber entscheidenden Unterschiede zwischen einer Automatisierung, einem KI-Workflow und einem KI-Agenten. Für CIOs ist das Verständnis dieser unterschiedlichen Konzepte nicht nur wichtig, sondern bildet die kritische Grundlage für strategische Investitionen und eine zukunftssichere IT-Architektur.
@@ -17,7 +17,7 @@ Im Kern lassen sich diese drei Stufen der Prozessoptimierung anhand von drei Sch
 
 Die Evolution geht dabei vom starren Regelwerk (Automatisierung) über die assistierte Intelligenz (KI-Workflow) bis hin zur echten Autonomie (KI-Agent).
 
-![Stufen der Prozessautomatisierung](https://picsur.myctx.net/i/42c68cf0-6e74-4ccd-83a8-d696049016d7.png)
+![Stufen der Prozessautomatisierung](https://picsur.kngstn.eu/i/bb9f6ec1-5795-4c4a-b3c1-bc56b60755a6.jpg)
 _Stufen der Prozessautomatisierung_
 
 ## 1\. Automatisierungen (Regelbasiert und Statisch)

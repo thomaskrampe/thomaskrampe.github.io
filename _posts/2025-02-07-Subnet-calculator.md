@@ -4,7 +4,7 @@ date: 2025-02-07 12:00:00 +/-0000
 categories: [Technologie, Tools]
 tags: [how-to, network] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/a1e6c77e-ad33-4b12-a9ff-cd122152dd98.png
+  path: https://picsur.kngstn.eu/i/e0783825-bbf1-42d0-bc51-b2c8da9441f1.png
 ---
 
 Um einfach mal eine bestimmte IP-Adresse einem Subnet zuzuordnen, bedienen wir uns einfach einer frei verfügbaren API im Internet. Einfach die IP-Adresse in CIDR Notation z.B. per curl an die API schicken.
