@@ -4,7 +4,7 @@ date: 2025-11-24 09:00:00 +/-0000
 categories: [Strategie, Arbeitsplatz, KI]
 tags: [workplace,llm,ki,processes] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/9dc1c105-64e4-46ca-bb35-4409f0d08d4e.png
+  path: https://picsur.kngstn.eu/i/f6a4d5b2-4698-4124-ac98-d24d4f3daac3.jpg
 ---
 
 ## Wie Multi-Agenten-Systeme die Arbeitswelt neu ordnen
