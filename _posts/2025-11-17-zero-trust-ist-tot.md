@@ -4,7 +4,7 @@ date: 2025-11-17 09:00:00 +/-0000
 categories: [Strategie, Security]
 tags: [security, zero-trust, verified-trust] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/bdf30827-8b6e-4f03-a27b-303b376ed3c9.png
+  path: https://picsur.kngstn.eu/i/f8a9d19c-aa2b-4ecd-a53c-5e4bcd09516e.png
 ---
 
 ## Warum über 80 % der DACH-Unternehmen ihre Sicherheitsarchitektur neu überdenken müssen
