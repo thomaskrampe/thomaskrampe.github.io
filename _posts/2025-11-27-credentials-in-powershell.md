@@ -119,7 +119,7 @@ Remove-Secret -Name "Dbaccess"
 # Secret ändern - bestehendes Secret einfach überschreiben
 Set-Secret -Name "Dbaccess" -Secret (Get-Credential)
 
-# Passwortauthentifizeirung von einem bestehenden Vault entfernen
+# Bestehenden Vault entsprerren (falls noch gesperrt)
 Unlock-SecretStore
 
 # Setzt die Authentifizierung auf 'None' (deaktiviert die Passwortabfrage)
