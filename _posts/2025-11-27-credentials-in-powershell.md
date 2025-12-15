@@ -89,8 +89,10 @@ Set-Secret -Name "DbAccess" -Secret $SecureString -Vault "AutoTaskVault"
 Im Skript, das dann vom Task Scheduler ausgeführt wird, sind keine Credentials sichtbar. Und auch der Vault auf dem entsprechenden System ist nicht so einfach kopierbar.
 
 ```powershell
-# Abruf der Credentials zur Laufzeit
+# Abruf der Credential-Objektes zur Laufzeit
 $Creds = Get-Secret -Name "DbAccess" -AsPSCredential -Vault "AutoTaskVault" -ErrorAction Stop
+# oder z.B. ein API Key als Plaintext
+$ApiKey = Get-Secret -Name "ApiKey" -AsPlaintext -Vault "AutoTaskVault" -ErrorAction Stop
 
 if ($Creds) {
     # Connect-SQLServer ...
@@ -116,6 +118,15 @@ Remove-Secret -Name "Dbaccess"
 
 # Secret ändern - bestehendes Secret einfach überschreiben
 Set-Secret -Name "Dbaccess" -Secret (Get-Credential)
+
+# Passwortauthentifizeirung von einem bestehenden Vault entfernen
+Unlock-SecretStore
+
+# Setzt die Authentifizierung auf 'None' (deaktiviert die Passwortabfrage)
+Set-SecretStoreConfiguration -Authentication 'None' -PasswordTimeout 0
+
+# Konfiguration ggf. nochmal überprüfen
+Get-SecretStoreConfiguration
 ```
 
 **Nachteile & Risiken:**
