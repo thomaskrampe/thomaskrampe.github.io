@@ -19,7 +19,7 @@ Die Entwicklung hin zu "Short-lived Certificates" ist bereits seit längerem fes
 * Ab März 2027: Reduzierung auf eine Gültigkeit von maximal 100 Tagen.
 * Ab März 2029: Zielmarke von 47 Tagen.
 
-Hintergrund dieser Entwicklung ist die kryptographische Agilität. Kürzere Laufzeiten verringern das Missbrauchsfenster kompromittierter Schlüssel und bereiten Infrastrukturen auf den schnellen Wechsel von Verschlüsselungsstandards vor (z. B. [Post-Quantum-Cryptography][1]) Wenn eine Schwachstelle in einem Verschlüsselungsalgorithmus (wie z.B. bei RSA) entdeckt wird oder auch ein Schlüssel abhanden kommt (was ihnen hoffentlich nie passiert), dauert es bei einer Laufzeit von einem Jahr eben ein ganzes Jahr, bis alle Zertifikate im Internet getauscht sind. Bei 47 Tagen ist das gesamte Internet innerhalb von maximal 7 Wochen "geheilt", ohne dass Zertifikate mühsam manuell widerrufen (Revoke) werden müssen, was technisch oft unzuverlässig ist.
+Hintergrund dieser Entwicklung ist die kryptographische Agilität. Kürzere Laufzeiten verringern das Missbrauchsfenster kompromittierter Schlüssel und bereiten Infrastrukturen auf den schnellen Wechsel von Verschlüsselungsstandards vor (z. B. [Post-Quantum-Cryptography][1]) Wenn eine Schwachstelle in einem Verschlüsselungsalgorithmus (wie z.B. bei RSA) entdeckt wird oder auch ein Schlüssel abhanden kommt (was ihnen hoffentlich nie passiert), dauert es bei einer Laufzeit von 398 Tagen imungünstigsten Fall eben ein ganzes Jahr, bis alle Zertifikate im Internet getauscht sind. Bei 47 Tagen ist das gesamte Internet innerhalb von maximal 7 Wochen "geheilt", ohne dass Zertifikate mühsam manuell widerrufen (Revoke) werden müssen, was technisch oft unzuverlässig ist.
 
 Der Wechsel zu Kurzzeit-Zertifikaten ist auch kein "Mal-eben-so-nebenbei-Update". Er birgt viele operative Risiken, bietet aber auch strategische Vorteile.
 
@@ -31,7 +31,7 @@ Der Wechsel zu Kurzzeit-Zertifikaten ist auch kein "Mal-eben-so-nebenbei-Update"
 
 Warum jetzt 47 Tage und nicht 45 oder 48? 
 
-Das war die erste Frage die ich von Korrekturlesern bekommen habe und tatsächlich ist das eine durchaus berechtigte Frage. Es wirkt fast so, als hätte jemand gewürfelt. Aber hinter dieser "krummen" Zahl steckt eine sehr präzise regulatorische Logik, die auf der Wochenstruktur basiert.
+Das war die erste Frage, die ich von Korrekturlesern bekommen habe und tatsächlich ist das eine durchaus berechtigte Frage. Es wirkt fast so, als hätte jemand gewürfelt. Aber hinter dieser "krummen" Zahl steckt eine sehr präzise regulatorische Logik, die auf der Wochenstruktur basiert.
 
 1\. **Die "Vierteljährliche" Logik**
 Das Ziel der Browser-Hersteller ist es, Zertifikatslaufzeiten in einen Rhythmus zu bringen, der in Quartale passt.
@@ -63,9 +63,9 @@ Automatisierung des Zertifkatsmanagements bedeutet auch eine höhere Frequenz be
 
 * Azure Key Vault / AWS KMS: Hochverfügbare Cloud-Tresore, die Schlüssel oft in Hardware (HSM) speichern, sodass sie niemals im Klartext exportiert werden können.
 * HashiCorp Vault: Ideal für Hybrid-Cloud-Szenarien, um Schlüssel zentral über verschiedene Plattformen hinweg zu verwalten.
-* Lokal betriebene Passwortmanager bieten in den Enterprise Versionen auch oft eine Verwaltung der Schlüssel, sind aber in der Regel auch nur intern, im Gegensatz zu den Cloud Diensten, erreichbar.
+* Lokal betriebene Passwortmanager bieten in den Enterprise Versionen auch oft eine Verwaltung der Schlüssel, sind aber in der Regel auch nur intern erreichbar, im Gegensatz zu den Cloud Diensten.
 
-Darüber hinaus ist die automatische Key-Rotation und das generieren eines komplett neues Schlüsselpaar bei jeder Erneuerung der Zertifikate absolutes Pflichtprogramm.
+Darüber hinaus ist die automatische Key-Rotation und das generieren eines komplett neuen Schlüsselpaares bei jeder Erneuerung der Zertifikate ein absolutes Pflichtprogramm.
 
 ## Die technische Umsetzung mit dem ACME Protokoll
 
