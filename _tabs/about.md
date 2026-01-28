@@ -6,8 +6,7 @@ order: 4
 
 ## Support
 
-<a href="https://www.buymeacoffee.com/thomaskrampe" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <img src="https://picsur.kngstn.eu/i/5129bcea-1ab7-42f1-b560-2437e414f187.png?height=200" align="right">
-
+<a href="https://www.buymeacoffee.com/thomaskrampe" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## Mission
 
