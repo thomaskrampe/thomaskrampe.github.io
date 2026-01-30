@@ -1,8 +1,8 @@
 ---
 title: Zero-Trust verstehen und einsetzen
 date: 2024-04-11 12:00:00 +/-0000
-categories: [Strategie, Security]
-tags: [zero-trust] # TAG names should always be lowercase
+categories: [Strategie, Sicherheit]
+tags: [zero-trust, security] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/81008d94-eb24-45eb-bdfe-0f050fcae29f.jpg
 ---
@@ -35,7 +35,7 @@ Die reine Identifizierung des Benutzers (auch nicht über mehrere Faktoren) reic
 
 Aber auch die Infrastruktur muss basierend auf Kontext überwacht und analysiert werden. Werden beispielsweise ungewöhnlich viele Daten von den Fileservern übertragen, gibt es plötzlich vermehrt Zugriffe auf bestimmte Daten, meldet sich ein bereits angemeldeter Benutzer gerade erneut aus einem anderen Land an? Aus einer solchen Analyse sollten bzw. müssen aber auch sofortige Aktionen und Maßnahmen erfolgen z.B. sperren des Benutzerkontos bei doppelter Anmeldung, schließen der Firewall Ports, wenn plötzlich Daten in großen Mengen übertragen werden und natürlich das Starten einer weiteren Überwachung solcher Vorfälle zum Beispiel durch Aktivieren von Screen Recording.  Angriffe auf die Datenübertragungsprotokolle können durch konsequente und vor allem durchgängige Verschlüsselung minimiert werden, was gerade in öffentlichen Netzwerken bei der Verwendung von Cloud-Diensten unumgänglich ist.
 
-![][1]
+![Zero-Trust im Überblick][1]
 
 ## Am Anfang steht die Planung
 

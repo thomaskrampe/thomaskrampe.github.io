@@ -1,7 +1,7 @@
 ---
 title: Quanten-Ready und Performance-Stark
 date: 2025-11-16 13:30:00 +/-0000
-categories: [Strategie, Security, Kryptographie]
+categories: [Strategie, Sicherheit, Kryptographie]
 tags: [security, pqc, ecc, kryptographie] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/b0fcae02-5f62-4723-b8ac-4511dfa5d82e.png

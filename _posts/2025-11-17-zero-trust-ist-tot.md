@@ -1,7 +1,7 @@
 ---
 title: Zero Trust ist tot, lang lebe Verified Trust
 date: 2025-11-17 09:00:00 +/-0000
-categories: [Strategie, Security]
+categories: [Strategie, Sicherheit]
 tags: [security, zero-trust, verified-trust] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/f8a9d19c-aa2b-4ecd-a53c-5e4bcd09516e.png
