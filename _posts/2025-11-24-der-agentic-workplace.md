@@ -2,7 +2,7 @@
 title: Der Agentic Workplace und die Neubewertung des Arbeitsplatzes
 date: 2025-11-24 09:00:00 +/-0000
 categories: [Strategie, Arbeitsplatz, KI]
-tags: [workplace,llm,ki,processes] # TAG names should always be lowercase
+tags: [workplace,llm,ki,processes,agentic] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/f6a4d5b2-4698-4124-ac98-d24d4f3daac3.jpg
 ---
