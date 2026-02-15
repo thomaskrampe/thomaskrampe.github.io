@@ -1,7 +1,7 @@
 ---
 title: Der digitale Turbo für die Wohnungswirtschaft
 date: 2026-02-15 12:11:00 +/-0000
-categories: [Strategie, Fachkäftemangel, Wohnungswirtschaft]
+categories: [Strategie, Fachkräftemangel, Wohnungswirtschaft]
 tags: [automation, workplace, security, finance, nis2] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/5a28c28a-bce9-4bdb-ae7d-fcd4a8e67657.png
