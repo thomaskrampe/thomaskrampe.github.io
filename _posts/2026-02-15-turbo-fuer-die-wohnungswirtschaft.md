@@ -80,23 +80,25 @@ Die "G"-Komponente von ESG verlangt transparente, nachvollziehbare und regelkonf
 
 ## Die 5-Stufen-Roadmap zur IT-Exzellenz
 
-### Stufe 1: Readiness-Audit (Monat 1)
+![5-Stufen Roadmap](https://picsur.kngstn.eu/i/ec4d285c-cdaf-4dec-8226-136398200ad7.png)
+
+**Stufe 1: Readiness-Audit (Monat 1)**
 
 Prüfung der aktuellen IT-Reife. Identifikation von Legacy-Systemen, die nicht cloud-fähig sind. Festlegung der Outsourcing-Tiefe (Infrastruktur, Anwendungen oder Full-Managed).
 
-### Stufe 2: Architektur-Design (Monat 2-3)
+**Stufe 2: Architektur-Design (Monat 2-3)**
 
 Entwurf der Zielarchitektur. Fokus auf Hybrid Cloud: Kritische ERP-Daten in einer Private Cloud, skalierbare Mieter-Services in der Public Cloud.
 
-### Stufe 3: Provider-Selection & Vergabe (Monat 4-5)
+**Stufe 3: Provider-Selection & Vergabe (Monat 4-5)**
 
 Ausschreibung basierend auf funktionalen Anforderungen. Wichtigstes Kriterium: Branchen-Know-how (Kenntnis der wohnungswirtschaftlichen Prozesse).
 
-### Stufe 4: Transition & Data Migration (Monat 6-9)
+**Stufe 4: Transition & Data Migration (Monat 6-9)**
 
 Schrittweise Migration der Workloads. Implementierung neuer Sicherheits-Gateways. Parallel dazu: Schulung der Key-User.
 
-### Stufe 5: Continuous Improvement (Dauerbetrieb)
+**Stufe 5: Continuous Improvement (Dauerbetrieb)**
 
 Etablierung eines Service-Governance-Boards. Regelmäßige Überprüfung der SLAs und Anpassung der Services an neue Marktgegebenheiten (z.B. neue Gesetze).
 
