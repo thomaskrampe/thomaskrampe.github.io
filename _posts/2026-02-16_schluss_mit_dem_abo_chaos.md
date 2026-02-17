@@ -24,7 +24,7 @@ Wir entscheiden welches Modell wir verweden wollen: Zum Beispiel GPT-5 für Logi
 
 **Der Clou:** Mit der "One-Click Reprompting"-Funktion feuern wir denselben Prompt zeitgleich an verschiedene Modelle (z.B. Gemini 2.5 Pro vs. GPT-5). Das ist für Benchmarking und Qualitätssicherung im Business-Kontext Gold wert. Wir sehen sofort, welches Modell die Aufgabe besser löst, ohne Copy-Paste-Orgien.
 
-![](https://picsur.kngstn.eu/i/c326f119-99e0-4e48-9b92-30556c9fb8dd.png)
+![Mammouth One-Click Reprompting](https://picsur.kngstn.eu/i/c326f119-99e0-4e48-9b92-30556c9fb8dd.png)
 
 ## Der Vergleich: Mammouth vs. The Rest
 
