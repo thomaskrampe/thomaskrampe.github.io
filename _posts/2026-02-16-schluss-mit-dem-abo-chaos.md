@@ -70,8 +70,8 @@ Mammoth nutze ich für:
 → Mit eigenen Mammouth's das "Arbeitstier" für meinen Arbeitsalltag
 
 Der entscheidende Unterschied:
-**Copilot** = Unternehmensinterne oder kundenspezifische Produktivität
-**Mammoth** = Recherche sowie kundenunspezifische Produktivität
+* **Copilot** = Unternehmensinterne oder kundenspezifische Produktivität
+* **Mammoth** = Recherche sowie kundenunspezifische Produktivität
 
 Bei manchen Projekten oder Recherchen will ich oft NICHT, dass Daten durch Microsoft-Server laufen, auch nicht bei "DSGVO-konformen" Copilot-Instanzen. Mit Mammoth entscheide ich selbst: Claude via EU-API oder GPT-4 via Azure in Frankfurt.
 
