@@ -127,8 +127,8 @@ Shadow AI ist also schon mit der DSGVO allein ein Compliance-Albtraum. Aber kein
 *[DLP]: Data Loss Prevention
 *[ISMS]: Informationssicherheitsmanagementsystem
 
-[1]: https://openclaw.ai
-[2]: https://mammouth.ai/
+[1]: https://thomas-krampe.com/posts/openclaw-agentic-workplace/
+[2]: https://thomas-krampe.com/posts/schluss-mit-dem-abo-chaos/
 [3]: https://thomas-krampe.com/posts/KI_rechtskonform_einsetzen/
 [4]: https://netwrix.com/en/resources/blog/shadow-ai-security-risks/
 [5]: https://www.politico.eu/article/eu-parliament-blocks-ai-features-over-cyber-privacy-fears/
