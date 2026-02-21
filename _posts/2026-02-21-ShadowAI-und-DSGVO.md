@@ -60,7 +60,7 @@ Die deutschen Datenschutzaufsichtsbehörden werden aktiver. Es ist nur eine Frag
 
 ## Warum ein einfaches Verbot nicht funktioniert
 
-Die erste Reaktion vieler IT-Abteilungen ist of ein wenig planlos und hat wenig Voraussicht. Die Lösung ist oft, einfach alles blockieren. Diesen, meiner Meinung nach falschen Weg, geht übrigens gerade das [EU Parlament[5]] mit dem deaktivieren der KI-Funktionen auf den Endgeräten der Abgeordneten. Der Hintergrund is verständlich, löst aber wahrscheinlich das Problem nicht nachhaltig.
+Die erste Reaktion vieler IT-Abteilungen ist of ein wenig planlos und hat wenig Voraussicht. Die Lösung ist oft, einfach alles blockieren. Diesen, meiner Meinung nach falschen Weg, geht übrigens gerade das [EU Parlament][5] mit dem deaktivieren der KI-Funktionen auf den Endgeräten der Abgeordneten. Der Hintergrund is verständlich, löst aber wahrscheinlich das Problem nicht nachhaltig.
 
 Der Mitarbeiter, dem ChatGPT oder Copilot gesperrt wird, nutzt es auf dem Privathandy und schickt die Ergebnisse per privater E-Mail zurück. Das Datenleck ist größer als zuvor. Verbote ohne Alternativen schaffen nicht weniger Shadow AI, sondern leider mehr und das auch nicht mehr durch entsprechende CASB Systeme kontrollierbar.
 
