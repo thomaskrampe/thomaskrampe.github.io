@@ -84,7 +84,7 @@ Geben Sie Ihren Mitarbeitern sichere Alternativen, bevor Sie anfangen zu sperren
   
 ### Schritt 3: AI Acceptable Use Policy
 
-Regeln Sie schriftlich, welche Tools genehmigt sind und welche Daten an eine KI gesendet werden dürfen. Klären Sie auch, was bei Verstößen passiert. Und, wer mich kennt, weiß das ich immer wieder empfehle, den Betriebsrat frühzeitig mit einbinden, denn KI am Arbeitsplatz berührt die Mitbestimmungsrechte nach **§ 87 BetrVG**. 
+Regeln Sie schriftlich, welche Tools genehmigt sind und welche Daten an eine KI gesendet werden dürfen. Klären Sie auch, was bei Verstößen passiert. Und, wer mich kennt, weiß das ich immer wieder empfehle, den Betriebsrat frühzeitig mit einzubinden, denn KI am Arbeitsplatz berührt die Mitbestimmungsrechte nach **§ 87 BetrVG**.
 
 ### Schritt 4: Technische Schutzmaßnahmen
 
