@@ -23,7 +23,11 @@ Auf dieser Website enthaltene Verknüpfungen mit Websites anderer Unternehmen we
 
 Die Nutzung der auf dieser Website zur Verfügung gestellten Inhalte erfolgt auf alleinige Gefahr des Nutzers. Für mögliche Schäden (insbesondere entgangener Gewinn, Datenverlust bzw. Produktionsausfälle) übernehme ich keinerlei Haftung. Dies gilt nicht im Falle des Vorsatzes und für den Fall, dass eine Haftung gesetzlich zwingend vorgeschrieben ist.
 
-## 5. Anwendbares Recht
+## 5. Bildnachweise
+
+Alle auf dieser Website verwenden Titelbilder wurden mit Hilfe von KI erzeugt. In der Regel erfolgt dies über Google Nano Banana, Flux oder GPT Image. KI-generierte Bilder haben in Deutschland grundsätzlich kein Urheberrecht, da sie keine persönliche geistige Schöpfung eines Menschen darstellen (§ 2 Abs. 2 UrhG). Sie gelten als gemeinfrei und können frei verwendet werden, ohne dass ein Rechteinhaber existiert. Alle anderen Bilder unterliegen der [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) Lizenz.
+
+## 6. Anwendbares Recht
 
 Diese Website wird von Thomas Krampe verwaltet. Diese Bedingungen unterliegen dem Recht der Bundesrepublik Deutschland. Gerichtsstand für alle Rechtsstreitigkeiten ist für Kaufleute Frankfurt/Main. Ich mache keinerlei Aussagen darüber, ob die Inhalte dieser Web Site für den Gebrauch außerhalb der Bundesrepublik Deutschland geeignet sind oder ob der Zugriff auf Inhalte dieser Web Site außerhalb der Bundesrepublik Deutschland zulässig ist; ein solcher Zugriff geschieht auf eigene Veranlassung und Gefahr. Für die Einhaltung des jeweils geltenden lokalen Rechts ist der Benutzer selbst verantwortlich.
 
