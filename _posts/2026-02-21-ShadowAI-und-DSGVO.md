@@ -40,19 +40,19 @@ Das ist übrigens kein Witz. Das sind reale Zahlen aus echten Unternehmensaudits
 
 Für deutsche Unternehmen ist die rechtliche Dimension besonders ernst. Shadow AI schafft gleich mehrere DSGVO-Verstöße gleichzeitig:
 
-### **Keine Rechtsgrundlage (Art. 6 DSGVO)**
+**Keine Rechtsgrundlage (Art. 6 DSGVO)**
   
 Wer Kundendaten in ein nicht genehmigtes KI-Tool eingibt, hat weder Einwilligung eingeholt noch einen Auftragsverarbeitungsvertrag (AVV) geschlossen.
 
-### **Drittlandübermittlung ohne Schutzmaßnahmen (Art. 44–49 DSGVO)**  
+**Drittlandübermittlung ohne Schutzmaßnahmen (Art. 44–49 DSGVO)**  
 
-Die meisten öffentlichen KI-Dienste betreiben ihre Server in den USA – ohne AVV ist jede Übermittlung personenbezogener Daten ein Verstoß. In einem einzigen Chat können so gleich dutzende Verstöße vorkommen!
+Die meisten öffentlichen KI-Dienste betreiben ihre Server in den USA – ohne AVV ist jede Übermittlung personenbezogener Daten ein Verstoß. Ein einziger Chat kann dutzende betroffene Personen umfassen und damit den Schadensumfang massiv erhöhen.
 
-### **Verletzung der Informationspflichten**  
+**Verletzung der Informationspflichten**  
 
-Betroffene haben das Recht zu wissen, dass ihre Daten verarbeitet werden. Bei Shadow AI ist das schlicht unmöglich.
+Betroffene haben das Recht zu wissen, dass und vor allem wofür ihre Daten verarbeitet werden. Bei Shadow AI ist das schlicht unmöglich nachzuweisen.
 
-### **Lückenhaftes Verzeichnis der Verarbeitungstätigkeiten (Art. 30 DSGVO)**  
+**Lückenhaftes Verzeichnis der Verarbeitungstätigkeiten (Art. 30 DSGVO)**  
 
 Shadow-AI-Nutzung taucht dort definitionsgemäß bei den wenigsten Unternehmen auf.
 
@@ -60,7 +60,7 @@ Die deutschen Datenschutzaufsichtsbehörden werden aktiver. Es ist nur eine Frag
 
 ## Warum ein einfaches Verbot nicht funktioniert
 
-Die erste Reaktion vieler IT-Abteilungen ist of ein wenig planlos und hat wenig Voraussicht. Die Lösung ist oft, einfach alles blockieren. Diesen, meiner Meinung nach falschen Weg, geht übrigens gerade das [EU Parlament][5] mit dem deaktivieren der KI-Funktionen auf den Endgeräten der Abgeordneten. Der Hintergrund is verständlich, löst aber wahrscheinlich das Problem nicht nachhaltig.
+Die erste Reaktion vieler IT-Abteilungen ist oft ein wenig planlos und hat wenig Voraussicht. Die Lösung ist oft, einfach alles blockieren. Diesen, meiner Meinung nach falschen Weg, geht übrigens gerade das [EU Parlament][5] mit dem deaktivieren der KI-Funktionen auf den Endgeräten der Abgeordneten. Der Hintergrund is verständlich, löst aber wahrscheinlich das Problem nicht nachhaltig.
 
 Der Mitarbeiter, dem ChatGPT oder Copilot gesperrt wird, nutzt es auf dem Privathandy und schickt die Ergebnisse per privater E-Mail zurück. Das Datenleck ist größer als zuvor. Verbote ohne Alternativen schaffen nicht weniger Shadow AI, sondern leider mehr und das auch nicht mehr durch entsprechende CASB Systeme kontrollierbar.
 
@@ -78,13 +78,14 @@ Geben Sie Ihren Mitarbeitern sichere Alternativen, bevor Sie anfangen zu sperren
 
 - **Microsoft 365 Copilot** mit aktiviertem EU Data Boundary
 - **Azure OpenAI Service** – Daten verlassen nicht Ihren Tenant
-- **Aleph Alpha** – deutsches LLM, DSGVO-nativ, BSI-geprüft
+- **[Aleph Alpha][6]** – deutsches LLM, DSGVO-nativ, BSI-geprüft
+- **[Mistral AI][7]** - deutsch/französisches AI Startup
 - **On-Premises-Lösungen** (z.B. Ollama) für hochsensible Bereiche
-- **Nenna.ai** deutsches Tool für DSGVO-konformes Prompt-Management und automatische Datenanonymisierung vor der KI-Übermittlung
+- **[Nenna.ai][8]** deutsches Tool für DSGVO-konformes Prompt-Management und automatische Datenanonymisierung vor der KI-Übermittlung
   
 ### Schritt 3: AI Acceptable Use Policy
 
-Regeln Sie schriftlich, welche Tools genehmigt sind und welche Daten an eine KI gesendet werden dürfen. Klären Sie auch, was bei Verstößen passiert. Und, wer mich kennt, weiß das ich immer wieder empfehle, den Betriebsrat frühzeitig mit einzubinden, denn KI am Arbeitsplatz berührt die Mitbestimmungsrechte nach **§ 87 BetrVG**.
+Regeln Sie schriftlich, welche Tools genehmigt sind und welche Daten an eine KI gesendet werden dürfen. Klären Sie auch, was bei Verstößen passiert. Und meine persönliche Empfehlung, binden Sie den Betriebsrat frühzeitig mit ein, denn KI am Arbeitsplatz berührt die Mitbestimmungsrechte nach **§ 87 BetrVG**. Lieber vorher drüber sprechen, als nachher zu streiten.
 
 ### Schritt 4: Technische Schutzmaßnahmen
 
@@ -107,7 +108,7 @@ Zur Budgetorientierung für ein mittelständiges Unternehmen mit etwa 200–1.00
 - Ein CASB/DLP-Toolstack verursacht Kosten zwischen 15 bis 40 € pro User/Monat,
 - ein externes AI-Governance-Framework zwischen ca. 15.000 bis 50.000 €.
 
-Gegenrechnung: Ein einziger DSGVO-Verstoß kann Bußgelder von bis zu **4% des weltweiten Jahresumsatzes** bedeuten!
+Gegenrechnung: Ein einziger DSGVO-Verstoß *kann* Bußgelder von bis zu 4% des weltweiten Jahresumsatzes bedeuten! Zugegeben, das wird eher selten verhängt, aber Geldbußen im sechstelligen Bereich sind sehr realistisch.
 
 > **Kleiner Tip:** Viele deutsche Mittelständler haben bereits einen CASB in ihrer Microsoft-Lizenz und wissen es nicht. Das wäre mein erster Check bevor jemand etwas neues einkauft und implementieren möchte.
 {: .prompt-tip }
@@ -132,3 +133,6 @@ Shadow AI ist also schon mit der DSGVO allein ein Compliance-Albtraum. Aber kein
 [3]: https://thomas-krampe.com/posts/KI_rechtskonform_einsetzen/
 [4]: https://netwrix.com/en/resources/blog/shadow-ai-security-risks/
 [5]: https://www.politico.eu/article/eu-parliament-blocks-ai-features-over-cyber-privacy-fears/
+[6]: https://aleph-alpha.com/
+[7]: https://mistral.ai/
+[8]: https://www.nenna.ai/
