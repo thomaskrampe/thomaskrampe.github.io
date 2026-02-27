@@ -119,7 +119,7 @@ Shadow AI entsteht nicht, weil Mitarbeiter böswillig sind. Sie entsteht, weil M
 
 Wer jetzt einen klaren Governance-Rahmen schafft, positioniert KI-Compliance als Wettbewerbsvorteil, denn Kunden, Partner und Behörden werden künftig immer mehr Transparenz darüber verlangen, wie Unternehmen mit KI und Daten umgehen.
 
-Übrigens für die, die gern selbst Wissen möchten wo sie stehen, habe ich ein kostenloses und unverbidliches [Self-Assessment][9] erstellt.
+Übrigens für diejenigen, die gern selbst wissen möchten wo sie stehen, habe ich ein kostenloses und unverbidliches [Self-Assessment][9] erstellt.
 
 ## Fazit und Ausblick
 
