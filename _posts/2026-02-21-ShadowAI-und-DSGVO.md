@@ -119,6 +119,8 @@ Shadow AI entsteht nicht, weil Mitarbeiter böswillig sind. Sie entsteht, weil M
 
 Wer jetzt einen klaren Governance-Rahmen schafft, positioniert KI-Compliance als Wettbewerbsvorteil, denn Kunden, Partner und Behörden werden künftig immer mehr Transparenz darüber verlangen, wie Unternehmen mit KI und Daten umgehen.
 
+Übrigens für die, die gern selbst Wissen möchten wo sie stehen, habe ich ein kostenloses und unverbidliches [Self-Assessment][9] erstellt.
+
 ## Fazit und Ausblick
 
 Shadow AI ist also schon mit der DSGVO allein ein Compliance-Albtraum. Aber keine Sorge, der Gesetzgeber hat noch nachgelegt. Den **EU AI Act** habe ich in diesem Artikel bewusst ausgeklammert, sonst wäre das hier kein Blogartikel geworden, sondern eher ein psychiatrisches Gutachten über den Zustand der deutschen IT-Governance. Das kommt allerdings noch in einem nächsten Artikel. Sie dürfen schon mal wieder Kaffee kochen, viel Kaffee.
@@ -136,3 +138,5 @@ Shadow AI ist also schon mit der DSGVO allein ein Compliance-Albtraum. Aber kein
 [6]: https://aleph-alpha.com/
 [7]: https://mistral.ai/
 [8]: https://www.nenna.ai/
+[9]: https://forms.office.com/e/rN8wcCgZBv
+
