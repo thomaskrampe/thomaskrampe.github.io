@@ -139,4 +139,3 @@ Shadow AI ist also schon mit der DSGVO allein ein Compliance-Albtraum. Aber kein
 [7]: https://mistral.ai/
 [8]: https://www.nenna.ai/
 [9]: https://forms.office.com/e/rN8wcCgZBv
-
