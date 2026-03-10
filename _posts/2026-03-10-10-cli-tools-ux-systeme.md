@@ -1,5 +1,5 @@
 ---
-title: 10 CLI-Tools die auf keinem UX-System fehlen sollten
+title: 10 CLI-Tools die auf keinem Unix/Linux-System fehlen sollten
 date: 2026-03-10 11:02:00 +/-0000
 categories: [macOS, Tools, Linux]
 tags: [homebrew, ubuntu, cli, how-to ] # TAG names should always be lowercase
@@ -171,11 +171,11 @@ brew install ncdu
 ### Pro-Tipp
 
 `ncdu /`
-Analysiert das gesamte Dateisystem. Mit d kann man Verzeichnisse oder Dateien direkt aus ncdu heraus löschen, natürlich mit Bestätigungsdialog. Auf Produktionssystemen bitte mit Bedacht einsetzen.
+Analysiert das gesamte Dateisystem. Mit `d` kann man Verzeichnisse oder Dateien direkt aus ncdu heraus löschen, natürlich mit Bestätigungsdialog. Auf Produktionssystemen bitte mit Bedacht einsetzen.
 
 ### Website des Entwicklers
 - [dev.yorhel.nl/ncdu](https://dev.yorhel.nl/ncdu)
-- [ncdu auf GitHub](https://github.com/nicowillis/ncdu)
+- [ncdu](https://code.blicky.net/yorhel/ncdu)
 
 ## 5. bat – cat mit Superkräften
 
@@ -208,7 +208,7 @@ brew install bat
 
 ### Pro-Tipp
 
-bat lässt sich hervorragend mit anderen Tools kombinieren:
+`bat` lässt sich hervorragend mit anderen Tools kombinieren:
 
 ```bash
 # Als Pager für man-Pages:
@@ -218,7 +218,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 rg "suchbegriff" --pretty | bat
 ```
 
-Themes können mit bat --list-themes angezeigt und mit --theme=TwoDark gesetzt werden.
+Themes können mit `bat --list-themes` angezeigt und mit `--theme=TwoDark` gesetzt werden.
 
 ### Website des Entwicklers
 
@@ -355,7 +355,7 @@ brew install lazydocker
 alias lzd='lazydocker'
 ```
 
-Mit e auf einem Container öffnet man direkt eine Shell-Session, kein `docker exec -it container_name /bin/bash` mehr nötig. Die Log-Ansicht mit Echtzeit-Updates ersetzt `docker logs -f` komplett.
+Mit `e` auf einem Container öffnet man direkt eine Shell-Session, kein `docker exec -it container_name /bin/bash` mehr nötig. Die Log-Ansicht mit Echtzeit-Updates ersetzt `docker logs -f` komplett.
 
 ### Website des Entwicklers
 
@@ -369,7 +369,7 @@ ripgrep (kurz: `rg`) ist ein extrem schnelles Such-Tool, das rekursiv in Dateien
 
 ### Warum unverzichtbar?
 
-Weil `grep -r "suchbegriff" . langsam ist und die Ausgabe schwer lesbar ist. `ripgrep` macht dasselbe in einem Bruchteil der Zeit, ignoriert automatisch irrelevante Verzeichnisse und liefert sofort verwertbare Ergebnisse. In großen Codebasen ist der Unterschied dramatisch.
+Weil `grep -r "suchbegriff" .` langsam ist und die Ausgabe schwer lesbar ist. `ripgrep` macht dasselbe in einem Bruchteil der Zeit, ignoriert automatisch irrelevante Verzeichnisse und liefert sofort verwertbare Ergebnisse. In großen Codebasen ist der Unterschied dramatisch.
 
 ### Installation
 
@@ -401,7 +401,7 @@ rg --files-without-match "Copyright"
 rg "config" --pretty | bat
 ```
 
-`ripgrep ist auch die Standard-Such-Engine für fzf-Integrationen und viele VS-Code-Extensions – es lohnt sich also doppelt.
+`ripgrep` ist auch die Standard-Such-Engine für fzf-Integrationen und viele VS-Code-Extensions – es lohnt sich also doppelt.
 
 ### Website des Entwicklers
 
@@ -496,7 +496,7 @@ tasks:
 
 ### Das Terminal verdient bessere Werkzeuge
 
-Diese zehn Tools sind kein Luxus – sie sind professionelle Grundausstattung für jeden, der ernsthaft mit Linux oder macOS arbeitet. Die Zeit, die man durch effizientere Werkzeuge gewinnt, summiert sich schnell auf Stunden pro Woche. Und mal ehrlich: Wenn ein modernes Terminal-Tool kostenlos ist, in 30 Sekunden installiert werden kann und die tägliche Arbeit spürbar angenehmer macht, gibt es keinen vernünftigen Grund, beim alten Status quo zu bleiben.
+Diese zehn Tools sind kein Luxus, sie sind professionelle Grundausstattung für jeden, der ernsthaft mit Linux oder macOS arbeitet. Die Zeit, die man durch effizientere Werkzeuge gewinnt, summiert sich schnell auf Stunden pro Woche. Und mal ehrlich, wenn ein modernes Terminal-Tool kostenlos ist, in 30 Sekunden installiert werden kann und die tägliche Arbeit spürbar angenehmer macht, gibt es keinen vernünftigen Grund, beim alten Status quo zu bleiben.
 
 Meine Empfehlung, fang mit htop, bat und ripgrep an, wenn du noch keine CLI-Tool-Erfahrung hast. Diese drei haben die steilste Lernkurve nach oben, also den sofortigen Mehrwert ohne große Einarbeitung. Der Rest kommt mit der Zeit.
 
