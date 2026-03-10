@@ -7,15 +7,18 @@ image:
   path: https://picsur.kngstn.eu/i/fb97649c-0c6f-4312-b100-a93cb5619201.png
 ---
 
-Mal ehrlich, jeder der sich mit DevOps auseinandersetzen möchte, kommt an einer Linux Konsole / Terminal nicht vorbei. Tatsächlich wird Linux know-how als eine der grundlegend benötigten Kernkompetenzen aufgeführt. Wer jetzt aber auch noch mit den klassischen Kommandos wie `top`, `cat` und `find` arbeiten soll, sollte jetzt weiter lesen und sich meine smarteren Alternativen anschauen.
+Jeder der sich mit DevOps auseinandersetzen möchte, kommt an einer Linux Konsole / Terminal nicht vorbei. Tatsächlich wird Linux know-how überall als eine der grundlegend benötigten Kernkompetenzen im zusammenhang mit DevOps aufgeführt. Wer jetzt aber auch noch mit den klassischen Kommandos wie `top`, `cat` und `find` arbeitet, sollte jetzt weiter lesen und sich meine smarteren Alternativen anschauen.
 
 Das Terminal ist nach wie vor das mächtigste Werkzeug in der Toolbox eines jeden IT-Profis aber nur, wenn man es auch vernünftig ausstattet. Die gute Nachricht dabei ist, das die Open-Source-Community in den letzten Jahren eine beeindruckende Anzahl moderner CLI-Tools hervorgebracht hat, die alte Unix-Klassiker nicht nur ersetzen, sondern regelrecht alt aussehen lassen.
 
-In diesem Artikel stelle ich euch meine persönlichen Top 10 vor. Tools, die ich auf jedem System installiere, bevor ich ernsthaft anfange zu arbeiten. Ob Entwickler, DevOps-Engineer oder Systemadministrator, diese Liste ist für alle relevant, die das Terminal (auch unter macOS) täglich nutzen und dabei effizienter sein wollen.
+In diesem Artikel stelle ich mal meine persönliche Top 10 Tools vor. Tools, die ich auf jedem System installiere, bevor ich ernsthaft anfange zu arbeiten. Ob Entwickler, DevOps-Engineer oder Systemadministrator, diese Liste ist für alle relevant, die das Terminal (auch unter macOS) täglich nutzen und dabei effizienter sein wollen.
+
+> **Kleiner Hinweis:** Alle Tools funktionieren auch auf macOS und werden mit Homebrew installiert. Wer das noch nicht auf seinem Mac hat, sollte meinen [Artikel](https://thomas-krampe.com/posts/homebrew/) dazu lesen.
+{: .prompt-info }
 
 ## Die Qual der Wahl - Warum gerade diese 10
 
-Kriterien für diese Liste waren einfach. Das Tool muss einen echten Mehrwert gegenüber dem Standard-Pendant bieten, stabil und aktiv gepflegt sein, auf Linux (in diesem Artikel Ubuntu) **und** macOS funktionieren und sich in realen Produktionsumgebungen bewährt haben. Kein akademisches Gedöns, sondern echte Tools die das Leben erleichtern.
+Meine Kriterien für diese Liste waren einfach. Das Tool muss einen echten Mehrwert gegenüber dem Standard-Pendant bieten, stabil und aktiv gepflegt sein, auf Linux (in diesem Artikel speziell Ubuntu) **und** macOS funktionieren und sich in realen Produktionsumgebungen bewährt haben. Kein akademisches Gedöns, sondern echte Tools die das Leben erleichtern.
 
 Los geht's.
 
@@ -23,13 +26,13 @@ Los geht's.
 
 ### Was macht das Tool?
 
-`htop` ist ein interaktiver Prozess-Viewer und die modernere Alternative zum uralten `top`. Es zeigt CPU-, RAM- und Swap-Auslastung in Echtzeit, erlaubt das direkte Beenden von Prozessen per Tastendruck und bietet eine farbkodierte, übersichtliche Darstellung,  alles direkt im Terminal. Wer mag, kann aber auch die etwas modernere Variante `btop` verwenden.
+`htop` ist ein interaktiver Prozess-Viewer und die modernere Alternative zum uralten `top`. Es zeigt CPU-, RAM- und Swap-Auslastung in Echtzeit, erlaubt das direkte Beenden von Prozessen per Tastendruck und bietet eine farbkodierte, übersichtliche Darstellung,  alles direkt im Terminal. Wer mag, kann sich aber auch die etwas modernere Variante `btop` mal anschauen.
 
 ![htop][1]
 
 ### Warum unverzichtbar?
 
-Weil `top` aus einer Zeit stammt, in der Bildschirme noch in Zeichen gemessen wurden und UX ein Fremdwort war. `htop` ist das, was `top` immer hätte sein sollen - sofort verständlich, navigierbar und tatsächlich nützlich. Wer zum ersten Mal auf einem neuen Server landet, öffnet `htop` – Punkt.
+Weil `top` aus einer Zeit stammt, in der Bildschirme noch in Zeichen gemessen wurden und UX ein Fremdwort war. `htop` ist das, was `top` immer hätte sein sollen, sofort verständlich, navigierbar und tatsächlich nützlich. Wer zum ersten Mal auf einem neuen Server landet, öffnet `htop` und schaut was alles läuft.
 
 ### Installation
 
@@ -66,7 +69,7 @@ Glances ist ein systemübergreifendes Monitoring-Tool, das auf einen Blick alles
 
 ### Warum unverzichtbar?
 
-Weil du mit einem einzigen Befehl einen vollständigen Systemüberblick bekommst – inklusive Docker. Besonders stark: Glances lässt sich im Client-Server-Modus betreiben, sodass du mehrere Systeme remote überwachen kannst, ohne ein vollständiges Monitoring-System aufsetzen zu müssen. Für schnelle Diagnosen auf Produktionssystemen Gold wert.
+Weil du mit einem einzigen Befehl einen vollständigen Systemüberblick bekommst, inklusive Docker (was ich am nützlichsten finde). Glances lässt sich auch im Client-Server-Modus betreiben, um mehrere Systeme remote zu überwachen, ohne gleich ein vollständiges Monitoring-System aufsetzen zu müssen. Für schnelle Diagnosen auf Produktionssystemen Gold wert, braucht aber auch etwas mehr an Ressourcen.
 
 ### Installation
 
@@ -90,7 +93,7 @@ brew install glances
 glances -w
 ```
 
-Startet Glances als Webserver auf Port 61208 – perfekt für Remote-Monitoring über den Browser. Mit glances --export influxdb lässt es sich sogar direkt in eine InfluxDB + Grafana-Pipeline integrieren.
+Startet Glances als Webserver auf Port 61208, perfekt für Remote-Monitoring über den Browser. Mit `glances --export influxdb` lässt es sich sogar direkt in eine InfluxDB + Grafana-Pipeline integrieren.
 
 ### Website des Entwicklers
 
@@ -101,7 +104,7 @@ Startet Glances als Webserver auf Port 61208 – perfekt für Remote-Monitoring 
 
 ### Was macht das Tool?
 
-`eza` ist ein moderner Ersatz für den allbekannten ls-Befehl. Es bietet Farbhervorhebungen, Git-Integration (zeigt direkt den Status von Dateien im Repository), Icons, Baumansicht und eine deutlich lesbarere Ausgabe, alles out of the box.
+`eza` ist ein moderner Ersatz für den allbekannten `ls` Kommandos. Es bietet Farbhervorhebungen, Git-Integration (zeigt direkt den Status von Dateien im Repository), Icons, Baumansicht und eine deutlich lesbarere Ausgabe und das alles "out-of-the-box".
 
 ![eza][3]
 
@@ -135,24 +138,24 @@ alias ll='eza -la --icons --git'
 alias lt='eza --tree --icons --level=2'
 ```
 
-Nach einem `source ~/.zshrc` habt ihr `ls` dauerhaft aufgewertet, ohne euch umgewöhnen zu müssen.
+Nach einem `source ~/.zshrc` ist `ls` dauerhaft aufgewertet, ohne große Umgewöhnung.
 
 ### Website des Entwicklers
 
-- [eza.rocks](https://eza.rocks/) 
+- [eza.rocks](https://eza.rocks/)
 - [eza auf GitHub](https://github.com/eza-community/eza)
 
 ## 4. ncdu – Festplattenanalyse ohne Schmerzen
 
 ### Was macht das Tool?
 
-`ncdu` (NCurses Disk Usage) ist eine interaktive Alternative zu du. Es analysiert den Speicherverbrauch eines Verzeichnisses und zeigt das Ergebnis in einer navigierbaren Listenansicht an – sortiert nach Größe, mit der Möglichkeit, Verzeichnisse direkt zu löschen.
+`ncdu` (NCurses Disk Usage) ist eine interaktive Alternative zu `du`. Es analysiert den Speicherverbrauch eines Verzeichnisses und zeigt das Ergebnis in einer navigierbaren Listenansicht an, sortiert nach Größe  und mit der Möglichkeit, Verzeichnisse direkt zu löschen.
 
 ![ncdu][4]
 
 ### Warum unverzichtbar?
 
-Weil `du -sh /*` zwar gut funktioniert, aber dann kommt der Output und man weiß trotzdem nicht sofort, wo der Speicherplatz geblieben ist. ncdu zeigt es auf Anhieb, lässt sich durch die Verzeichnisstruktur navigieren und spart bei der Fehlersuche ("Wer hat /var/log vollgeschrieben?") enorm Zeit.
+Weil `du -sh /*` zwar gut funktioniert, aber beim Output weiß trotzdem nicht sofort, wo der Speicherplatz geblieben ist. `ncdu` zeigt es auf Anhieb, lässt sich durch die Verzeichnisstruktur navigieren und spart Zeit bei der Fehlersuche (z.B. "Wer hat /var/log vollgeschrieben?").
 
 ### Installation
 
@@ -171,17 +174,17 @@ brew install ncdu
 ### Pro-Tipp
 
 `ncdu /`
-Analysiert das gesamte Dateisystem. Mit `d` kann man Verzeichnisse oder Dateien direkt aus ncdu heraus löschen, natürlich mit Bestätigungsdialog. Auf Produktionssystemen bitte mit Bedacht einsetzen.
+Analysiert das gesamte Dateisystem. Mit `d` kann man Verzeichnisse oder Dateien direkt aus `ncdu` heraus löschen, natürlich mit Bestätigungsdialog. Auf Produktionssystemen bitte mit Bedacht einsetzen.
 
 ### Website des Entwicklers
-- [dev.yorhel.nl/ncdu](https://dev.yorhel.nl/ncdu)
+
 - [ncdu](https://code.blicky.net/yorhel/ncdu)
 
 ## 5. bat – cat mit Superkräften
 
 ### Was macht das Tool?
 
-`bat` ist ein cat-Ersatz mit Syntax-Highlighting, Zeilennummern, Git-Integration,  automatischer Paginierung und mein absolutes "must-have". Es unterstützt hunderte von Programmiersprachen und Konfigurationsformaten direkt out of the box.
+`bat` ist ein `cat`-Ersatz mit Syntax-Highlighting, Zeilennummern, Git-Integration,  automatischer Paginierung und mein absolutes "must-have" auf jedem System (gibt es übrigens auch für Windows). Es unterstützt hunderte von Programmiersprachen und Konfigurationsformaten direkt out of the box.
 
 ![bat][5]
 
@@ -228,7 +231,7 @@ Themes können mit `bat --list-themes` angezeigt und mit `--theme=TwoDark` geset
 
 ### Was macht das Tool?
 
-`gping` ist ein Ping-Tool mit integrierter Echtzeit-Graphendarstellung direkt im Terminal. Man kann mehrere Hosts gleichzeitig pingen und deren Latenz als ASCII-Graph visualisieren – farblich getrennt und in Echtzeit.
+`gping` ist ein Ping-Tool mit integrierter Echtzeit-Graphendarstellung direkt im Terminal. Man kann mehrere Hosts gleichzeitig pingen und deren Latenz als ASCII-Graph visualisieren, farblich getrennt und in Echtzeit.
 
 ![gping][6]
 
@@ -274,7 +277,7 @@ Vergleicht vier Hosts gleichzeitig in Echtzeit. Perfekt um zu sehen, ob ein Late
 
 ### Warum unverzichtbar?
 
-Weil die Welt aus JSON und YAML besteht – API-Antworten, Kubernetes-Manifeste, CI/CD-Pipelines, Docker Compose Files. Wer diese Daten noch mit grep und sed bearbeitet, hat entweder sehr viel Geduld oder sehr wenig Selbstachtung. jq und yq machen strukturierte Datenverarbeitung in der Shell zu einem Vergnügen.
+Weil die Welt heute aus JSON und YAML besteht (API-Antworten, Kubernetes-Manifeste, CI/CD-Pipelines, Docker Compose Files). Wer diese Daten noch mit `grep` und `sed` bearbeitet, hat entweder sehr viel Geduld oder sehr wenig Selbstachtung. `jq` und `yq` machen strukturierte Datenverarbeitung in der Shell zu einem Vergnügen.
 
 ### Installation
 
@@ -328,7 +331,7 @@ yq e '.spec.replicas = 3' deployment.yaml
 
 ### Warum unverzichtbar?
 
-Weil `docker ps -a | grep ...` irgendwann aufhört, Spaß zu machen. `lazydocker` gibt einen sofortigen Überblick über den gesamten Docker-Zustand eines Systems, ohne dass man sich durch zehn verschiedene Befehle arbeiten muss. Besonders auf Systemen mit vielen Containern ist das ein echter Zeitsparer Wer Docker nutzt, weiß was ich meine.
+Weil `docker ps -a | grep ...` irgendwann aufhört, Spaß zu machen. `lazydocker` gibt einen sofortigen Überblick über den gesamten Docker-Zustand eines Systems, ohne dass man sich durch zehn verschiedene Befehle arbeiten muss. Besonders auf Systemen mit vielen Containern ist das ein echter Zeitsparer. Wer Docker nutzt, weiß was ich meine.
 
 ### Installation
 
@@ -365,11 +368,11 @@ Mit `e` auf einem Container öffnet man direkt eine Shell-Session, kein `docker 
 
 ### Was macht das Tool?
 
-ripgrep (kurz: `rg`) ist ein extrem schnelles Such-Tool, das rekursiv in Dateien nach Mustern sucht. Es ist deutlich schneller als grep, respektiert `.gitignore`-Dateien automatisch, unterstützt reguläre Ausdrücke und zeigt Ergebnisse farblich hervorgehoben an.
+ripgrep (kurz: `rg`) ist ein extrem schnelles Such-Tool, das rekursiv in Dateien nach Mustern sucht. Es ist deutlich schneller als `grep`, respektiert `.gitignore`-Dateien automatisch, unterstützt reguläre Ausdrücke und zeigt Ergebnisse farblich hervorgehoben an.
 
 ### Warum unverzichtbar?
 
-Weil `grep -r "suchbegriff" .` langsam ist und die Ausgabe schwer lesbar ist. `ripgrep` macht dasselbe in einem Bruchteil der Zeit, ignoriert automatisch irrelevante Verzeichnisse und liefert sofort verwertbare Ergebnisse. In großen Codebasen ist der Unterschied dramatisch.
+Weil `grep -r "suchbegriff" .` langsam und die Ausgabe schwer lesbar ist. `ripgrep` macht das gleiche in einem Bruchteil der Zeit, ignoriert automatisch irrelevante Verzeichnisse und liefert sofort verwertbare Ergebnisse. In großen Codebasen ist der Unterschied dramatisch.
 
 ### Installation
 
@@ -401,7 +404,7 @@ rg --files-without-match "Copyright"
 rg "config" --pretty | bat
 ```
 
-`ripgrep` ist auch die Standard-Such-Engine für fzf-Integrationen und viele VS-Code-Extensions – es lohnt sich also doppelt.
+`ripgrep` ist auch die Standard-Such-Engine für viele VS-Code-Extensions, es lohnt sich also doppelt.
 
 ### Website des Entwicklers
 
@@ -417,7 +420,7 @@ rg "config" --pretty | bat
 
 ### Warum unverzichtbar?
 
-Weil `df -h` zwar funktioniert, aber die Ausgabe inklusive aller /snap-Loop-Devices und tmpfs-Einträge unleserlich ist. duf filtert automatisch sinnvoll, zeigt relevante Informationen sofort und sieht dabei noch gut aus. Kleines Tool, großer Effekt.
+Weil `df -h` zwar funktioniert, aber die Ausgabe inklusive aller /snap-Loop-Devices und tmpfs-Einträge unleserlich ist. `duf` filtert automatisch sinnvoll, zeigt relevante Informationen sofort und sieht dabei noch gut aus. Kleines Tool, aber großer Effekt.
 
 ### Installation
 
@@ -467,7 +470,7 @@ cargo install gping
 brew install htop glances eza ncdu bat gping jq yq ripgrep duf lazydocker
 ```
 
-Natürlich geht das auch mit Ansible in einem Playbook:
+Da ich ja in der Einleitung bereits DevOps erwähnt habe, geht die Installation natürlich auch mit Ansible in einem Playbook:
 
 ```yaml
 tasks:
@@ -496,11 +499,11 @@ tasks:
 
 ### Das Terminal verdient bessere Werkzeuge
 
-Diese zehn Tools sind kein Luxus, sie sind professionelle Grundausstattung für jeden, der ernsthaft mit Linux oder macOS arbeitet. Die Zeit, die man durch effizientere Werkzeuge gewinnt, summiert sich schnell auf Stunden pro Woche. Und mal ehrlich, wenn ein modernes Terminal-Tool kostenlos ist, in 30 Sekunden installiert werden kann und die tägliche Arbeit spürbar angenehmer macht, gibt es keinen vernünftigen Grund, beim alten Status quo zu bleiben.
+Diese zehn Tools sind kein Luxus, sie sind professionelle Grundausstattung für jeden, der ernsthaft mit dem Terminal auf Linux oder macOS arbeitet. Die Zeit, die man durch effizientere Werkzeuge gewinnt, summiert sich schnell auf Stunden pro Woche. Und mal ehrlich, wenn ein modernes Terminal-Tool kostenlos ist, in 30 Sekunden installiert werden kann und die tägliche Arbeit spürbar angenehmer macht, gibt es keinen vernünftigen Grund, beim alten Status quo zu bleiben.
 
-Meine Empfehlung, fang mit htop, bat und ripgrep an, wenn du noch keine CLI-Tool-Erfahrung hast. Diese drei haben die steilste Lernkurve nach oben, also den sofortigen Mehrwert ohne große Einarbeitung. Der Rest kommt mit der Zeit.
+Meine Empfehlung, anfangen mit `htop`, `bat` und `ripgrep`, wenn noch keine CLI-Tool-Erfahrung vorhanden ist. Diese drei Tols haben die steilste Lernkurve nach oben, also den sofortigen Mehrwert ohne große Einarbeitung. Der Rest kommt mit der Zeit und dem Bedürfniss.
 
-Was fehlt auf deiner Liste? Hast du Tools, die für dich absolut unverzichtbar sind und hier nicht auftauchen? Schreib es in die Kommentare, ich bin gespannt, was die Community noch so im Gepäck hat.
+Was fehlt auf dieser Liste? Habt ihr noch weitere Tools, die absolut unverzichtbar sind und hier nicht auftauchen? Schreibt es in die Kommentare, ich bin gespannt, was die Community noch so im Gepäck hat.
 
 [1]: https://picsur.kngstn.eu/i/f1b3c197-e3bd-4788-b55c-7cdfeb4d38c5.png
 [2]: https://picsur.kngstn.eu/i/29b24a67-a500-4b0f-aa19-96741e36326f.png
