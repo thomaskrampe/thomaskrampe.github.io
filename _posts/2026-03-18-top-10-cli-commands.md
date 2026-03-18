@@ -166,7 +166,7 @@ Macht `ps`-Ausgaben lesbar, auch ohne Excel.
 
 ## Meine Top-Empfehlung
 
-Beginnt mit `pushd/popd` und `watch`, die ändern eurenn Workflow sofort. Mit diesen 10 CLI-Kommandos spare ich damit in Projekten Stunden.
+Beginnt mit `pushd/popd` und `watch`, die ändern euren Workflow sofort. Mit diesen 10 CLI-Kommandos spare ich in Projekten Stunden.
 
 ## Bonustip
 
@@ -185,7 +185,7 @@ pip3 install tldr
 tldr --update
 ```
 
-**macOS (Apple Silicone oder Intel)**
+**macOS (Apple Silicon/Intel)**
 
 ```bash
 brew install tldr
