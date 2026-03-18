@@ -170,7 +170,7 @@ Beginnt mit `pushd/popd` und `watch`, die ändern eurenn Workflow sofort. Mit di
 
 ## Bonustip
 
-Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann kurze Beschreibungungen und Beispiele statt langer man-page.
+Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann kurze Beschreibungungen und Beispiele statt langer man-page. Einfach `tldr <command>` verwenden.
 
 **Ubuntu**
 
