@@ -1,7 +1,7 @@
 ---
 title: Top 10 CLI-Kommandos für Linux und macOS
 date: 2026-03-18 06:55:00 +/-0000
-categories: [macOS, Tools, Linux]
+categories: [macOS, Linux, Tools]
 tags: [homebrew, ubuntu, cli, how-to] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/d954a7a9-418d-44d4-9123-1b6d8f0fd556.png
@@ -170,15 +170,15 @@ Beginnt mit `pushd/popd` und `watch`, die ändern euren Workflow sofort. Mit die
 
 ## Bonustip
 
-Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann kurze Beschreibungungen und Beispiele statt langer man-page. Einfach `tldr <command>` verwenden.
+Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann kurze Beschreibungungen und Beispiele statt langer und unübersichtlicher man-pages. Einfach `tldr <command>` statt `man <command>`verwenden.
 
 **Ubuntu**
 
 ```bash
 sudo apt install tldr
-# bei Problemen mit apt geht auch snap oder pip
+# bei Problemen mit apt geht auch snap 
 sudo snap install tldr
-# oder
+# oder pip
 pip3 install tldr
 
 # Zum Schluss noch den Offline-Cache herunterladen, dann geht es auch ohne Internet
