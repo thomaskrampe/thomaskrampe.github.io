@@ -140,6 +140,21 @@ alias lt='eza --tree --icons --level=2'
 
 Nach einem `source ~/.zshrc` ist `ls` dauerhaft aufgewertet, ohne große Umgewöhnung.
 
+**Kleiner Nachtrag:**
+
+Ich verwende `eza` auch, um schnell den Git-Status zu sehen. `eza` verwendet dabei folgende Buchstaben (Großbuchstaben für staged, Kleinbuchstaben für unstaged, je nach Build mit Git-Support):
+
+```
+- (oder  ): Nicht modifiziert
+N/n: Neue Datei
+M/m: Modifiziert (geändert)
+D/d: Gelöscht
+R/r: Umbenannt 
+T/t: Typ geändert 
+I/i: Ignoriert
+U/u: Konflikt (unmerged)
+```
+
 ### Website des Entwicklers
 
 - [eza.rocks](https://eza.rocks/)
