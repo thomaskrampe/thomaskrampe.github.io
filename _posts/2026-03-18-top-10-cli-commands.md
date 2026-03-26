@@ -7,14 +7,14 @@ image:
   path: https://picsur.kngstn.eu/i/d954a7a9-418d-44d4-9123-1b6d8f0fd556.png
 ---
 
-Nachdem ich bereits meine [10 besten CLI Tools](https://thomas-krampe.com/posts/top-10-cli-tools/) vorgestellt habe, möchte ich natürlich nicht den Eindruck erwecken, dass alles im OS bereits enthaltene nichts taugt und immer etwas nach installiert werden muss. Dem ist natürlich nicht so und das möchte ich mit diesem Artikel, mit den 10 am meisten unterschätzten CLI-Kommandos für Linux und macOS auch zeigen.
+Nachdem ich bereits meine [10 besten CLI Tools](https://thomas-krampe.com/posts/top-10-cli-tools/) vorgestellt habe, möchte ich nicht den Eindruck erwecken, dass alle Kommandos die im OS bereits enthalten sind, nichts taugen.
 
-Stellen wir uns kurz vor, wir sitzen vor dem Terminal, jonglieren mit Verzeichnissen, Logs und Skripten und greifen doch immer wieder zu den üblichen Verdächtigen wie `ls`, `cd` oder `grep`. Dabei stecken in Linux und macOS echte Schätze, die bereits vorinstalliert sind und uns das Leben erleichtern. Diese 10 Kommandos sind deshalb unterschätzt, weil sie nicht sehr bekannt sind, aber in der Praxis wirklich Zeit sparen.
+Stellen wir uns doch kurz vor, wir sitzen vor dem Terminal, jonglieren mit Verzeichnissen, Logs und Skripten und greifen doch immer wieder zu den üblichen Verdächtigen wie `ls`, `cd` oder `grep` und denken uns, da hat doch so ein Typ einen Artikel geschrieben, was ich alles noch installieren muss. Dabei stecken in Linux und macOS auch ohne meinen Artikel bereits viele unterschätzte Kommandos, die bereits vorinstalliert sind und uns das Leben massiv erleichtern können. Diese 10 Kommandos werden deshalb unterschätzt, weil sie nicht sehr bekannt sind, aber in der Praxis wirklich Zeit sparen. Zeit also, ides mal kennenzulernen.
 
 > **Wichtig:** Alles läuft "out-of-the-box" auf macOS und gängigen Linux-Distributionen (Ubuntu, Fedora etc.), keine Paketmanager nötig (ok, mit einer kleinen Ausnahme, aber dazu mehr bei Nummer 4).
 {: .prompt-info }
 
-## 1. `sudo !!` – Das "Mist, sudo vergessen!" Kommando
+## 1. Darf ich vorstellen, `sudo !!` – Das "Mist, sudo vergessen!" Kommando
 
 Habt ihr schon mal z.B. ein langes Kommando ohne sudo ausgeführt und musstet danach alles noch mal tippen oder erst umständlich den Cursor bewegen? `sudo !!` wiederholt den letzten Befehl einfach mit `sudo` davor.
 
@@ -27,9 +27,9 @@ $ sudo !!
 sudo apt update
 ```
 
-Spart mit Sicherheit 5 Sekunden pro Tag, die sich summieren. Funktioniert in Bash/Zsh.
+Spart mit Sicherheit 5 Sekunden pro Tag, die sich summieren. Funktioniert in Bash und Zsh.
 
-## 2. `pushd` und `popd` – Verzeichnis-Stack für Multitasking
+## 2. Das Dream-Team `pushd` und `popd` – Verzeichnis-Stack für Multitasking
 
 Vergesst `cd` Marathons zwischen Projekten. `pushd` legt Verzeichnisse auf einen Stack, `popd` holt sie ab. `dirs -v` zeigt den Stack an.  
 
@@ -170,7 +170,7 @@ Beginnt mit `pushd/popd` und `watch`, die ändern euren Workflow sofort. Mit die
 
 ## Bonustip
 
-Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann kurze Beschreibungungen und Beispiele statt langer und unübersichtlicher man-pages. Einfach `tldr <command>` statt `man <command>`verwenden.
+Für jedes Kommando könnt ihr euch natürlich die entsprechende `man` Page mit `man <command>` anschauen. Aber ehrlich, die sind teilweise ziemlich lang und unübersichtlich. Hier könnt ihr aber einfach `tldr` (steht für too long; didn't read) nachinstallieren. Ihr bekommt dann nur eine kurze Beschreibungungen und Beispiele statt langer und unübersichtlicher man-pages. Einfach `tldr <command>` statt `man <command>`verwenden.
 
 **Ubuntu**
 
