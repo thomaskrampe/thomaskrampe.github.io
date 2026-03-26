@@ -9,7 +9,7 @@ image:
 
 Nachdem ich bereits meine [10 besten CLI Tools](https://thomas-krampe.com/posts/top-10-cli-tools/) vorgestellt habe, möchte ich nicht den Eindruck erwecken, dass alle Kommandos die im OS bereits enthalten sind, nichts taugen.
 
-Stellen wir uns doch kurz vor, wir sitzen vor dem Terminal, jonglieren mit Verzeichnissen, Logs und Skripten und greifen doch immer wieder zu den üblichen Verdächtigen wie `ls`, `cd` oder `grep` und denken uns, da hat doch so ein Typ einen Artikel geschrieben, was ich alles noch installieren muss. Dabei stecken in Linux und macOS auch ohne meinen Artikel bereits viele unterschätzte Kommandos, die bereits vorinstalliert sind und uns das Leben massiv erleichtern können. Diese 10 Kommandos werden deshalb unterschätzt, weil sie nicht sehr bekannt sind, aber in der Praxis wirklich Zeit sparen. Zeit also, ides mal kennenzulernen.
+Stellen wir uns doch kurz vor, wir sitzen vor dem Terminal, jonglieren mit Verzeichnissen, Logs und Skripten und greifen doch immer wieder zu den üblichen Verdächtigen wie `ls`, `cd` oder `grep` und denken uns, da hat doch so ein Typ einen Artikel geschrieben, was ich alles noch installieren muss. Dabei stecken in Linux und macOS auch ohne meinen Artikel bereits viele unterschätzte Kommandos, die bereits vorinstalliert sind und uns das Leben massiv erleichtern können. Diese 10 Kommandos werden deshalb unterschätzt, weil sie nicht sehr bekannt sind, aber in der Praxis wirklich Zeit sparen. Zeit also, diese mal kennenzulernen.
 
 > **Wichtig:** Alles läuft "out-of-the-box" auf macOS und gängigen Linux-Distributionen (Ubuntu, Fedora etc.), keine Paketmanager nötig (ok, mit einer kleinen Ausnahme, aber dazu mehr bei Nummer 4).
 {: .prompt-info }
