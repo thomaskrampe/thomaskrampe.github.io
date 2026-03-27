@@ -4,7 +4,7 @@ date: 2026-03-27 09:31:00 +/-0000
 categories: [Strategie, Fachkräftemangel]
 tags: [workplace] # TAG names should always be lowercase
 image:
-  path: https://picsur.myctx.net/i/a2436ac9-92fe-4d48-8748-899dea1032f7.png
+  path: https://picsur.kngstn.eu/i/ec46cf0c-124c-45da-bac0-5c2f99689243.png
 ---
 
 ## Agentic AI für Desktop Workflows
