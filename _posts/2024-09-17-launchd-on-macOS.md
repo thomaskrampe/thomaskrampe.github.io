@@ -1,8 +1,8 @@
 ---
 title: Verwenden von launchd zur Ausführung von Skripten in macOS
 date: 2024-09-17 12:00:00 +/-0000
-categories: [OS, macOS, Tools]
-tags: [how-to, automation] # TAG names should always be lowercase
+categories: [Tools]
+tags: [how-to, automation, macos] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/6f3193cc-31fd-49af-bb0b-52e7f030dc32.png
 ---
