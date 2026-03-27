@@ -1,10 +1,10 @@
 ---
 title: Anthropic Cowork der KI-Agent für den Desktop
 date: 2026-03-27 09:31:00 +/-0000
-categories: [Strategie, Arbeitsplatz, KI]
-tags: [workplace,ki,agentic,] # TAG names should always be lowercase
+categories: [Strategie, Fachkräftemangel]
+tags: [workplace] # TAG names should always be lowercase
 image:
-  path: https://picsur.kngstn.eu/i/ec46cf0c-124c-45da-bac0-5c2f99689243.png
+  path: https://picsur.myctx.net/i/a2436ac9-92fe-4d48-8748-899dea1032f7.png
 ---
 
 ## Agentic AI für Desktop Workflows
@@ -13,7 +13,7 @@ image:
 
 Bedenken? Ja, ich auch auf den ersten Blick, aber dazu komme ich noch.
 
-Ich habe mir Anthropic Cowork mal mit einem ersten Blick angeschaut und versucht, eine Bewertung der Architektur, Implementierung und Implikationen für Entscheider zu erstellen. Da auch Microsoft in der M365 E7 Lizenz mit dem Feature [Copilot Cowork](https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/) erscheinen und das im Wesentlichen auf Anthropic Cowork basieren wird, habe ich auch etwas dazu geschrieben.
+Ich habe mir Anthropic Cowork mal angeschaut und versucht, eine Bewertung der Architektur, Implementierung und Implikationen für Entscheider zu erstellen. Da auch Microsoft in der M365 E7 Lizenz mit dem Feature [Copilot Cowork](https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/) erscheinen und das im Wesentlichen auf Anthropic Cowork basieren wird, habe ich auch etwas dazu geschrieben.
 
 ## Funktionale Architektur
 
@@ -59,7 +59,7 @@ Anthropic Cowork ist ja das, worauf Microsoft Copilot Cowork aufbaut. Es gibt ab
 | **Monitoring**     | Lokal (Logs), OpenTelemetry optional                      | Work IQ + Enterprise Audit Logs          |
 | **Preis**          | Cowork ist Teil der kostenpflichtigen Claude-Abonnements. | M365-Abo (nicht spezifiziert)            |
 
-Kurz gesagt, Anthropic Cowork eignet sich für lokale, unstrukturierte Daten, wogegen Copilot Cowork eher für cloudbasierte Prozesse in Microsoft 365 Umgebungen ist.
+Kurz gesagt, Anthropic Cowork eignet sich für lokale, unstrukturierte Daten, wogegen Copilot Cowork eher für cloudbasierte Prozesse in Microsoft 365 Umgebungen gedacht ist.
 
 ## Risiken und Vorteile für Entscheider
 
