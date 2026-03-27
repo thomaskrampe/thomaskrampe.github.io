@@ -1,7 +1,7 @@
 ---
 title: OpenClaw Agentic Workplace 
 date: 2026-01-30 08:03:00 +/-0000
-categories: [Technologie, Tools, KI]
+categories: [Tools, KI]
 tags: [ki, agentic, security, openclaw] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/80200c66-92f6-4967-a733-c58335504516.png

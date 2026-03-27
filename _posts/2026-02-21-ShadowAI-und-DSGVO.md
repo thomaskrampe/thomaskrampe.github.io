@@ -1,8 +1,8 @@
 ---
 title: Shadow AI und DSGVO
 date: 2026-02-21 08:12:45 +/-0000
-categories: [Strategie, KI, Sicherheit, Governance]
-tags: [shadow ai, compliance, dsgvo, datenschutz] # TAG names should always be lowercase
+categories: [Strategie, KI, Sicherheit]
+tags: [shadowai, governance, compliance, dsgvo, datenschutz] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/1d567446-731c-47e5-87db-fcf3355f8341.png
 ---

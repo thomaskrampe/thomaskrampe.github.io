@@ -1,8 +1,8 @@
 ---
 title: Schluss mit dem Abo-Chaos
 date: 2026-02-16 21:32:12 +/-0000
-categories: [KI, Produktivität, Fachkräftemangel]
-tags: [ki,llm,workplace,security] # TAG names should always be lowercase
+categories: [Tools]
+tags: [ki,llm,workplace,security,agentic] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/0f95fd42-32ba-4aaa-a2f7-49dbf3034dd0.png
 ---

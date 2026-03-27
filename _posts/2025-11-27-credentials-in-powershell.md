@@ -1,7 +1,7 @@
 ---
 title: Sichere Automatisierung - Credentials in PowerShell verwalten
 date: 2025-11-27 11:35:00 +/-0000
-categories: [Automatisierung, Powershell, Sicherheit]
+categories: [Tools, Sicherheit]
 tags: [how-to, automation, powershell, microsoft] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/d3693219-1912-4fa4-8099-c223a1acb2f7.jpg

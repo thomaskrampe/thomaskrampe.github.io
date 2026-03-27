@@ -2,7 +2,7 @@
 title: Top 10 CLI-Kommandos für Linux und macOS
 date: 2026-03-18 06:55:00 +/-0000
 categories: [Tools]
-tags: [homebrew, ubuntu, cli, how-to, macos, linux] # TAG names should always be lowercase
+tags: [homebrew, linux, macos, cli, how-to] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/d954a7a9-418d-44d4-9123-1b6d8f0fd556.png
 ---

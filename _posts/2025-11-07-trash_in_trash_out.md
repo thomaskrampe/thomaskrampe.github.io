@@ -1,7 +1,7 @@
 ---
 title: Trash In, Trash Out – Das 80%-Problem Ihrer KI-Strategie
 date: 2025-11-07 09:00:00 +/-0000
-categories: [Strategie, KI, Datenklassifizierung]
+categories: [Strategie, KI]
 tags: [ki, daten, how-to, processes] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/514a494f-eb68-4ac7-b4c1-d4cdf7a2143d.png

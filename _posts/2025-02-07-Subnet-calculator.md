@@ -1,7 +1,7 @@
 ---
 title: Subnetrechner per API nutzen
 date: 2025-02-07 12:00:00 +/-0000
-categories: [Technologie, Tools]
+categories: [Tools]
 tags: [how-to, network] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/e0783825-bbf1-42d0-bc51-b2c8da9441f1.png
