@@ -1,7 +1,7 @@
 ---
 title: Microsoft CA Maintenance
 date: 2025-03-20 12:00:00 +/-0000
-categories: [Microsoft, Support]
+categories: [OS, Microsoft, Support]
 tags: [windows, pki, maintenance] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/b52ccd34-7682-43ce-b410-c5af77b4e260.png

@@ -1,7 +1,7 @@
 ---
 title: 10 CLI-Tools die auf keinem Unix/Linux-System fehlen sollten
 date: 2026-03-10 11:02:00 +/-0000
-categories: [macOS, Linux, Tools]
+categories: [OS, macOS, Linux, Tools]
 tags: [homebrew, ubuntu, cli, how-to ] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/fb97649c-0c6f-4312-b100-a93cb5619201.png
