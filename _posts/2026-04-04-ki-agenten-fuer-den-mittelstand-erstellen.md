@@ -61,7 +61,7 @@ Lassen Sie uns einmal Schritt-für-Schritt durch den Prozess der "Agent Erstellu
 
 ### Schritt 1 - Definieren Sie Ihren Usecase
 
-Bevor Sie eine Zeile Code oder einen Flow bauen, brauchen Sie zuerst mal etwas Klarheit. Was soll der Agent eigentlich machen? Ein typischer, gut konfigurierbarer Agent hat einen sehr fokussierten Job, etwa Kundensupport-Tickets triagieren, HR-Anfragen beantworten oder Verkaufsangebote vorbereiten, eben einen bereits existierenden Prozess, der bereits (manuell) gelebt wird. Ein Agent, der "alles machen soll" wird komplex, fehleranfällig und lässt sich nur sehr schwer kontrollieren.
+Bevor Sie eine Zeile Code oder einen Flow bauen, brauchen Sie zuerst mal etwas Klarheit. Was soll der Agent eigentlich machen? Ein typischer, gut konfigurierbarer Agent hat einen sehr fokussierten Job, etwa Kundensupport-Tickets triagieren, HR-Anfragen beantworten oder Verkaufsangebote vorbereiten, eben einen existierenden Prozess, der bereits (manuell) gelebt wird. Ein Agent, der "alles machen soll" wird komplex, fehleranfällig und lässt sich nur sehr schwer kontrollieren.
 
 Folgende Fragen können hier helfen:
 
@@ -77,14 +77,14 @@ Dieser Schritt dauert ca. 1-2 Tage und Sie sollten in dieser Phase auch einen 2�
 
 ### Schritt 2 - Erstellen des eigentlichen Agents in Copilot Studio
 
-Technisch gesehen brauchen wir für diesen Schritt nur ein entsprechendes Microsoft-Konto mit Zugriff auf Copilot Studio und Zugriff auf die in M365 gespeicherten Daten. Die Bedienung ist grafisch (Drag-and-Drop) und in natürtlicher Sprache, hier ist kein Code oder Programmierkentnisse nötig.
+Technisch gesehen brauchen wir für diesen Schritt nur ein entsprechendes Microsoft-Konto mit Zugriff auf Copilot Studio und Zugriff auf die in M365 gespeicherten Daten. Die Bedienung ist grafisch (Drag-and-Drop) und in natürlicher Sprache, hier ist kein Code oder Programmierkentnisse nötig. Allerdings ist etwas Erfahrung, wie ein Prompt für eine KI erstellt wird, durchaus von nutzen.
 
 - **Grundkonfiguration:** Geben Sie dem Agent einen aussagekräftigen Namen (z.B. „Support Ticket Triage Agent"), eine Beschreibung und die Anweisungen, wie er sich verhalten soll. Diese Anweisungen sind das "Gehirn" des Agenten. Ein schlechter Prompt führt zu schlechten Ergebnissen.
 
   - **Beispiel-Prompt:** *"Du bist ein freundlicher Support-Agent. Deine Aufgabe ist es, eingehende Kundenmails zu analysieren und zu klassifizieren. Fragen zu Rechnungen gehen an 'billing@company.de', technische Probleme an 'tech-support@company.de'. Bei Lob oder Komplimenten antworte persönlich und dankbar. Du darfst keine Rückerstattungen zusagen, nur vorschlagen. Du findest Lösungen immer zuerst in unserer Knowledge Base, bevor du um Eskalation fragst."*
 
 - **Wissen hinzufügen:** Der Agent braucht Zugang zu Ihren Daten. Das können SharePoint-Dokumente sein (Ihre Produkthandbücher, Policies, eine Knowledgebase), Excel-Listen (Kundenreferenzen, Preislisten) oder SQL-Datenbanken. Sie verbinden diese Quellen im Studio, und der Agent kann dann darauf zugreifen.
-  - ***Beispiel:** Sie laden ein FAQ-Dokument hoch und der Agent lernt daraus, die entsprechenden  Antworten zu geben.
+  - **Beispiel:** Sie laden ein FAQ-Dokument hoch und der Agent lernt daraus, die entsprechenden  Antworten zu geben.
 
 - **Aktionen konfigurieren:** Was darf der Agent tun? Sie können Power Automate-Flows verlinken, damit der Agent automatisch Outlook-Mails sendet, Tickets in ServiceNow erstellt oder CRM-Daten aktualisiert. Das ist die Brücke zwischen einem einfachen ChatBot und echter Geschäftslogik.
 
@@ -94,7 +94,7 @@ Dieser Schritt kann, je nach Art und Umfang des Agenten, auch so 1-3 Tage dauern
 
 ### Schritt 3 - Testen und Optimierung
 
-Ohne einen Test, ist der Agent lediglich eine Idee, das richtige testen ist ein kritischer Prozess. Wer schon mal bei einer Hotlien angerufen hat und in der Schleife eines Sprachcomputers der ersten Generation gefangen war, weiß was ich meine. Sie müssen den Agenten hier mit echten Szenarien testen am besten auch mit unbelasteten Testbenutzern. Typische Fehler können hier sein, dass der Agent nicht ausführlich genug oder aber auch viel zu ausführlich antwortet, die Kundenabsichten nicht richtig versteht oder einfach zu schnell eskaliert.
+Ohne einen Test, ist der Agent lediglich eine Idee. Das richtige testen ist somit ein kritischer Prozess in der Entwicklung von Agents. Wer schon mal bei einer Hotline angerufen hat und in der Schleife eines Sprachcomputers der ersten Generation gefangen war, weiß was ich meine. Sie müssen den Agenten hier mit echten Szenarien testen am besten auch mit unbelasteten Testbenutzern. Typische Fehler können hier sein, dass der Agent nicht ausführlich genug oder aber auch viel zu ausführlich antwortet, die Kundenabsichten nicht richtig versteht oder einfach zu schnell eskaliert.
 
 Copilot Studio bietet hierfür einen Bereich zum testen. Sie geben lediglich eine Test-Nachricht ein (z.B. „Mein Internet ist seit 2 Tagen weg") und sehen sofort, wie der Agent antwortet. Nun können Sie optimieren, bis die Antwortqualität des Agenten gut genug ist. Der ganze Vorgang dauert wieder ungefähr 3-5 Tage.
 
