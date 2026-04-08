@@ -19,9 +19,11 @@ Um Agenten zu bauen zu können, brauchen Sie zunächst Klarheit über Ihre Micro
 
 ### Status Quo von E3 und E5 im April 2026
 
-Microsoft 365 E3 kostet aktuell ca. 19 Euro pro Benutzer pro Monat und enthält grundlegende Office-Tools, Exchange Online und OneDrive. Ab Juli 2026 bekommen E3-Pläne zusätzlich Microsoft Defender for Office 365 P1 und Copilot Chat integriert, ohne dass der Preis wesentlich steigt. Für Sie bedeutet das, dass Sie bereits Copilot Chat für einfache Aufgaben nutzen können, etwa zum Zusammenfassen von E-Mails oder zur Erstellung von Texten. Allerdings sind wirkliche "Custom Agents" mit einer E3 Lizenz nur sehr begrenzt möglich. Hier brauchen Sie zusätzlich Copilot Studio Lizenzen als Add-on.
+Microsoft 365 E3 kostet aktuell 34,90 Euro pro Benutzer pro Monat (im Jahresabo mit Teams) und enthält grundlegende Office-Tools, Exchange Online und OneDrive. Ab Juli 2026 bekommen E3-Pläne zusätzlich Microsoft Defender for Office 365 P1 und Copilot Chat integriert, ohne dass der Preis wesentlich steigt. Für Sie bedeutet das, dass Sie bereits Copilot Chat für einfache Aufgaben nutzen können, etwa zum Zusammenfassen von E-Mails oder zur Erstellung von Texten. Allerdings sind wirkliche "Custom Agents" mit einer E3 Lizenz nur sehr begrenzt möglich. Hier brauchen Sie zusätzlich Copilot Studio Lizenzen als Add-on.
 
-Microsoft 365 E5 (mit derzeit ca. 31 Euro pro Benutzer im Monat) bietet mehr Sicherheit, fortgeschrittene Compliance-Tools und Copilot integriert. E5 Kunden haben damit eine bessere Basis für ihre Custom Agents, da die enthaltene Sicherheitsinfrastruktur robuster ist. Ab Juli 2026 bekommen E5-Pläne zusätzlich Intune-Module und weitere Defender-Funktionen, was für das Agent-Deployment maßgeblich ist, denn um den Überblick zu behalten, müssen Agents zentral verwaltet werden.
+Microsoft 365 E5 (mit derzeit 55,20 Euro pro Benutzer pro Monat mit Teams) bietet mehr Sicherheit, fortgeschrittene Compliance-Tools und Copilot integriert. E5 Kunden haben damit eine bessere Basis für ihre Custom Agents, da die enthaltene Sicherheitsinfrastruktur robuster ist. Ab Juli 2026 bekommen E5-Pläne zusätzlich Intune-Module und weitere Defender-Funktionen, was für das Agent-Deployment maßgeblich ist, denn um den Überblick zu behalten, müssen Agents zentral verwaltet werden.
+
+[Aktuelle Preise][7] finden Sie hier.
 
 ### Microsoft 365 E7 ab dem 1. Mai 2026
 
@@ -35,7 +37,7 @@ Die neue E7-Suite (99 USD/Monat = ca. 92 Euro, ohne MwSt.) ist ein echter Wendep
 
 ![Microsoft 365 E7 - The Frontier Suite](https://picsur.kngstn.eu/i/32004a89-3dcf-4887-b314-2a33c3499aa1.png)
 
-Für einen Mittelstand mit 200 Benutzern bedeutet das konkret: Statt E5 (31€) + Copilot (26€) + Copilot Studio (26€) zusammen ca. 83€ pro Benutzer/Monat zu zahlen, bekommen Sie die E7 Lizenz für 92€. Also lediglich 9€ Mehrkosten pro Benutzer im Monat. Das hört ich im ersten Moment zwar nach einem ganz klassischen Up-Selling an, Sie erhalten dafür aber die zentrale Agent-Governance inklusive. Das ist wirtschaftlich wesentlich attraktiver für Unternehmen, die produktiv mit KI werden wollen.
+Für einen Mittelstand mit 200 Benutzern bedeutet das konkret: Statt E5 (55€) + Copilot (26€) zusammen ca. 81€ pro Benutzer/Monat zu zahlen, bekommen Sie die E7 Lizenz für 92€. Also lediglich 11€ Mehrkosten pro Benutzer im Monat. Das hört ich im ersten Moment zwar nach einem ganz klassischen Up-Selling an, Sie erhalten dafür aber die zentrale Agent-Governance inklusive (Agent 365 allein kostet bereits ca. 14€ pro User pro Monat). Das ist wirtschaftlich wesentlich attraktiver für Unternehmen, die produktiv mit KI werden wollen.
 
 ## Was ist das alles
 
@@ -43,7 +45,7 @@ Für einen Mittelstand mit 200 Benutzern bedeutet das konkret: Statt E5 (31€) 
 
 Copilot Studio ist die Low-Code-Plattform von Microsoft, mit der Ihr IT-Team und Ihre Business-Power-User eigene Agenten bauen können. Es gibt im Wesentlichen zwei Varianten:
 
-- Die Standalone Copilot Studio Lizenz kostet ab 26€ pro Nutzer im Monat und kommt mit 25.000 Message Credits pro Monat (falls die per-User-Lizenz nicht genug ist, zahlen Sie extra Credits). Sie brauchen diese Lizenz, wenn Sie mit einer M365 E3 Lizenz Custom Agents bauen wollen oder wenn einzelne Power-User Agenten entwickeln sollen. Das ist sinnvoll für Unternehmen mit einer dedizierten Automation-Abteilung (z.B. 3–5 Personen).
+- Die Standalone Copilot Studio Lizenz kostet ab 26€ pro Nutzer im Monat und kommt mit 25.000 Message Credits pro Monat (falls die per-User-Lizenz nicht genug ist, zahlen Sie extra Credits zu 0,01€ pro Credit). Sie brauchen diese Lizenz, wenn Sie mit einer M365 E3 Lizenz Custom Agents bauen wollen oder wenn einzelne Power-User Agenten entwickeln sollen. Das ist sinnvoll für Unternehmen mit einer dedizierten Automation-Abteilung (z.B. 3–5 Personen).
 
   - **Alternativ:** Die Copilot Studio (lite) Variante ist ab Juni 2026 direkt in Microsoft Teams und SharePoint verfügbar. Sie ist ein Low-Code-Interface im Browser und richtet sich an Business-User. Das ist praktisch kostenfrei, wenn Sie bereits M365 Copilot haben, und perfekt für erste Experimente.
 
@@ -130,3 +132,4 @@ Nun, ich habe für Sie einige fertige und sofort umsetzbare Use-Cases mit einer 
 [4]: https://thomas-krampe.com/posts/trash_in_trash_out/
 [5]: https://www.linkedin.com/in/thomaskrampe/
 [6]: https://t13k.de/bookp
+[7]: https://www.microsoft.com/de-de/microsoft-365/enterprise/microsoft-365-plans-and-pricing?market=de
