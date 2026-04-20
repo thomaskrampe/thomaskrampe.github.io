@@ -1,7 +1,7 @@
 ---
 title: Docker Compose Best Practices 
 date: 2026-04-20 13:47:28 +/-0000
-categories: [technologie, Container, DevOps]
+categories: [Technologie, Container, DevOps]
 tags: [docker,how-to,devops] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/7be1a8af-3897-4ccd-95f1-6b2a03043555.png
@@ -9,9 +9,9 @@ image:
 
 ## 7 Best Practices, die euer Leben leichter machen
 
-Ich habe heute mal meine ganzen Docker Container organisiert und dabei festgestellt, dass sich nicht alle meine Docker Compose Dateien an meine "eigenen" Best Practices halten. Ihr kennt das, mal schnell eine `compose.yml` von irgendwo heruntergeladen, ausgeführt und wenn es dann auch gleich funktonioniert, wird es auch unverändert so verwendet.
+Ich habe heute mal meine ganzen Docker Container organisiert und dabei festgestellt, dass sich nicht alle meine Docker Compose Dateien an die "eigenen" Best Practices halten. Ihr kennt das, mal schnell eine `compose.yml` von irgendwo heruntergeladen, ausgeführt und wenn es dann auch gleich funktonioniert, wird es auch unverändert so verwendet.
 
-Die ganze Organisation hat jetzt etwas Zeit gekostet, weshalb ich beschlossen habe, meine persönlichen Best Practices aufzuschreibe und diese hier zu teilen.
+Die ganze Organisation hat mich jetzt etwas Zeit gekostet, weshalb ich beschlossen habe, meine persönlichen Best Practices einmal aufzuschreiben und diese hier zu teilen.
 
 ## Chaotische Compose-Dateien
 
@@ -36,7 +36,7 @@ services:
 
 ### 2. Namen verwenden
 
-Egal ob bei Containern, Volumes oder Netzwerken, solltet ihr immer aussagekräftige Namen verwenden. Das ist natürlich nur etwas für Menschen, aber es ist tatsächlich sehr hilfreich, wenn ihr z.B. mit `docker ps` einen bestimmten Container sucht oder in einem Tool darauf referenzieren wollt.
+Egal ob bei Containern, Volumes oder Netzwerken, solltet ihr immer aussagekräftige Namen verwenden. Das ist natürlich nur etwas für Menschen (einer KI ist das egal), aber es ist tatsächlich sehr hilfreich, wenn ihr z.B. mit `docker ps` einen bestimmten Container sucht oder in einem Tool darauf Referenzieren wollt.
 
 ```yaml
 services:
@@ -56,9 +56,9 @@ networks:
   
 ```
 
-### 3. Environment-Variablen immer verwenden
+### 3. Environment-Variablen immer verwenden - keine Ausnahmen
 
-Das ist ein echter "must-have" Tip. Ich entdecke immer wieder Dateien auf GitHub in denen die Credentials (meist sogar funktionierende) hart in die compose.yaml geschrieben wurden. Gewöhnt euch an, kritische Werte wie z.B. Passwörter, Secrets, API Tokens usw. in `.env` Environment Dateien auszulagern. Wenn ihr euch nicht sicher seid was kritisch ist, nehmt alles raus und ersetzt es durch Variablen.
+Das ist ein echter "must-have" Tip. Ich entdecke immer wieder Dateien auf GitHub in denen die Credentials (meist sogar funktionierende) hart in die compose.yaml geschrieben wurden. Gewöhnt euch an, kritische Werte wie z.B. Passwörter, Secrets, API Tokens usw. in `.env` Environment Dateien auszulagern. Wenn ihr euch nicht sicher seid was davon kritisch ist, nehmt einfach alles raus und ersetzt es durch Variablen.
 
 Beispiel `.env`File
 
@@ -99,13 +99,11 @@ DB_PASS=<Hier DB Password eintragen>
 
 Falls es ein öffentliches Repository ist, kann der Benutzer gleich sehen, was er für Variablen ausfüllen muss. Bei nur einer handvoll Variablen und sprechenden Namen sicher überflüssig, aber bei längeren Compose Dateien mit vielen Werten, ist das extrem hilfreich für den Nutzer.
 
-Ich verwende z.B. für mein ganzes Homelab auch Github, allerdings in einem privaten Repository.
-
 ### 4. depends_on und Health Checks zusammen verwenden
 
-Ich sehe oft `depends_on: db` in den Compose Dateien. Hier wird aber lediglich gewartet bis der Service gestartet ist, sobald der entsprechende DB Service läuft ist depends_on erfüllt. Aber Postgres zum Beispiel benötigt 10–30 Sekunden für die Initialisierung nach dem Start, der Service der dann basierend auf `depend_on` startet wird sicher fehlschlagen.
+Ich sehe oft `depends_on: db` in den Compose Dateien. Hier wird aber lediglich gewartet bis der Service gestartet ist, sobald der entsprechende DB Service läuft, ist `depends_on:` erfüllt. Aber Postgres zum Beispiel benötigt 10–30 Sekunden für die Initialisierung nach dem eigentlichen Start, der Service der dann basierend auf `depend_on:` starten möchte, wird sicherlich fehlschlagen.
 
-Der bessere Weg ist es, `depends_on` ausschließlich mit einem Health-Check wie `condition: service_healthy` zu kombinieren.
+Der bessere Weg ist es, `depends_on:` ausschließlich mit einem Health-Check wie `condition: service_healthy` zu kombinieren.
 
 ```yaml
 services:
@@ -116,13 +114,13 @@ services:
 
   db:
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]  # Leichtgewichtig, real check
+      test: ["CMD-SHELL", "pg_isready -U postgres"]  # Leichtgewichtig, realer check
       start_period: 30s  # Init-Zeit geben
 ```
 
-`condition: service_healthy` setzt natürlich einen Health-Check in allen Service voraus.
+`condition: service_healthy` setzt natürlich einen Health-Check in den Services voraus.
 
-Ein einfacher Health-Check für Web Services könnte wie folgt aussehen:
+Ein einfacher Health-Check für Web Services zum Beispiel könnte wie folgt aussehen:
 
 ```yaml
 healthcheck:
@@ -132,6 +130,7 @@ healthcheck:
   retries: 3        # Mehr Versuche für den Startup
   start_period: 40s # Manche Service brauchen etwas mehr Zeit zu starten
 ```
+Einfach mal Goole benutzen oder eine KI fragen, die baut euch einen passenden health-Check für euren Service.
 
 Unabhängig von `depends_on` solltet ihr für jeden Service in einer Compose Datei auch immer einen Health-Check einbauen. Gerade für Tools zur Verwaltung von Docker Containern (z.B. [Dockhand][1] oder [Portainer][2]) erleichtert es das Monitoring. Denn ein `docker ps` zeigt mir nur ob der Container gestartet ist, der Heath-Check zeigt mir ob der Service auch funktioniert (wenn der Health Check auch gut erstellt wurde).
 
@@ -139,7 +138,7 @@ Unabhängig von `depends_on` solltet ihr für jeden Service in einer Compose Dat
 
 Gerade im CI/CD Umfeld sollte man die Basis-Konfiguration zentral halten und Umgebungen (Dev, Prod, Test) modular überschreiben.
 
-Wie sieht die Datei-Struktur dafür aus:
+Wie sieht ein Beispiel für die Datei-Struktur aus:
 
 - **docker-compose.yml** (Basis): Gemeinsame Services, Images, Volumes, Netzwerke.
 - **docker-compose.dev.yml** (Entwicklung): Volumes für Hot-Reload, Debug-Ports, lokale Builds.
@@ -155,7 +154,7 @@ Wie sieht die Datei-Struktur dafür aus:
 
 Docker Compose führt die Dateien dann sequentiell zusammen (Reihenfolge = Priorität):
 
-- **Überschreiben:** Gleicher Service-Feld → Letzte Datei gewinnt (z. B. die Ports in Dev überschreibt Basis).
+- **Überschreiben:** Gleiches Service-Feld → Letzte Datei gewinnt (z. B. die Ports in Dev überschreibt Basis).
 - **Erweitern:** Neue Felder/Services werden hinzugefügt (z. B. Limits werden nur in Prod eingefügt).
 - **Automatisch:** docker-compose.override.yml wird immer mit docker-compose.yml gemerged (Dev-Standard).
 
@@ -172,12 +171,12 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 docker compose up -d
 ```
 
-> **Meine Empfehlung:** Immer auch mit entsprechenden .env-Files kombinieren (env_file: .env.dev).  Zum validieren `docker compose -f base.yml -f prod.yml config` verwenden. Das zeigt das finale Merge-Ergebnis und ist unverzichtbar für Debugging.
+> **Meine Empfehlung:** Immer auch mit entsprechenden .env-Files kombinieren (env_file: .env.dev).  Zum Validieren `docker compose -f base.yml -f prod.yml config` verwenden. Das zeigt das finale Merge-Ergebnis und ist unverzichtbar für Debugging.
 {: .prompt-tip }
 
 ### 6. Resource Limits setzen
 
-Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **Harte Limits** (`limits:`) die der Container nicht überschreiten darf und **Soft Limit** (`reservations:`) die Mindestressourcen garantieren. Beides sollte zusammen genutzt werden.
+Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **Harte Limits** (`limits:`) die der Container nicht überschreiten darf und **Softe Limit** (`reservations:`) die Mindestressourcen garantieren. Beides sollte immer zusammen genutzt werden.
 
 **Beispiel:**
 
@@ -208,11 +207,11 @@ dcaf6795a186   authentik-worker      0.15%     367.6MiB / 1GiB
 
 Zur Veranschaulichung mal meinen [Authentik][3] Container. Mein Host hat 4 GB RAM, authentik-postgres und authentik-server haben kein Limit und dürfen nehmen, was da ist. Im Gegensatz dazu ist authentik-worker auf 1 GB und authentik-redis auf 256 MB beschränkt.
 
-Aber aufpassen, bei Reservierungen (garantierte Mindestressourcen) immer auch etwas Power für das Hostsystem übrig lassen.
+Aber aufpassen, bei Reservierungen (garantierte Mindestressourcen) immer auch etwas CPU/RAM für das Hostsystem übrig lassen.
 
 ### 7. init: true aktivieren
 
-Wenn wir einen Compose-Stack mit `docker compose down` herunterfahren, soll dieser natürlich graceful heruntergefahren werden (Daten speichern, Connections schließen etc.). Stattdessen sendet Docker ein SIGKILL nach 10 Sekunden, als Ergebnis davon hängen oft Prozesse als Zombie Prozesse.
+Wenn wir einen Compose-Stack mit `docker compose down` herunterfahren, soll dieser natürlich "graceful" heruntergefahren werden (Daten speichern, Connections schließen etc.). Stattdessen sendet Docker ein SIGKILL nach 10 Sekunden, als Ergebnis davon hängen oft Prozesse als Zombie Prozesse fest.
 
 Das Problem ist, dass in Containern die PID 1 meist der App-Prozess (z. B. node app.js) ist. Dieser ist kein richtiger Init und handhabt Signale (SIGTERM, SIGINT) nicht korrekt. Was dann passiert sind:
 
@@ -231,10 +230,10 @@ services:
     init: true        # Das war's!
 ```
 
-> **Meine Empfehlung:** `init: true` in jeden Service, gerade auch wenn mehrere Services in der Compose Datei erstellt werden. Spart Stunden an Wiederherstellungszeit, wenn ein Host aufgrund von Zombiprozessen neu gestartet werden muss und dabei Daten verloren gehen. In meinen Stacks seit 2 Jahren keine Zombie-Probleme mehr.
+> **Meine Empfehlung:** `init: true` in jeden Service, gerade auch wenn mehrere Services in der Compose Datei erstellt werden. Spart Stunden an Wiederherstellungszeit, wenn ein Host aufgrund von Zombiprozessen neu gestartet werden muss und dabei Daten verloren gehen. In meinen Stacks habe ich seit 2 Jahren keine Zombie-Probleme mehr.
 {: .prompt-tip }
 
-Ich kann nur empfehlen, jede eurer Compose-Datei zu prüfen und Health-Checks sowie Limits nachzurüsten. In meinem Team und auch in meinem privaten Homelab hat das Ausfälle um bis zu 70 % gesenkt.
+Ich kann nur empfehlen, jede eurer Compose-Dateien zu prüfen und Health-Checks sowie Limits nachzurüsten. In meinem Team und auch in meinem privaten Homelab hat das Ausfälle um bis zu 70 % gesenkt.
 
 Haben Sie schon mal einen Compose-Fehler erlebt, der Prod lahmgelegt hat? Hinterlasst gern mal eure Erfahrung!
 
