@@ -36,7 +36,7 @@ services:
 
 ### 2. Namen verwenden
 
-Egal ob bei Containern, Volumes oder Netzwerken, solltet ihr immer aussagekräftige Namen verwenden. Das ist natürlich nur etwas für Menschen (einer KI ist das egal), aber es ist tatsächlich sehr hilfreich, wenn ihr z.B. mit `docker ps` einen bestimmten Container sucht oder in einem Tool darauf Referenzieren wollt.
+Egal ob bei Containern, Volumes oder Netzwerken, solltet ihr immer aussagekräftige Namen verwenden. Das ist natürlich nur etwas für Menschen (einer KI ist das egal), aber es ist tatsächlich sehr hilfreich, wenn ihr z.B. mit `docker ps` einen bestimmten Container sucht oder in einem Tool darauf referenzieren wollt.
 
 ```yaml
 services:
@@ -58,7 +58,7 @@ networks:
 
 ### 3. Environment-Variablen immer verwenden - keine Ausnahmen
 
-Das ist ein echter "must-have" Tip. Ich entdecke immer wieder Dateien auf GitHub in denen die Credentials (meist sogar funktionierende) hart in die compose.yaml geschrieben wurden. Gewöhnt euch an, kritische Werte wie z.B. Passwörter, Secrets, API Tokens usw. in `.env` Environment Dateien auszulagern. Wenn ihr euch nicht sicher seid was davon kritisch ist, nehmt einfach alles raus und ersetzt es durch Variablen.
+Das ist ein echter "must-have" Tip. Ich entdecke immer wieder Dateien auf GitHub in denen die Credentials (meist sogar funktionierende) hart in die compose.yml geschrieben wurden. Gewöhnt euch an, kritische Werte wie z.B. Passwörter, Secrets, API Tokens usw. in `.env` Environment Dateien auszulagern. Wenn ihr euch nicht sicher seid was davon kritisch ist, nehmt einfach alles raus und ersetzt es durch Variablen.
 
 Beispiel `.env`File
 
@@ -67,7 +67,7 @@ DB_USER=superuser
 DB_PASS=secretpassword
 ```
 
-Variablen dann in der `compose.yaml` nutzen:
+Variablen dann in der `compose.yml` nutzen:
 
 ```yaml
   environment:
@@ -75,7 +75,7 @@ Variablen dann in der `compose.yaml` nutzen:
     - DB_PASS=${DB_PASS}
 ```
 
-> **Aber Achtung:** Wenn ihr eure Projekte auf GitHub o.ä. bereitstellt oder hostet, achtet darauf `.env` in die lokale oder am besten globale `.gitignore` Datei aufzunehmen, sonst könntet ihr die Daten auch im Klartext in der `compose.yaml` lassen.
+> **Aber Achtung:** Wenn ihr eure Projekte auf GitHub o.ä. bereitstellt oder hostet, achtet darauf `.env` in die lokale oder am besten globale `.gitignore` Datei aufzunehmen, sonst könntet ihr die Daten auch im Klartext in der `compose.yml` lassen.
 {: .prompt-warning }
 
 Beispiel `.gitignore`:
@@ -130,7 +130,7 @@ healthcheck:
   retries: 3        # Mehr Versuche für den Startup
   start_period: 40s # Manche Service brauchen etwas mehr Zeit zu starten
 ```
-Einfach mal Goole benutzen oder eine KI fragen, die baut euch einen passenden health-Check für euren Service.
+Einfach mal Google benutzen oder eine KI fragen, die baut euch einen passenden Health-Check für euren Service.
 
 Unabhängig von `depends_on` solltet ihr für jeden Service in einer Compose Datei auch immer einen Health-Check einbauen. Gerade für Tools zur Verwaltung von Docker Containern (z.B. [Dockhand][1] oder [Portainer][2]) erleichtert es das Monitoring. Denn ein `docker ps` zeigt mir nur ob der Container gestartet ist, der Heath-Check zeigt mir ob der Service auch funktioniert (wenn der Health Check auch gut erstellt wurde).
 
@@ -156,7 +156,6 @@ Docker Compose führt die Dateien dann sequentiell zusammen (Reihenfolge = Prior
 
 - **Überschreiben:** Gleiches Service-Feld → Letzte Datei gewinnt (z. B. die Ports in Dev überschreibt Basis).
 - **Erweitern:** Neue Felder/Services werden hinzugefügt (z. B. Limits werden nur in Prod eingefügt).
-- **Automatisch:** docker-compose.override.yml wird immer mit docker-compose.yml gemerged (Dev-Standard).
 
 **Beispiel:**
 
@@ -176,7 +175,7 @@ docker compose up -d
 
 ### 6. Resource Limits setzen
 
-Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **Harte Limits** (`limits:`) die der Container nicht überschreiten darf und **Softe Limit** (`reservations:`) die Mindestressourcen garantieren. Beides sollte immer zusammen genutzt werden.
+Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **Harte Limits** (`limits:`) die der Container nicht überschreiten darf und **Softe Limits** (`reservations:`) die Mindestressourcen garantieren. Beides sollte immer zusammen genutzt werden.
 
 **Beispiel:**
 
@@ -205,13 +204,13 @@ dcaf6795a186   authentik-worker      0.15%     367.6MiB / 1GiB
 2bb1b19ce5da   authentik-server      0.66%     501.3MiB / 3.778GiB   
 ```
 
-Zur Veranschaulichung mal meinen [Authentik][3] Container. Mein Host hat 4 GB RAM, authentik-postgres und authentik-server haben kein Limit und dürfen nehmen, was da ist. Im Gegensatz dazu ist authentik-worker auf 1 GB und authentik-redis auf 256 MB beschränkt.
+Zur Veranschaulichung mal meine [Authentik][3] App als Beispiel. Mein Host hat 4 GB RAM, authentik-postgres und authentik-server haben kein Limit und dürfen nehmen, was da ist. Im Gegensatz dazu ist authentik-worker auf 1 GB und authentik-redis auf 256 MB beschränkt.
 
 Aber aufpassen, bei Reservierungen (garantierte Mindestressourcen) immer auch etwas CPU/RAM für das Hostsystem übrig lassen.
 
 ### 7. init: true aktivieren
 
-Wenn wir einen Compose-Stack mit `docker compose down` herunterfahren, soll dieser natürlich "graceful" heruntergefahren werden (Daten speichern, Connections schließen etc.). Stattdessen sendet Docker ein SIGKILL nach 10 Sekunden, als Ergebnis davon hängen oft Prozesse als Zombie Prozesse fest.
+Wenn wir einen Compose-Stack mit `docker compose down` herunterfahren, soll dieser natürlich "graceful" heruntergefahren werden (Daten speichern, Connections schließen etc.). Stattdessen aber sendet Docker ein SIGKILL nach 10 Sekunden Wartezeit, als Ergebnis davon hängen oft Prozesse als Zombie Prozesse fest.
 
 Das Problem ist, dass in Containern die PID 1 meist der App-Prozess (z. B. node app.js) ist. Dieser ist kein richtiger Init und handhabt Signale (SIGTERM, SIGINT) nicht korrekt. Was dann passiert sind:
 
