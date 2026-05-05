@@ -29,7 +29,7 @@ services:
   app:
 ```
 
-- **Vorteil ohne Version:** Einfachere Dateien, immer aktuelle Features, keine keine Warnungen.
+- **Vorteil ohne Version:** Einfachere Dateien, immer aktuelle Features, keine Warnungen.
 - **Nachteil:** Bei sehr alten Docker-Versionen (pre-1.10) könnten Features fehlschlagen. Aber mal ganz ehrlich, habt ihr das wirklich noch?
 
 **Meine Empfehlung:** In neuen Projekten einfach die Version entfernen.
@@ -175,7 +175,7 @@ docker compose up -d
 
 ### 6. Resource Limits setzen
 
-Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **Harte Limits** (`limits:`) die der Container nicht überschreiten darf und **Softe Limits** (`reservations:`) die Mindestressourcen garantieren. Beides sollte immer zusammen genutzt werden.
+Tatsächlich haben Docker-Container standardmäßig keine Limits, sie nutzen so viel CPU/Memory wie der Host bereitstellt. Limits z.B. in Multi-Service-Stacks schützen unseren Host und verhindern Downtimes in der Produktion durch fehlerhafte Services (z.B. Out-of-Memory). Bei Limits unterscheiden wir **harte Limits** (`limits:`) die der Container nicht überschreiten darf und **softe Limits** (`reservations:`) die Mindestressourcen garantieren. Beides sollte immer zusammen genutzt werden.
 
 **Beispiel:**
 
