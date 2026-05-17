@@ -130,6 +130,7 @@ healthcheck:
   retries: 3        # Mehr Versuche für den Startup
   start_period: 40s # Manche Service brauchen etwas mehr Zeit zu starten
 ```
+
 Einfach mal Google benutzen oder eine KI fragen, die baut euch einen passenden Health-Check für euren Service.
 
 Unabhängig von `depends_on` solltet ihr für jeden Service in einer Compose Datei auch immer einen Health-Check einbauen. Gerade für Tools zur Verwaltung von Docker Containern (z.B. [Dockhand][1] oder [Portainer][2]) erleichtert es das Monitoring. Denn ein `docker ps` zeigt mir nur ob der Container gestartet ist, der Heath-Check zeigt mir ob der Service auch funktioniert (wenn der Health Check auch gut erstellt wurde).
