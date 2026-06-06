@@ -244,7 +244,7 @@ Einmal sauber aufgesetzt, braucht ein neuer Kunde eine neue Datei in `config.d/`
 
 Ansible und Terraform laufen schneller, weil der ControlMaster die Verbindung hält. Und das Terminal kennt jetzt den Unterschied zwischen Kunde A und Kunde B.
 
-Das klingt nach kleinem Aufwand für einen kleinen Gewinn. In der Praxis ist es der Unterschied zwischen einem Terminal, in dem man konzentriert arbeiten kann, und einem, in dem man zehn Prozent der Zeit damit verbringt, die richtige SSH-Kommandozeile zusammenzusuchen.
+In der Praxis ist es der Unterschied zwischen einem Terminal, in dem man konzentriert arbeiten kann, und einem, in dem man zehn Prozent der Zeit damit verbringt, die richtige SSH-Kommandozeile zusammenzusuchen.
 
 ## Weiterführende Links
 
