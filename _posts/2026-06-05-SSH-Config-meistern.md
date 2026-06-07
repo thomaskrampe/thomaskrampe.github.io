@@ -62,6 +62,9 @@ Host *
 
 Der `Host *`-Block am Ende gilt als Fallback für alle Verbindungen, die keinem spezifischen Block zugeordnet sind. SSH liest die Blöcke von oben nach unten und nimmt den ersten Treffer, der spezifische Kundenblock gewinnt also immer gegenüber dem Fallback.
 
+> Hinweis zu `AddKeysToAgent yes`: Diese Option lädt den privaten Key automatisch in den SSH-Agent, sobald er zum ersten Mal verwendet wird. Das ist praktisch, hat aber eine Wechselwirkung mit `IdentitiesOnly yes`: Keys, die im Agent landen, werden bei Verbindungen ohne explizites `IdentitiesOnly yes` wieder als Kandidaten angeboten. Wer mehrere Kunden verwaltet, sollte den Agent-Inhalt gelegentlich mit `ssh-add -l` prüfen und nicht mehr benötigte Keys z.B. mit `ssh-add -d ~/.ssh/keys/kunde-a/id_ed25519` entfernen. `IdentitiesOnly yes` in den Kundenblöcken sorgt dafür, dass der Agent dort ignoriert wird, aber ein voller Agent ist grundsätzlich ein Angriffsziel, falls der Agent-Socket kompromittiert wird.
+{: .prompt-tip }
+
 Pro Kunde liegt dann eine eigene Datei im Verzeichnis `~/.ssh/config.d/`:
 
 ```bash
@@ -105,6 +108,8 @@ Keys für jeden Kunden separat zu halten ist kein Aufwand, sondern Pflicht. Wenn
 # Key für einen neuen Kunden anlegen — immer Ed25519 (ECC), nie RSA
 ssh-keygen -t ed25519 -f ~/.ssh/keys/kunde-a/id_ed25519 -C "thomas@kunde-a"
 ```
+
+`ssh-keygen` erzeugt immer ein Schlüsselpaar, den privaten Key (id_ed25519) und den öffentlichen Key (id_ed25519.pub). Nur der öffentliche Key wird auf den Server übertragen und in `~/.ssh/authorized_keys` eingetragen. Der private Key verlässt niemals das lokale System.
 
 Ed25519 ist ein ECC-Algorithmus (Elliptic Curve Cryptography) und die richtige Wahl für neue SSH-Keys. Kleiner, schneller, sicherer als RSA, und deutlich resistenter gegenüber zukünftigen Angriffen. Wer wissen will, warum ECC der aktuelle Standard sein sollte und welche Algorithmen auch in einer Welt mit Quantencomputern noch Bestand haben, dem empfehle ich meinen Artikel [Quanten-ready und performance-stark](https://thomas-krampe.com/posts/quanten-ready-und-performance-stark/).
 
@@ -162,8 +167,80 @@ chmod 700 ~/.ssh/sockets
 
 `ControlPersist 10m` hält den Master-Socket zehn Minuten offen, auch nachdem die erste SSH-Session bereits geschlossen wurde. Ansible oder Terraform kann danach weiterhin die bestehende Verbindung nutzen. Nach zehn Minuten Inaktivität wird der Socket automatisch geschlossen.
 
->Hinweis: ControlMaster funktioniert nicht über ProxyJump-Ketten hinweg, wenn der Socket-Pfad nicht erreichbar ist. Das ist selten ein Problem, aber bei komplexen Netzwerktopologien sollte man es im Hinterkopf behalten.
+>Hinweis zu ControlMaster und ProxyJump: Der ControlMaster-Socket liegt immer lokal auf dem eigenen Rechner und ist daher unabhängig von ProxyJump-Ketten erreichbar. ControlMaster funktioniert problemlos in Kombination mit ProxyJump für die Verbindung zum Zielhost. Was nicht funktioniert, ist einen ControlMaster-Socket zu verwenden, der auf einem Sprunghost selbst liegt, das ist aber kein üblicher Anwendungsfall. Bei komplexen Netzwerktopologien kann es vorkommen, dass unterschiedliche Netzwerkpfade zu demselben Zielhost führen, was zu Konflikten im Socket-Pfad führen kann. In solchen Fällen hilft ein eindeutigerer ControlPath, z.B. mit %C als Hash über alle Verbindungsparameter: `ControlPath ~/.ssh/sockets/%C`.
 {: .prompt-tip }
+
+## Port Forwarding in der Config
+
+Port Forwarding ist ein weiteres Feature, das sich direkt in die Config-Struktur integrieren lässt und im Kundenbetrieb täglich nützlich ist. Die SSH Config kennt drei Varianten: `LocalForward`, `RemoteForward` und `DynamicForward`.
+
+LocalForward macht einen Dienst im Kundennetz lokal erreichbar. Ein typischer Anwendungsfall ist der Datenbankzugriff: Die Datenbank läuft intern und ist von außen nicht direkt erreichbar, aber über die bestehende SSH-Verbindung kann ein lokaler Port dorthin weitergeleitet werden.
+
+```bash
+# ~/.ssh/config.d/kunde-a
+
+Host kunde-a-db-tunnel
+    HostName 10.0.1.10
+    User thomas
+    IdentityFile ~/.ssh/keys/kunde-a/id_ed25519
+    IdentitiesOnly yes
+    ProxyJump kunde-a-bastion
+    LocalForward 15432 10.0.2.10:5432
+    RequestTTY no
+    ExitOnForwardFailure yes
+```
+
+Nach `ssh kunde-a-db-tunnel` ist die Datenbank des Kunden unter z.B. `localhost:15432` erreichbar, als wäre sie lokal. `RequestTTY no` verhindert, dass SSH eine interaktive Shell öffnet. `ExitOnForwardFailure yes` sorgt dafür, dass SSH sich beendet, wenn das Forwarding fehlschlägt, statt eine Shell ohne funktionierenden Tunnel zu öffnen.
+
+Mehrere Ports lassen sich in einem Block kombinieren:
+
+```bash
+Host kunde-a-tunnel
+    HostName 10.0.1.10
+    User thomas
+    IdentityFile ~/.ssh/keys/kunde-a/id_ed25519
+    IdentitiesOnly yes
+    ProxyJump kunde-a-bastion
+    LocalForward 15432 10.0.2.10:5432
+    LocalForward 19200 10.0.2.20:9200
+    RequestTTY no
+    ExitOnForwardFailure yes
+```
+
+RemoteForward funktioniert in die Gegenrichtung, ein Port auf dem Server wird auf einen lokalen Dienst weitergeleitet, nützlich z.B. für Webhooks in abgeschotteten Umgebungen, betrachte ich aber hier nicht weiter.
+
+DynamicForward richtet einen lokalen SOCKS-Proxy ein, der gesamten Traffic durch die SSH-Verbindung leitet. Nützlich, wenn man kurzzeitig auf mehrere Dienste im Kundennetz zugreifen muss, ohne für jeden einen eigenen `LocalForward` zu definieren:
+
+```bash
+Host kunde-a-socks
+    HostName bastion.kunde-a.example.com
+    User thomas
+    Port 2222
+    IdentityFile ~/.ssh/keys/kunde-a/id_ed25519
+    IdentitiesOnly yes
+    DynamicForward 1080
+    RequestTTY no
+```
+
+Nach `ssh kunde-a-socks` kann ein Browser oder ein anderes Tool so konfiguriert werden, dass es `localhost:1080` als SOCKS5-Proxy verwendet. Der gesamte Traffic läuft dann verschlüsselt durch die SSH-Verbindung ins Kundennetz.
+
+## Konditionelle Konfiguration mit Match
+
+Host-Blöcke matchen immer statisch auf den Namen, den man auf der Kommandozeile eingibt. Die `Match`-Direktive geht einen Schritt weiter und wertet Bedingungen zur Laufzeit aus. Das ermöglicht Konfigurationen, die sich je nach Kontext automatisch anpassen.
+
+`Match exec` führt einen Shell-Befehl aus und wendet den Block nur an, wenn der Befehl mit Exit-Code 0 zurückkehrt. Ein praktischer Anwendungsfall ist die automatische Erkennung, ob man sich in einem VPN befindet:
+
+```bash
+# ~/.ssh/config
+
+# Wenn das VPN aktiv ist (Route ins interne Netz vorhanden), direkt verbinden
+Match host kunde-a-prod exec "ip route show | grep -q 10.0.0.0/8"
+    ProxyJump none
+
+# Andernfalls gilt der Kundenblock mit Bastion
+```
+
+`Match`-Blöcke werden in der Reihenfolge ausgewertet, in der sie in der Datei stehen, genau wie `Host`-Blöcke. Der Unterschied ist, dass Match-Bedingungen zur Laufzeit geprüft werden, nicht beim Parsen. Ein Match-Block, der vor einem Host-Block steht, kann dessen spätere Einstellungen nicht überschreiben, weil SSH nach dem Prinzip "first match wins" arbeitet. Das macht sie ideal für Ausnahmen, die nicht in die normale Kundenstruktur passen.
 
 ## Das vollständige Setup
 
@@ -220,11 +297,14 @@ Die Verzeichnisstruktur auf der Festplatte:
 │   └── kunde-c
 ├── keys/
 │   ├── kunde-a/
-│   │   └── id_ed25519
+│   │   ├── id_ed25519       # Privater Key — verlässt diesen Rechner nicht
+│   │   └── id_ed25519.pub   # Öffentlicher Key — wird auf Server übertragen
 │   ├── kunde-b/
-│   │   └── id_ed25519
+│   │   ├── id_ed25519
+│   │   └── id_ed25519.pub
 │   └── kunde-c/
-│       └── id_ed25519
+│       ├── id_ed25519
+│       └── id_ed25519.pub
 └── sockets/                 # ControlMaster Sockets (leer im Normalfall)
 ```
 
@@ -237,6 +317,30 @@ ssh -v kunde-a-prod
 ```
 
 In der Ausgabe sieht man, welche Config-Datei geladen wurde, über welchen ProxyJump die Verbindung läuft und welcher Key akzeptiert wurde. Wenn etwas nicht funktioniert, ist `-v` der erste Schritt, kein Raten.
+
+## Konfiguration prüfen mit ssh-audit
+
+`ssh -v` zeigt, was SSH macht. `ssh-audit` zeigt, ob das, was SSH macht, sicher ist. Das Tool prüft Algorithmen, Cipher-Suites und MACs einer SSH-Verbindung und meldet veraltete oder unsichere Einstellungen.
+
+`ssh-audit` ist über pip, Snap oder die meisten Paketmanager verfügbar.
+
+```bash
+pip install ssh-audit
+# oder
+sudo apt install ssh-audit
+```
+
+Die eigene Client-Konfiguration lässt sich ebenfalls auditieren. Dafür startet `ssh-audit` einen lokalen Listener, gegen den man sich mit dem eigenen SSH-Client verbindet.
+
+```bash
+# Terminal 1: Listener starten
+ssh-audit --client-audit
+
+# Terminal 2: Eigenen Client dagegen verbinden
+ssh -p 2222 anything@localhost
+```
+
+Die Ausgabe zeigt, welche Algorithmen der eigene Client anbietet und welche davon als schwach oder veraltet eingestuft werden. Fertige Hardening-Guides für gängige Plattformen sind verfügbar und lassen sich direkt auf den globalen `Host *`-Block in der Config anwenden (siehe weiterführende Links).
 
 ## Was das im Alltag ändert
 
@@ -251,3 +355,5 @@ In der Praxis ist es der Unterschied zwischen einem Terminal, in dem man konzent
 - [OpenSSH Manual — ssh_config(5)](https://man.openbsd.org/ssh_config)
 - [OpenSSH Manual — ssh-keygen(1)](https://man.openbsd.org/ssh-keygen)
 - [Quanten-ready und performance-stark — thomas-krampe.com](https://thomas-krampe.com/posts/quanten-ready-und-performance-stark/) — Hintergründe zu ECC und quantenresistenter Kryptografie
+- [ssh-audit — SSH Server & Client Auditing Tool](https://github.com/jtesta/ssh-audit)
+- [ssh-audit Hardening Guides](https://www.ssh-audit.com/hardening_guides.html)
