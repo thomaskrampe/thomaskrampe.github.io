@@ -1,6 +1,6 @@
 ---
 title: WinGet für IT-Admins
-date: 2026-06-16 16:43:00 +/-0000
+date: 2026-06-16 14:43:00 +/-0000
 categories: [Tools, Windows]
 tags: [software,windows,paketieren,compliance] # TAG names should always be lowercase
 image:
