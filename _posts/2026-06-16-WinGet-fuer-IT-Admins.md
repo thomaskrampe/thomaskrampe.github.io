@@ -11,7 +11,7 @@ image:
 
 Wer im Mittelstand für die Softwareverteilung zuständig ist, kennt das Feld gut: PDQ Deploy hier, Chocolatey dort, vielleicht noch ein alter SCCM-Unterbau und dazwischen Intune, das seit zwei Jahren ausgebaut werden soll. Und sind wir mal ehrlich, die ganzen Tools von Drittanbietern sehe ich auch noch in Hülle und Fülle. Ich selbst zum Beispiel, nutze seit Jahren bei vielen Kunden das Tool LoginAM (fka. Automation Machine) meines Arbeitgebers. Jedes dieser Werkzeuge hat seine Berechtigung und keines davon verschwindet von selbst (warum auch).
 
-Linux Benutzer lachen, wenn ich von Softwareverteilung spreche. Was für die UX Fraktion schon immer ein Standard ist, liefert Microsoft seit Windows 10 1809 ebenfalls mit einem Paketmanager direkt im Betriebssystem, der für viele Szenarien ausreicht und nichts kostet. WinGet soll dabei nicht als Ersatz für alles, was bereits funktioniert sein. Aber als guter erster Schritt für Umgebungen, die gerade anfangen, Deployment zu strukturieren, und für alle, die den Drittanbieter-Overhead reduzieren wollen.
+Linux Benutzer lachen, wenn ich von Softwareverteilung spreche. Was für die Linux Fraktion schon immer ein Standard ist, liefert Microsoft seit Windows 10 1809 ebenfalls mit einem Paketmanager direkt im Betriebssystem, der für viele Szenarien ausreicht und nichts kostet. WinGet soll dabei nicht als Ersatz für alles, was bereits funktioniert sein. Aber als guter erster Schritt für Umgebungen, die gerade anfangen, Deployment zu strukturieren, und für alle, die den Drittanbieter-Overhead reduzieren wollen.
 
 ## Was WinGet ist und was nicht
 
@@ -267,7 +267,7 @@ Wichtige Voraussetzungen:
 - Paket-IDs sollten mit `winget search <name>` ermittelt werden [\[learn.microsoft.com\]](https://learn.microsoft.com/en-us/windows/package-manager/winget/install)
 - Detection Rule muss paketspezifisch validiert sein
 
-**Detection Rule Beispiel** (PowerShell-Skript - Git):**
+**Detection Rule Beispiel** (PowerShell-Skript - Git):
 
 ```powershell
 # Überprüft ob Git installiert ist
