@@ -1,8 +1,6 @@
 ---
 title: WinGet für IT-Admins
 date: 2026-06-16 14:43:00 +/-0000
-author: Thomas Krampe
-description: "Experte für End User Computing, Automatisierung, KI und Cloud-Technologien."
 categories: [Tools, Windows]
 tags: [software,windows,paketieren,compliance] # TAG names should always be lowercase
 image:
