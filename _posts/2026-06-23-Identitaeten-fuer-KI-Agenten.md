@@ -1,6 +1,6 @@
 ---
 title: Identitäten für KI-Agenten
-date: 2026-06-16 11:43:00 +/-0000
+date: 2026-06-23 11:43:00 +/-0000
 categories: [Technologie, KI, Azure]
 tags: [azure,entra,entraid,agentic,ki-agent,zero-trust] # TAG names should always be lowercase
 image:
