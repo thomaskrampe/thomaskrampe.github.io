@@ -9,7 +9,7 @@ image:
 
 Ich glaube, das hat jeder Consultant im Microsoft Azure Umfeld bereits erlebt. Der Kunde meldet sich irgendwann, meistens nach einer unerwarteten Azure-Rechnung, einem Audit, der erste Sicherheitsvorfall, oder einfach der neue CIO, der fragt warum niemand weiß, was eigentlich alles in Azure läuft (und warum).
 
-In meinem Fall war es ein mittelständisches Unternehmen, 350 Mitarbeiter, seit zwei Jahren mehr oder weniger aktiv auf Azure. Gestartet mit einer Subscription für "wir müssen in die Cloud-Sachen", inzwischen laufen dort einige produktive Anwendungen, eine selbst entwickelte Reporting-App, mehrere Test- und Produktivumgebungen mit virtuellen Maschinen, erste AVD (Azure Virtual Desktop) Test VDI's und irgendwo noch ein Überbleibsel aus einem alten Migrationsprojekt. Alles in einer Subscription, alles flach, alles als Global Admin angelegt.
+In meinem Fall war es ein mittelständisches Unternehmen, 350 Mitarbeiter, seit zwei Jahren mehr oder weniger aktiv auf Azure. Gestartet mit einer Subscription für "wir müssen in die Cloud", inzwischen laufen dort einige produktive Anwendungen, eine selbst entwickelte Reporting-App, mehrere Test- und Produktivumgebungen mit virtuellen Maschinen, erste AVD (Azure Virtual Desktop) Test VDI's und irgendwo noch ein Überbleibsel aus einem alten Migrationsprojekt. Alles in einer Subscription, alles flach, alles als Global Admin angelegt.
 
 Die Symptome die ich beim ersten Review gefunden habe:
 
