@@ -7,7 +7,7 @@ image:
   path: https://picsur.kngstn.eu/i/45a9dd5f-bee7-40da-9ae3-622abef1903d.png
 ---
 
-# Warum Entra ID neu gedacht werden muss
+## Warum Entra ID neu gedacht werden muss
 
 Service Accounts für Automatisierungen, Dienste oder Anwendungen waren jahrelang die Standardlösung für alles, was kein Mensch ist. Jetzt kommen KI-Agenten hinzu und sie passen in dieses Konstrukt nicht mehr wirklich.
 
