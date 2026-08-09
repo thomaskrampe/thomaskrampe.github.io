@@ -1,6 +1,6 @@
 ---
 title: SSH-Authentifizierung über OIDC mit opkssh
-date: 2026-08-09 10:41:00 +/-0000
+date: 2026-08-09 10:42:00 +/-0000
 categories: [Tools, Linux]
 tags: [ssh,linux,security,compliance] # TAG names should always be lowercase
 image:
