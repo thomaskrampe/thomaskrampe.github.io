@@ -2,7 +2,7 @@
 title: Digitale Souveränität 2026
 date: 2026-08-31 11:48:00 +/-0000
 categories: [Strategie, Compliance, Souveränität]
-tags: [cloud,cade,compliance,souveränität] # TAG names should always be lowercase
+tags: [cloud,cada,compliance,souveränität] # TAG names should always be lowercase
 image:
   path: https://picsur.kngstn.eu/i/4b68489a-d416-4ca8-abd0-75e81a899c7c.png
 ---
