@@ -60,6 +60,5 @@ Wenn Sie prüfen wollen, ob sich für Ihre KI-Agenten-Workflows der Wechsel auf 
 ## Quellen
 
 - [heise online: Prognose: Inferenzkosten für KI-Agenten verfünffachen sich bis 2028 (Gartner)](https://www.heise.de/news/Prognose-Inferenzkosten-fuer-KI-Agenten-verfuenffachen-sich-bis-2028-11417470.html)
-- [KI-Allianz Baden-Württemberg: KI-Hosting und digitale Souveränität](https://ki-allianz.de/ki-hosting-deutschland-souveraenitaet/)
 - [Retarus Blog: Schwarz auf weiß — Microsoft kann nicht garantieren, dass europäische Daten in Europa bleiben](https://www.retarus.com/blog/de/schwarz-auf-weiss-microsoft-kann-nicht-garantieren-dass-europaeische-daten-in-europa-bleiben/)
 - [Self-Hosting an LLM vs. API: Real Cost Math (2026) — Cloudzy](https://cloudzy.com/blog/self-hosting-open-weight-llm-gpu-vps-cost/)
