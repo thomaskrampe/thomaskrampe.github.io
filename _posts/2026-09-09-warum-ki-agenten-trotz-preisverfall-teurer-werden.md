@@ -27,7 +27,7 @@ Besonders bemerkenswert dabei ist, ein Teil der stärksten frei verfügbaren, se
 
 ## Chinesisches Modell, europäischer Betrieb
 
-Der Einwand, den ich immer wieder in diesem Zusammenhang höre ist,  dass ein chinesisches Modell im eigenen Unternehmen einzusetzen, nach einem neuen Souveränitätsproblem statt einer Lösung klingt. Meist kommt dann auch der Vergleich mit dem "Hosted in Europe" Problem, das wir aus der US-Cloud-Debatte kennen. Aber dieser Vergleich hinkt hier technisch.
+Der Einwand, den ich immer wieder in diesem Zusammenhang höre ist,  dass ein chinesisches Modell im eigenen Unternehmen einzusetzen, nach einem neuen Souveränitätsproblem statt einer Lösung klingt. Meist kommt dann auch der Vergleich mit dem ["Hosted in Europe" Problem](https://thomas-krampe.com/posts/Microsoft-und-Mistral-Souveraenitaet-zu-Ende-gedacht/), das wir aus der US-Cloud-Debatte kennen. Aber dieser Vergleich hinkt hier technisch.
 
 Bei einem Open-Weight-Modell laden wir das Modell einmal herunter und betreiben es danach vollständig in der eigenen oder einer gehosteten Infrastruktur. Es gibt keine laufende Verbindung zurück zum Modell-Entwickler, anders als bei einem API-Aufruf gegen einen US-Hyperscaler, wo der CLOUD Act unabhängig vom Serverstandort greift, wie Microsoft Frankreich kürzlich öffentlich bestätigt hat.
 
