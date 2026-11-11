@@ -4,7 +4,7 @@ date: 2026-11-10 12:30:00 +/-0000
 categories: [Strategie, Sicherheit]
 tags: [microsoft, m365, fido2, mfa,entraid] # TAG names should always be lowercase
 image:
-  path: https://picsur.kngstn.eu/i/fb2d0e45-e36c-490f-a80a-b3fffa25bf08.jpg
+  path: https://picsur.kngstn.eu/i/0407350b-2a6d-4d0f-b87a-31c1edf642d8.png
 ---
 
 Am 1. Februar 2027 stellt Microsoft SMS- und Sprachcodes für die meisten Nutzer in Entra ID ein. Wer dann nur noch ein Telefon als zweiten Faktor hat, muss bei der Anmeldung einen unterstützten Passkey registrieren, sonst geht es nicht mehr weiter. Drei Gründe sprechen dafür, jetzt auf FIDO2-Sicherheitsschlüssel umzustellen: die Frist, die Phishing-Anfälligkeit von SMS und Push sowie die Erwartungen aus NIS2 und von Cyber-Versicherern.
