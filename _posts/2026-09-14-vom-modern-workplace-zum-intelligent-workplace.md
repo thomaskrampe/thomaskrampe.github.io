@@ -53,4 +53,4 @@ Es gilt dieselbe Regel wie beim Modern Workplace. Identitätsmanagement, Zugriff
 
 Bevor die Agenten-Frage überhaupt sinnvoll zu beantworten ist, steht die Bestandsaufnahme. Wie stabil ist das Fundament in Ihrem eigenen Tenant tatsächlich? Genau das prüfen wir bei Previder mit dem M365 Tenant Check, zuletzt bei den [Hitzler Ingenieuren](https://previder.de/referenzen/hitzleringenieure). Der automatisierte Scan deckte dort eine Lücke bei den Conditional-Access-Regeln auf, die im laufenden Betrieb vermutlich nicht aufgefallen wäre. Der Kunde danach: „Wir dachten, wir sind sicher. Jetzt wissen wir es.“
 
-Interesse an einer solchen Bestandsaufnahme statt Bauchgefühl für Ihren Tenant? Sprechen Sie mich einfach darauf an, Sie erreichen mich über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de).
+Interesse an einer solchen Bestandsaufnahme statt Bauchgefühl für Ihren Tenant? Sprechen Sie mich einfach darauf an, Sie erreichen mich über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).

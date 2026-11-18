@@ -78,4 +78,4 @@ Nutzen Sie zuerst aus, was Sie haben. Verstehen Sie, warum etwas nicht funktioni
 
 Ein Werkzeug ist so gut wie der Kontext, in dem man es einsetzt. Dieser Kontext liegt in Ihrem Unternehmen, nicht im Tool selbst.
 
-Wenn Sie gerade vor genau dieser Entscheidung stehen, spreche ich gerne mit Ihnen darüber. Kein Verkaufsgespräch, sondern eine ehrliche Einschätzung Ihrer Situation. Schreiben Sie mir einfach über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder direkt per [E-Mail](mailto:t.krampe@previder.de).
+Wenn Sie gerade vor genau dieser Entscheidung stehen, spreche ich gerne mit Ihnen darüber. Kein Verkaufsgespräch, sondern eine ehrliche Einschätzung Ihrer Situation. Schreiben Sie mir einfach über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).

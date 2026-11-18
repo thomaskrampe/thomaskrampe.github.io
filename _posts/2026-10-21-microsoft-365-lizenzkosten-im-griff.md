@@ -65,4 +65,4 @@ Vorher sollten Sie allerdings die Berechtigungen prüfen. Copilot zeigt alles, w
 > Tipp aus der Praxis: Wiederholen Sie die Prüfung mindestens zweimal im Jahr. Ein Lizenzbestand, der einmal bereinigt wurde, ist nach einem Jahr durch Eintritte, Austritte, Projekt- und Rollenwechsel schnell wieder unscharf.
 {: .prompt-tip }
 
-Die Listenpreise legt Microsoft fest, die Zahl der bezahlten, aber ungenutzten Lizenzen bestimmen Sie selbst. Wer seinen Bestand kennt, kann dem nächsten Verlängerungstermin gelassen entgegensehen. Der Previder M365 Tenant Check enthält dafür übrigens ein eigenes Modul zu Lizenzen und Kosten. Wenn Sie Ihren Bestand gegenprüfen lassen möchten, schreiben Sie mir über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de).
+Die Listenpreise legt Microsoft fest, die Zahl der bezahlten, aber ungenutzten Lizenzen bestimmen Sie selbst. Wer seinen Bestand kennt, kann dem nächsten Verlängerungstermin gelassen entgegensehen. Der Previder M365 Tenant Check enthält dafür übrigens ein eigenes Modul zu Lizenzen und Kosten. 

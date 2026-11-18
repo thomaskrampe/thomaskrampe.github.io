@@ -55,7 +55,7 @@ Um hier fair zu sein, es gibt keine wirklich belastbare Beispielrechnung. Die Za
 
 Wenn ich von Hosting ausgehe, entstehen Fixkosten in Höhe von ca. 15.000 $/Monat (8×H100, Mittelwert ca. 20 $/Std.), daraus ergeben sich ca. 0,15 $/Mio. Tokens inkl.  einem Aufschlag für Redundanz. Der Break-even gegenüber einer API-Variante ist ab ca. 50 % Auslastung erreicht, ab ca. 70 % Dauerauslastung 3- bis 5-fach günstiger. Je teurer der Vergleichs-Anbieter, desto schneller kippt die Rechnung zugunsten von Self-Hosting. Das ist jetzt keine belastbare Studie, sondern lediglich zur Veranschaulichung, da ich hier weder VRAM noch die unterschiedlichen Strompreise (USA im Vergleich zu Europa) berücksichtige. In den Quellen finden Sie noch einen weiterführenden Artikel, der etwas tiefer auf diesen Vergleich eingeht.
 
-Wenn Sie prüfen wollen, ob sich für Ihre KI-Agenten-Workflows der Wechsel auf ein selbst gehostetes, offenes Modell lohnt, oder wo Ihre sensibelsten Daten heute noch unnötig eine externe API erreichen, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de). Ich würde mich gern völlig unverbindlich mit Ihnen austauschen.
+Wenn Sie prüfen wollen, ob sich für Ihre KI-Agenten-Workflows der Wechsel auf ein selbst gehostetes, offenes Modell lohnt, oder wo Ihre sensibelsten Daten heute noch unnötig eine externe API erreichen, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe). Ich würde mich gern völlig unverbindlich mit Ihnen austauschen.
 
 ## Quellen
 

@@ -147,7 +147,7 @@ Die Chatkontrolle-Entscheidung vom 9. Juli betrifft Ihr Unternehmen rechtlich ve
 
 Für die meisten Daten reicht die Antwort des Anbieters aus. Bei den übrigen ist ein Tool wie age kein großer Aufwand. Ein Nachmittag reicht, um einen Workflow für die sensibelste Datenkategorie in Ihrem Unternehmen aufzusetzen. Allerdings bringt das auch nur dann etwas, wenn es als Prozess im Unternehmen auch gelebt wird. Der beste Zeitpunkt dafür ist nicht, wenn die nächste Verordnung oder der nächste Vorfall Schlagzeilen macht, sondern jetzt.
 
-Wenn Sie eine Einschätzung brauchen, welche Daten in Ihrem Unternehmen diese zusätzliche Schicht wirklich benötigen, oder Unterstützung beim Aufsetzen eines solchen Workflows brauchen, sprechen Sie mich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de) an.
+Wenn Sie eine Einschätzung brauchen, welche Daten in Ihrem Unternehmen diese zusätzliche Schicht wirklich benötigen, oder Unterstützung beim Aufsetzen eines solchen Workflows brauchen, sprechen Sie mich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).
 
 ## Quellen und nützliche Links
 

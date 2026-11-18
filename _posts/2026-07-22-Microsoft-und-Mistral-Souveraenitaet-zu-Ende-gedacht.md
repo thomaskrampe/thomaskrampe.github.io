@@ -71,7 +71,7 @@ Ich bin nicht grundsätzlich skeptisch gegenüber der Partnerschaft, die Investi
 
 Alle Quellen, auf die sich meine Einschätzung stützt, finden Sie unten verlinkt, damit Sie sich selbst ein Bild machen können.
 
-Wenn Sie Ihre KI- oder Cloud-Strategie gegen die drei Souveränitätsebenen und den kommenden CADA-Rahmen prüfen möchten, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de).
+Wenn Sie Ihre KI- oder Cloud-Strategie gegen die drei Souveränitätsebenen und den kommenden CADA-Rahmen prüfen möchten, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).
 
 ## Quellen
 

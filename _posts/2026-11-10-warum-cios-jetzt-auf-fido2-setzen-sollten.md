@@ -111,7 +111,3 @@ Für einen geordneten Übergang empfiehlt sich dieses Vorgehen:
 5. Hardware-Token ausrollen: Mitarbeiter ohne Diensthandy oder in Bereichen mit Smartphone-Verbot erhalten FIDO2-Hardware-Keys. Global Administratoren sollten nicht bis zum 1. Juli 2027 warten.
 6. Temporary Access Pass (TAP) einführen: Nutzen Sie TAPs für das Onboarding neuer Mitarbeiter und die Erstregistrierung der Token ohne Passwort-Umwege.
 7. Telefonie-Anbieter nur bei echtem Bedarf: Prüfen Sie Soprano oder Telesign erst dann, wenn ein regulatorischer oder betrieblicher Grund SMS oder Voice erzwingt. Für alle Nutzer ohne Telefonie-Anbieter und ohne andere MFA-Methode wird die Passkey-Registrierung ab dem 1. Februar 2027 zur Pflicht.
-
-## Bereit für den Wechsel?
-
-Ich helfe Ihnen natürlich auch gern bei der Implementierung und dem Rollout FIDO2 Token in Ihrem Unternehmen. Sprechen Sie mich einfach bei [LinkedIn](https://www.linkedin.com/in/thomaskrampe) an oder vereinbaren Sie gleich einen [Termin](https://t13k.de/meetme).

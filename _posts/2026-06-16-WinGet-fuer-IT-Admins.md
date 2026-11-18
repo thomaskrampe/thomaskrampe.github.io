@@ -528,4 +528,4 @@ Ich mag ja immer ein Fazit, hier möchte ich das aber mal Bewertung nennen. WinG
 
 **Alle Skripte in diesem Artikel sind erstmal nur als Beispiele zu sehen:** Vor einem produktivem Rollout sollten Sie immer die Paket-IDs, Detection Rules, Exit-Code-Verhalten und Ausführungskontext in Ihrer Umgebung validieren und natürlich Skripte aus "irgendwelchen" Quellen (auch nicht von mir) nicht ungetestet einsetzen. Aber das ist eine andere Geschichte.
 
-Haben Sie Fragen zur Softwareverteilung oder Paketierung in Ihrer Umgebung oder möchten Sie WinGet in Kombination mit Intune evaluieren? Meine Kollegen und ich helfen gerne bei der Planung und Implementierung, kontaktieren Sie mich einfach über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de).
+Haben Sie Fragen zur Softwareverteilung oder Paketierung in Ihrer Umgebung oder möchten Sie WinGet in Kombination mit Intune evaluieren? Ich helfe gerne bei der Planung und Implementierung, kontaktieren Sie mich einfach über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).

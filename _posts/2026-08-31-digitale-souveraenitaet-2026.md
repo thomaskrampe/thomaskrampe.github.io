@@ -53,7 +53,7 @@ CADA dagegen ist noch in der Diskussion und weit weg. Wer jetzt schon auf ein fe
 
 Beide Regelwerke ändern aber grundsätzlich nichts an der Kernaussage, die sich für mich seit Monaten in Kundengesprächen bestätigt. Der Serverstandort beantwortet nur die erste von drei Fragen. Der Data Act macht dabei Betriebs-Souveränität günstiger, CADA versucht, alle drei Ebenen in ein Punktesystem zu pressen, mit sehr ungewissem Ausgang. Wer beide Ebenen schon vor der gesetzlichen Pflicht kennt, muss im Januar 2027 nicht erst anfangen, seine Verträge zu lesen.
 
-Wenn Sie Ihre Cloud-Verträge oder Ihre KI-Strategie gegen diese Entwicklungen prüfen möchten, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe) oder per [E-Mail](mailto:t.krampe@previder.de).
+Wenn Sie Ihre Cloud-Verträge oder Ihre KI-Strategie gegen diese Entwicklungen prüfen möchten, melden Sie sich gerne über [LinkedIn](https://www.linkedin.com/in/thomaskrampe).
 
 ## Quellen
 
